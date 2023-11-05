@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+ }
+ header{
+     color: white;
+     background-color: rgb(0, 84, 166);
+ }
+ body{
+     background-color: white;
+     font-family: 'Roboto', sans-serif;
+ 
+ }
+ a{
+     color: rgb(255, 255, 255);
+     margin: 15px;
+ }
+ img{
+     display: block; 
+     width: 40%; /* responsive  */
+     margin: auto;
+     border-radius: 10px; 
+     border: 4px solid white;
+ }
+ 
+ 
+ /* Cambiar raton al pasar por el link */
+ a:hover{
+     color: orangered;
+ }
+
+ .lmenu:hover{
+    color: white;
+ }
+ .submenu{
+    display: none;
+    
+ }
+ #servicios:hover .submenu{
+    display: block;
+ }
+  ul{
+     display: flex;
+     margin-right: 30%;
+     list-style: none;
+     justify-content: center;
+     align-items: center;
+     text-align: left;
+ 
+     
+  }
+ 
+ 
+ nav {
+     width: 100%;
+     height: 50px;
+     padding-top: 1%;
+     padding-bottom: 1%;
+     display: flex;
+     justify-content: space-between;
+     
+  } 
+ 
+ #logo{
+     width: 80%;
+     margin-right: 10%;
+     background-color: white;
+ }
+ 
+  .pepe{
+     text-align: right;
+     margin-right: 3%;
+  }
+  .vertical-line {
+     border-left: 1px solid white;
+     height: 89%;
+   }
