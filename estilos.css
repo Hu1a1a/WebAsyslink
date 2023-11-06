@@ -32,13 +32,43 @@
  .lmenu:hover{
     color: white;
  }
- .submenu{
-    display: none;
+
+ .desplegable{
+    display: inline-block;
+    position: relative;
+    margin: 15px;
+    text-decoration: underline;
     
  }
- #servicios:hover .submenu{
+
+ hr{
+    width: 90%;
+    margin: auto;
+ }
+ .submenu{
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    width: 250%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    top:250%; 
+    background-color: rgb(0, 84, 166);
+
+ }
+ .desplegable:hover .submenu{
     display: block;
  }
+
+ .submenu a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    
+  }
+  .submenu a:hover {
+    color: #FFFFFF;
+  }
   ul{
      display: flex;
      margin-right: 30%;
@@ -49,8 +79,6 @@
  
      
   }
- 
- 
  nav {
      width: 100%;
      height: 50px;
@@ -67,7 +95,7 @@
      background-color: white;
  }
  
-  .pepe{
+  .sesion{
      text-align: right;
      margin-right: 3%;
   }
