@@ -36,9 +36,12 @@
  .desplegable{
     display: inline-block;
     position: relative;
-    margin: 15px;
-    text-decoration: underline;
     
+    text-decoration: underline;
+
+ }
+ .desplegable a{
+    margin: 15px;
  }
 
  hr{
@@ -52,12 +55,14 @@
     width: 250%;
     overflow: auto;
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
-    top:250%; 
+    top: 85%; 
     background-color: rgb(0, 84, 166);
+    
 
  }
  .desplegable:hover .submenu{
     display: block;
+    
  }
 
  .submenu a {
@@ -75,15 +80,15 @@
      list-style: none;
      justify-content: center;
      align-items: center;
-     text-align: left;
- 
-     
+     text-align: left;  
   }
+  
+
  nav {
      width: 100%;
-     height: 50px;
-     padding-top: 1%;
-     padding-bottom: 1%;
+     height: 35px;
+     padding-top: 10px;
+     padding-bottom: 10px;
      display: flex;
      justify-content: space-between;
      
@@ -101,5 +106,5 @@
   }
   .vertical-line {
      border-left: 1px solid white;
-     height: 89%;
+     height: 90%;
    }
