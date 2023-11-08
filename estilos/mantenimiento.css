@@ -2,7 +2,9 @@ body {
     background-image: url('../imagenes/img1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 main .titulo {
     border: 2px solid #ffffff2d;
     background-color: #ffffff;
@@ -11,32 +13,36 @@ main .titulo {
     margin-bottom: 20px;
     border-radius: 10px;
     padding: 10px;
-    text-align: center;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
 }
+
 main .titulo h2 {
     font-size: 18px;
     color: #0557a7;
 }
-main .planes {
-    display: flex;
-    justify-content: space-between; 
+
+main .titulo, .planes .plan {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
 }
+
 main .planes .plan {
-    padding-top: 10px;
-    padding-bottom: 40px;
-    padding-right: 10px;
-    padding-left: 10px;
+    flex: 1;
+    margin-bottom: 20px;
+    padding: 10px 10px 50px 10px;
     border-radius: 8px;
     background-color: #ffffff;
-    margin: 20px;
-    flex: 1;
-    text-align: center;
     border: 1px solid #ccc;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 12px 30px 0 rgba(0, 0, 0, 0.5);
+    transition: all .5s ease;
 }
+
+main .planes .plan:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 12px 30px 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
 main .planes .plan h4 {
     margin-bottom: 30px;
     margin-right: auto;
@@ -48,12 +54,14 @@ main .planes .plan h4 {
     color: #ffffff;
     font-size: 13px;
 }
+
 main .planes .plan p {
     background-color: #ededed;
     margin-bottom: 5px;
     padding: 5px;
     border-radius: 5px;
 }
+
 main .planes .plan button {
     background-color: #0054a6;
     color: white;
@@ -63,4 +71,24 @@ main .planes .plan button {
     padding-right: 25px;
     padding-left: 25px;
     max-width: 80%;
+    transition: all .5s ease;
+}
+
+main .planes .plan button:hover {
+    background-color: #0f62b5;
+    cursor: pointer;
+}
+
+@media all and (min-width:600px) {    
+    main .planes {
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    main .planes .plan {
+        margin: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        max-width: 30%;
+    }
 }
