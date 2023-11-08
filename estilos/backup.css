@@ -1,0 +1,15 @@
+body {
+    background-color: #e7e6e6;
+}
+
+.guide {
+    background-color: #0054a6;
+    border-top: 2px solid #e7e6e6;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+
+.guide p {
+    color: #ccc;
+}
