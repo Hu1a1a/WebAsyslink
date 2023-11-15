@@ -1,15 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
 body {
-    background-color: #e7e6e6;
+    background-color: rgb(255, 255, 255);
 }
 
 .guide {
-    background-color: #0054a6;
+    background-color: #0c62b7;
     border-top: 2px solid #e7e6e6;
     padding-left: 10px;
     padding-top: 2px;
     padding-bottom: 3px;
+    padding: 5px;
 }
 
 .guide p {
     color: #ccc;
+}
+
+.guide p a {
+    color: white;
+}
+
+.block1 {
+    background-image: url('../imagenes/backup1.jpg');
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+
+.block1 .content {
+    font-family: 'Space Grotesk', sans-serif;;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    text-align: right;
+    color: white;
+    width:35%;
+    padding: 5%;
+    line-height: 1.56;
+    float: right;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.block1 .content p {
+    font-size: 20px;
+}
+
+.block2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+    align-items: flex-start;
+}
+
+.block2 img {
+    width: 46%;
+    margin-right: 100px;
+    max-width: 500px;
+}
+
+.block2 .content {
+    max-width: 30%;
+}
+
+.block2 .content hr {
+    color: #d6d6d6;
+}
+
+.block2 .content ul {
+    font-size: 18px;
+    color: #353535;
+    margin-top: 20px;
+    line-height: 1.56;
+}
+
+.block2 .content ul li {
+    margin-top: 10px;
+}
+
+.block2 .content h2 {
+    font-weight: 600;
+}
+
+.boton-planes {
+    margin-top: 100px;
+    width: 30%;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background-color: #0c62b7;
+    margin-bottom: 10%;
+    border-radius: 5px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.boton-planes button {
+    padding: 10px;
+    background-color: #0c62b7;
+    border: none;
+    font-size: large;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-image: url('../imagenes/backup_footer.jpg');
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    color: white;
+}
+
+footer .content-left {
+    margin: 50px 50px; 
+    float: left;
+}
+
+footer .content-right {
+    margin: 50px 50px;
+    float: right;
+}
+
+footer .content-left h3 {
+    margin-top: 15px;
+}
+
+footer .content-left p {
+    margin-top: 3px;
+}
+
+footer .content-right button {
+    margin-top: 30px;
+    float: right;
+    padding: 5px 50px;
+    color: #353535;
+    cursor: pointer;
 }
