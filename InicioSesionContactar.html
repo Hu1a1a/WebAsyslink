@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+    <link rel="stylesheet" type="text/css" href="estilos/inicioSesionContactar.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <!-- Logo de la pagina -->
+                    <a href="Inicio.html"><img src="imagenes/logo.png" alt="inicio"></a>
+                </li>
+                <li> <!-- Seccion Sobre nosotros -->
+                    <a class="lmenu" href="SobreNosotros.html">Sobre nosotros</a>
+                </li>
+                
+                <!-- Separador -->
+                <div class="vertical-line"></div>
+                <!-- Separador -->
+
+                <li> <!-- Desplegable de servicios -->
+                    <div class="desplegable">
+                        <br><br><a class="lmenu" href="#">Servicios</a><br><br><br>
+                        <div class="submenu">
+                            <a href="Infraestructura.html">Infraestructura</a><hr>
+                            <a href="Seguridad.html">Seguridad</a><hr>
+                            <a href="ContinuidadNegocio.html">Continuidad de Negocio</a><hr>
+                            <a href="TransformacionDigital.html">Transformacion digital</a><hr>
+                            <a href="Backup.html">Backup</a><hr>
+                            <a href="Mantenimiento.html">Mantenimiento</a>
+                        </div>
+                    </div>
+                </li>
+                
+                <!-- Separator -->
+                <div class="vertical-line"></div>
+                <!-- Separator -->
+
+                <!-- Seccion Contactar -->
+                <li><a class="lmenu" href="InicioSesionContactar.html">Contactar</a></li>
+                
+            </ul>
+            <ul class="sesion"> <!-- Seccion de inicio de sesion -->
+                <li>   
+                    <a class="lmenu" href="InicioSesion.html">Inicio sesion</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+     <div class="container">
+        <div class="form-wrapper">
+            <div class="form">
+                <h2>Inicia sesión</h2>
+                <form id="loginform">
+                    <label for="login-username">Correo electrónico:</label>
+                    <input type="text" id="login-username" name="login-username" required>
+                    <label for="login-password">Contraseña:</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                    <button type="submit" class="login-button">Confirmar</button>
+                </form>
+            </div>
+            <div class="form">
+                <h2>Regístrate</h2>
+                <form id="signupform">
+                    <label for="signup-username">Correo electrónico:</label>
+                    <input type="text" id="signup-username" name="signup-username" required>
+                    <label for="signup-password">Contraseña:</label>
+                    <input type="password" id="signup-password" name="signup-password" required>
+                    <label for="confirm-password">Confirmar contraseña:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <button type="submit" class="signup-button">Confirmar</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <button type="submit" class="continue-button">Continuar sin iniciar sesión</button>
+    </div>
+</body>
+</html>
