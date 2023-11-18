@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+body {
+    background-image: url('../imagenes/fondo_cliente.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.guide {
+    background-color: #0c62b7;
+    border-top: 2px solid #e7e6e6;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    padding: 5px;
+}
+
+.guide p {
+    color: #ccc;
+}
+
+.guide p a {
+    color: white;
+}
+
+.block1  {
+    display: block;
+    width: 75%;
+    margin: auto;
+    margin-top: 5%;
+    padding: 0px 20% 10% 0px; 
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    transition: all .5s ease;
+    text-align: left;
+}
+
+.block1 p {
+    color: #0054a6; 
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.block1 button{
+    background-color: #0557a7;
+    color: white;
+    margin-top: 5%;
+    padding: 5px;
+    margin-left: 5%;
+    border-radius: 5px;
+    padding-right: 25px;
+    padding-left: 25px;
+    max-width: 80%;
+    transition: all .5s ease;
+}
