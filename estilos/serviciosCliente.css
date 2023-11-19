@@ -19,6 +19,8 @@ main form {
     border-radius: 8px;
     margin: auto;
     text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5),
+     0 12px 30px 0 rgba(0, 0, 0, 0.5);
 }
 
 main form .busqueda {
@@ -44,7 +46,7 @@ main form .busqueda button {
 }
 
 main form .busqueda input {
-    padding: 1px 5px;
+    padding: 2px 10px;
     font-size: 19px;
     font-size: medium;
     border-radius: 5px;
