@@ -37,7 +37,6 @@ main form .busqueda button {
     color: white;
     background-color: #0054a6;
     border: none;
-    font-size: 19px;
     font-size: medium;
     padding: 3px 50px;
     border-radius: 5px;
@@ -54,7 +53,7 @@ main form .busqueda input {
 
 main form .busqueda p {
     color: #0054a6;
-    font-size: 19px;
+    font-size: 17px;
 }
 
 main form .listado {
@@ -62,7 +61,7 @@ main form .listado {
     border-radius: 8px;
     padding: 10px;
     text-align: start;
-    max-height: 420px;
+    max-height: 400px;
     overflow-y: auto;
     background-color: #f0f0f0;
     border: 5px solid #f0f0f0;
@@ -77,5 +76,5 @@ main form .listado .item {
 
 main form .listado .item p {
     display: inline-block;
-    font-size: 19px;
+    font-size: 17px;
 }
