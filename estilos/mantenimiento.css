@@ -5,7 +5,7 @@ body {
     background-attachment: fixed;
 }
 
-main .titulo {
+.titulo {
     border: 2px solid #ffffff2d;
     background-color: #ffffff;
     width: 300px;
@@ -14,59 +14,92 @@ main .titulo {
     border-radius: 10px;
     padding: 10px;
     display: block;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-main .titulo h2 {
+.titulo h2 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 18px;
     color: #0557a7;
 }
 
-main .titulo, .planes .plan {
-    max-width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
 }
 
-main .planes .plan {
-    flex: 1;
-    margin-bottom: 20px;
+.box {
+    width: 42%;
+    height: 300px;
+    margin: 20px;
+    box-sizing: border-box;
+    text-align: center;
+
     padding: 10px 10px 50px 10px;
     border-radius: 8px;
     background-color: #ffffff;
-    border: 1px solid #ccc;
     transition: all .5s ease;
 }
 
-main .planes .plan:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 12px 30px 0 rgba(0, 0, 0, 0.5);
+.box:hover {
     transform: translateY(-5px);
 }
 
-main .planes .plan h4 {
+#bronce:hover {
+    box-shadow: 0 8px 16px 0
+    rgba(205, 127, 50, 0.5), 
+    0 12px 30px 0
+    rgba(205, 127, 50, 0.5);
+}
+
+#plata:hover {
+    box-shadow: 0 8px 16px 0
+    rgba(227, 228, 229, 0.5), 
+    0 12px 30px 0
+    rgba(227, 228, 229, 0.5);
+}
+
+#oro:hover {
+    box-shadow: 0 8px 16px 0
+    rgba(212, 175, 55, 0.5), 
+    0 12px 30px 0
+    rgba(212, 175, 55, 0.5);
+}
+
+.box h4 {
     margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
     max-width: 60%;
-    padding: 5px;
+    padding: 10px 5px;
     background-color: #0557a7;
     border-radius: 5px;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 14px;
 }
 
-main .planes .plan p {
+.box p {
     background-color: #ededed;
     margin-bottom: 5px;
     padding: 5px;
     border-radius: 5px;
 }
 
-main .planes .plan button {
+.box button {
     background-color: #0054a6;
     color: white;
     margin-top: 5px;
     padding: 5px;
+    border: none;
+    cursor: pointer;
     border-radius: 5px;
     padding-right: 25px;
     padding-left: 25px;
@@ -74,21 +107,24 @@ main .planes .plan button {
     transition: all .5s ease;
 }
 
-main .planes .plan button:hover {
+.box button:hover {
     background-color: #0f62b5;
-    cursor: pointer;
 }
 
-@media all and (min-width:600px) {    
-    main .planes {
-        display: flex;
-        justify-content: space-between; 
+@media screen and (max-width:500px) {
+    .box {
+        width: 80%;
     }
+}
 
-    main .planes .plan {
-        margin: 20px;
-        margin-right: 10px;
-        margin-left: 10px;
-        max-width: 30%;
+@media screen and (min-width:1000px) {
+    .box {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    .box {
+        width: 30%;
     }
 }
