@@ -1,0 +1,81 @@
+body {
+    background-image: url('../imagenes/img1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    margin-top: 5%;
+} 
+
+main form {
+    display: block;
+    width: 85%;
+    max-width: 1200px;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    margin: auto;
+    text-align: center;
+}
+
+main form .busqueda {
+    display: inline;
+    text-align: center;
+}
+
+main form .busqueda p, 
+main form .busqueda input, 
+main form .busqueda button {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+main form .busqueda button {
+    color: white;
+    background-color: #0054a6;
+    border: none;
+    font-size: 19px;
+    font-size: medium;
+    padding: 3px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main form .busqueda input {
+    padding: 1px 5px;
+    font-size: 19px;
+    font-size: medium;
+    border-radius: 5px;
+    width: 50%;
+}
+
+main form .busqueda p {
+    color: #0054a6;
+    font-size: 19px;
+}
+
+main form .listado {
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: start;
+    max-height: 420px;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+    border: 5px solid #f0f0f0;
+}
+
+main form .listado .item {
+    background-color: #e6e2e2;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+main form .listado .item p {
+    display: inline-block;
+    font-size: 19px;
+}
