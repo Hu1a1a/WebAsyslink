@@ -1,0 +1,39 @@
+.content {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .block {
+    display: flex;
+    width: 40%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 25px;
+    border: 3px solid rgb(0, 84, 166);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    max-height: 100px;
+    text-align: center;
+ }
+ 
+ .block h2 {
+    color: rgb(0, 84, 166);
+    align-self: center;
+    padding: 10%;
+ }
+
+ body {
+    background-image:url('../imagenes/fondoPortalU.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ }
+ 
+ 
