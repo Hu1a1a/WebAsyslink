@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="estilos/estilos.css">
         <link rel="stylesheet" href="estilos/backup.css">
         <link rel="stylesheet" href="estilos/guia.css">
+        <script src="javascript/manejarURL.js"></script>
     </head>
     <body>
         <header>
@@ -97,7 +98,7 @@
 
         <!-- Boton de servicios backup -->
         <div class="boton-planes">
-            <button>Probar servicio de backup</button>
+            <button onclick="redirigir('#')">Probar servicio de backup</button>
         </div>
 
         <!-- Footer -->
@@ -116,7 +117,7 @@
             </div>
             <div class="content-right">
                 <h3>¿Necesitas más información?</h3>
-                <button>Reúnete con nosotros</button>
+                <button onclick="redirigir('InicioSesion.html')">Reúnete con nosotros</button>
             </div>
         </footer>
     </body>
