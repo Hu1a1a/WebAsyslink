@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Barra de AsysLink</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="styles/main.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <nav> <!-- Main benu box -->
+            <ul class="menu">
+                <!-- Page logo and some links -->
+                <li class="logo"><a href="#"><img src="resources/logo.png" draggable="false"></a></li>
+                <li class="item"><a class="tag" href="#">Sobre nosotros</a></li>
+                <li class="item" id="submenu">
+                    <!-- Submenu de servicios -->
+                    <a class="tag" href="#">Servicios</a>
+                    <ul>
+                        <li><a href="#">Infraestructura</a></li>
+                        <li><a href="#">Seguridad</a></li>
+                        <li><a href="#">Continuidad de Negocio</a></li>
+                        <li><a href="#">Transformacion Digital</a></li>
+                        <li><a href="#">Backup</a></li>
+                        <li><a href="#">Mantenimiento</a></li>
+                    </ul>
+                </li>
+                <li class="item"><a class="tag" href="#">Contactar</a></li>
+
+                <!-- Separator -->
+                <li class="end"></li>
+                <!-- Separator -->
+
+                <!-- Social media links -->
+                <li class="item" id="sesion"><a href="#">
+                    <button onclick="redirigir('#')">
+                        <a href="#">Iniciar sesion</a>
+                        <img src="resources/user.svg" height="55px">
+                    </button>
+                </li>
+                <li class="toggle"><a href="#"><span class="bars"></span></a></li>
+            </ul>
+        </nav>
+        <script>
+            // Funcion para iniciar sesion
+            function redirigir(url) { 
+                window.location.href = url;
+            }       
+        </script>
+    </body>
+</html>
