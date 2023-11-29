@@ -20,8 +20,6 @@
 }
 
 .container2{
-    display: flex;
-    align-items: flex-end;
     font-family: 'Space Grotesk', sans-serif;
     background-color: rgba(0, 0, 0, 0.6);
     box-sizing: border-box;
@@ -36,19 +34,24 @@
     max-height: 90vh;
 }
 
-.container3 img{
-    display: flex;
+
+.container3{
     font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+}
+
+.container3 img{
+    
     margin-top: 20px;
     border-radius: 5%;
-    width: 46%;
-    margin-right: 50px;
+    width: 50%;
+    object-fit: contain;
+    margin-right: 10%;
     margin-left: 100px;
     max-width: 500px;
 }
 
-.BackArchive h2{
-    font-family: 'Space Grotesk', sans-serif;
+.BackArchive h2{    
     font-size: 40px;
     font-weight: bold;  
     margin-top: 30px;
