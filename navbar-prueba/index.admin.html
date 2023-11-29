@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/main.usuario.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
         <script src="main.js"></script>
     </head>
@@ -29,15 +29,31 @@
                 </li>
                 <li class="item"><a class="tag" href="#">Contactar</a></li>
 
-                <!-- Separator -->
+                <!-- Separador de derecha e izquierda -->
                 <li class="end"></li>
-                <!-- Separator -->
+                <!-- Separador de derecha e izquierda -->
+
+
+                <li class="item" id="submenu-right">
+                    <!-- Submenu de servicios -->
+                    <a class="tag" href="#">Portal Administrador ▼</a>
+                    <ul>
+                        <li><a href="#">Mis clientes</a></li>
+                        <li><a href="#">Solicitudes de informacion</a></li>
+                        <li><a href="#">Servicios Contratados</a></li>
+                        <li><a href="#">Ticketing</a></li>
+                    </ul>
+                </li>
+
+                <!-- Separador vetical -->
+                <li class="item" id="separator" style="font-size: 25px;">|</li>
+                <!-- Separador vetical -->
 
                 <!-- Social media links -->
                 <li class="item" id="sesion"><a href="#">
                     <button onclick="">
-                        <a href="#">Iniciar sesion</a>
-                        <img src="resources/user.svg" height="35px">
+                        <a href="#">Cerrar sesion</a>
+                        <img src="resources/cerrar_session.svg" height="35px">
                     </button>
                 </li>
                 <li class="toggle"><a href="#"><span class="bars"></span></a></li>
