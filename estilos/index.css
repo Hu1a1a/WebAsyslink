@@ -48,8 +48,14 @@ justify-content: start;
     margin-bottom: 20%;
     margin-left: auto;
     margin-right: auto;
-    border: 4px solid aqua;
+    border: 8px solid #0054a6;
+    border-radius: 5px;
     background-color: white;
+  padding: 10px;
+}
+
+.cuadro h4 {
+  margin-bottom: 3px;
 }
 
 .circulo{
