@@ -93,6 +93,7 @@ h2 {
     font-size: large;
     color: white;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 footer {
