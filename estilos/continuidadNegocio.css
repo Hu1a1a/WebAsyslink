@@ -186,3 +186,44 @@ ol li div {
 li h3 {
     color: rgb(103,196,193);
 }
+
+.container6{
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.container6 img{
+    
+    border-radius: 5%;
+    width: 50%;
+    object-fit: contain;
+    margin-right: 10%;
+    margin-left: 10%;
+   
+    max-width: 500px;
+}
+
+.BCM h2{    
+    font-size: 40px;
+    font-weight: bold;  
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+.BCM p1 p2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+.BCM p1 span{
+    border-top: 1px solid #353535;    
+    display: inline-block;
+    padding-top: 10px;
+}
