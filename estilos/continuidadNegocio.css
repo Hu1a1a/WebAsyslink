@@ -9,14 +9,19 @@
     padding: 5px
 }
 
-.fondoIntroCN{
+.container1{
+    display: flex;
     background-image: url('../imagenes/contNegocio3.jpeg');
-    width: 100%;
-    height: 600px;
     background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: flex-end;
 }
 
-.introduccion{
+.container2{
+    display: flex;
+    align-items: flex-end;
     font-family: 'Space Grotesk', sans-serif;
     background-color: rgba(0, 0, 0, 0.6);
     box-sizing: border-box;
@@ -25,12 +30,13 @@
     width:35%;
     padding: 5%;
     line-height: 1.56;
-    float: right;
     margin-top: 5%;
     margin-right: 5%;
+    margin-bottom: auto;
+    max-height: 90vh;
 }
 
-.fondoBackArchive img{
+.container3 img{
     display: flex;
     font-family: 'Space Grotesk', sans-serif;
     margin-top: 20px;
