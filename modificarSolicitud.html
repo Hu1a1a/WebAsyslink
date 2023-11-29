@@ -54,27 +54,24 @@
                 <a href="#"> Solicitud Numero.</a></p>
         </div>          
 
-        <div class="block1">
-            <div>
-
-                <p> Servicio sobre el que se solicita informacion: </p> <!-- PHP aqui -->
-                <br>
-                <p> Empresa solicitante: </p> <!-- PHP aqui -->
-                <br>
-                <p> Nombre y apellidos del solicitante: </p> <!-- PHP aqui -->
-                <br>
-                <p> Direccion de correo electrónico del solicitante: </p> <!-- PHP aqui -->
-                <br>
-                <p> Numero de telefono del solicitante: </p> <!-- PHP aqui -->
-                <br>
-                <p> Fecha de envio de la solicitud: </p> <!-- PHP aqui -->
-                <br>
-                <p> Fecha de la reunion: </p> <!-- PHP aqui -->
-                <br>
-                <br>
-                <button onclick="location.href='modificarSolicitud.html'">Modificar</button>
+        <section id="contenido">
+            <div class="container">
+                    <div class="form">
+                        <h2>Modificar solicitud numero.</h2>
+                        <br>
+                        <form action=".php" method="POST">
+                            <label for="fecha_hora">Fecha y hora:</label>
+                            <input type="datetime-local" id="fecha_hora" name="fecha_hora" required>
+    
+                            <label for="servicios">Servicios de interés:</label>
+                            <textarea id="servicios" name="servicios"></textarea>
+    
+                            <button type="submit">Confirmar cambios</button>
+                        </form>
+                    </div>
+                    <button type="submit">Cancelar cita</button>
             </div>
-        </div>
+        </section>
         
 
     </body>

@@ -88,3 +88,12 @@ body {
 .texto {
    padding-top: 20px;
 }
+
+.checkbox {
+   display: inline-flex;
+   align-items: center;
+}
+
+.checkbox a{
+   text-decoration: underline;
+}
