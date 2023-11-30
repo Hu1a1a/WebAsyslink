@@ -11,7 +11,7 @@
             <ul>
                 <li> <!-- Logo de la pagina -->
                     <a href="index.html"><img id="logo" src="imagenes/logo.png" alt="inicio"></a>
-                </li>
+                </li> 
                 <li> <!-- Seccion Sobre nosotros -->
                     <a class="lmenu" href="SobreNosotros.html">Sobre nosotros</a>
                 </li>
@@ -57,19 +57,24 @@
         <section id="contenido">
             <div class="container">
                     <div class="form">
-                        <h2>Modificar solicitud numero.</h2>
                         <br>
                         <form action=".php" method="POST">
+                            <h2>Modificar solicitud numero.</h2>
                             <label for="fecha_hora">Fecha y hora:</label>
+                            <br>
                             <input type="datetime-local" id="fecha_hora" name="fecha_hora" required>
-    
+                            <br>
                             <label for="servicios">Servicios de interés:</label>
+                            <br>
                             <textarea id="servicios" name="servicios"></textarea>
     
                             <button type="submit">Confirmar cambios</button>
+                            <br>
+                            <div class="cancelar">
+                                <button type="submit">Cancelar cita</button>
+                            </div>
                         </form>
                     </div>
-                    <button type="submit">Cancelar cita</button>
             </div>
         </section>
         
