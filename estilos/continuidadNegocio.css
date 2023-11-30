@@ -9,14 +9,17 @@
     padding: 5px
 }
 
-.fondoIntroCN{
+.container1{
+    display: flex;
     background-image: url('../imagenes/contNegocio3.jpeg');
-    width: 100%;
-    height: 600px;
     background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: flex-end;
 }
 
-.introduccion{
+.container2{
     font-family: 'Space Grotesk', sans-serif;
     background-color: rgba(0, 0, 0, 0.6);
     box-sizing: border-box;
@@ -25,24 +28,30 @@
     width:35%;
     padding: 5%;
     line-height: 1.56;
-    float: right;
     margin-top: 5%;
     margin-right: 5%;
+    margin-bottom: auto;
+    max-height: 90vh;
 }
 
-.fondoBackArchive img{
-    display: flex;
+
+.container3{
     font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+}
+
+.container3 img{
+    
     margin-top: 20px;
     border-radius: 5%;
-    width: 46%;
-    margin-right: 50px;
+    width: 50%;
+    object-fit: contain;
+    margin-right: 10%;
     margin-left: 100px;
     max-width: 500px;
 }
 
-.BackArchive h2{
-    font-family: 'Space Grotesk', sans-serif;
+.BackArchive h2{    
     font-size: 40px;
     font-weight: bold;  
     margin-top: 30px;
@@ -66,6 +75,7 @@
     font-family: 'Space Grotesk', sans-serif;
     font-size: 20px;
     margin-top: 20px;
+    margin-left: 8%;
     margin-bottom: 20px;
     padding-right: 30px;
 }
@@ -76,37 +86,144 @@
     
 }
 
-.fondoDisasterRecovery{
-    margin-top: 100px;
-    background-color: lightgray;
+.container4{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    background-color: rgb(228, 228, 228);
     font-family: 'Space Grotesk', sans-serif;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
-.disasterRecovery h2{
+.container5{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.container5 h2{
     font-size: 40px;
     font-weight: bold;  
     margin-bottom: 10px;
     margin-left: 5%;
 }
 
-.disasterRecovery p1{
+.container5 p1{
     font-size: 16px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    max-width: 40%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    max-width: 100%;
     float: left;
 }
 
-.disasterRecovery p1 span{
+.container5 p1 span{
     border-top: 1px solid #777777;    
     display: inline-block;
     padding-top: 10px; 
 }
 
-.disasterRecovery h3{
+.container5 h3{
     font-size: 15px;
     font-weight: bold;  
+    margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 5%;
+    
+}
+
+.container5 ul{
+    max-width: 100%;
+    margin-left: 8%;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    counter-reset: num;
+    width: 100%;
     margin-left: 2%;
-    clear: left;
+    margin-right: 16%;
+    margin-top: 2%;
+    margin-bottom:2%;
+}
+
+ol li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    counter-increment: num;
+    margin-bottom: 0.5rem;
+    border: 5px solid;
+    border-image: linear-gradient(to right, black, turquoise) 1;
+    padding: 1rem;
+}
+
+ol li::before {
+    content: counter(num);
+    margin-right: 0.5rem;
+    border: 3px solid black;
+    font-size: large;
+    font-weight: bold;
+    font-family:'Space Grotesk', sans-serif ;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+}
+
+ol li div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+
+li h3 {
+    color: rgb(103,196,193);
+}
+
+.container6{
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.container6 img{
+    
+    border-radius: 5%;
+    width: 50%;
+    object-fit: contain;
+    margin-right: 10%;
+    margin-left: 10%;
+   
+    max-width: 500px;
+}
+
+.BCM h2{    
+    font-size: 40px;
+    font-weight: bold;  
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+.BCM p1 p2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+.BCM p1 span{
+    border-top: 1px solid #353535;    
+    display: inline-block;
+    padding-top: 10px;
 }

@@ -1,46 +1,45 @@
-
-body{
-    width: 100%;
-    height: 100%;
-    /* background-color: blueviolet; */
-}
-body div{
-justify-content: start;
+body {
+    background: rgb(249,249,249);
+background: radial-gradient(circle, rgba(249,249,249,1) 0%, rgba(0,0,0,0.1) 100%);
 }
 
+.intro {
+    max-width: 1300px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
 
-
-.left{
-    display: inline-block;
+.intro .left {
     width: 30%; 
     text-align: center;
-    height: 100%;
-    /* background-color: aqua; */
     float: left;
     margin: auto;
 }
 
-.center{
+.intro .center{
     display: inline-block;
     width: 40%;
     height: 50%;
-    
     text-align: center;
     margin: auto;
-    float: center;
-    /* background-color: green; */
 }
-.right{
-    display: inline-block;
+
+.intro .right{
     width: 30%;
-    height: 100%;
     text-align: center;
-    /* background-color: yellow; */
     float: right;
     margin: auto;
 }
 
-.cuadro{
+.cuadro, .circulo {
+    -webkit-box-shadow: 10px 10px 43px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 10px 10px 43px 0px rgba(0,0,0,0.3);
+    box-shadow: 10px 10px 43px 0px rgba(0,0,0,0.3);
+}
+
+.cuadro {
     display: block;
     width: 60%;
     height: 60px;
@@ -48,95 +47,91 @@ justify-content: start;
     margin-bottom: 20%;
     margin-left: auto;
     margin-right: auto;
-    border: 4px solid aqua;
-    background-color: white;
+    border: 5px solid #3274b6;
+    border-radius: 5px;
+    background-color: rgb(248, 243, 243);
+    padding: 10px;
+}
+
+.cuadro h4 {
+  margin-bottom: 3px;
 }
 
 .circulo{
     width: 95%;
-    padding-top:35%;
-    padding-bottom: 35%;
+    padding-top:30%;
+    padding-bottom: 30%;
     border-radius: 50%;
     margin-top: 30%;
     margin-bottom: 20%;
-    display: flex;
-    object-fit: contain;
+    display: block;
     text-align: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     justify-content: center; 
-    border: 4px solid aqua;
-    background-color: white;
+    border: 10px solid #3274b6;
+    background-color: rgb(248, 243, 243);
 }
 
-.Portafolio{
+.circulo h2 {
+    font-size: 20px;
+}
+
+.circulo h1 {
+    font-size: 35px;
+}
+
+.break {
+    color: #353535;
+    width: 80%;
+    display: block;
+    margin: auto;
     text-align: center;
-    margin-top: 5%;
-    padding-bottom: 15%;
-}
-.Portafolio p{
-    width: 30%;
-    text-align: left;
-    margin: auto;
-}
-.Portafolio h1{
-    width: 20%;
-    margin: auto;
 }
 
-.secciones{
-    max-width: 600px;
+.break hr {
+    color: #3535352b;
+}
+
+.servicios {
+    color: #353535;
+    max-width: 1500px;
+    padding-top: 100px;
+    display: flex;
+    padding-bottom: 50px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.servicios .secciones {
     width: 50%;
-    margin-bottom: 20%;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    /* padding-right: 10%; */
-    
-    text-align: center;
-    float: left;
 }
 
-.secciones h1{
-    margin: auto;
-}
-.secciones p{
-    max-width: 300px;
-    text-align: left;
-    margin-left: 15%;
+.servicios .secciones p,
+.servicios .secciones h2,
+.servicios .secciones hr {
+    max-width: 400px;
 }
 
-.secciones hr{
-    max-width: 600px;
+.servicios .secciones p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.servicios .botones {
     width: 50%;
-    text-align: left;
-    margin: auto;
 }
 
-.botones{
-    max-width: 600px;
-    width: 50%;
-    margin: auto;
-    margin-bottom: 20%;
-    padding-top: 10%;
-    padding-bottom: 10%;
+.servicios .botones button {
     float: right;
-}
-
-.botones button{
-    display: block;
-margin: auto;
-margin-bottom: 2%;
-max-width: 600px;
-font-size: large;
-width: 95%;
-padding-top: 5%;
-padding-bottom: 5%;
-
-}
-
-#bloque{
-    display: block;
+    margin-bottom: 10px;
+    max-width: 500px;
+    font-size: 15px;
+    width: 85%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 footer {

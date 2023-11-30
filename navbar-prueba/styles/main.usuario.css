@@ -60,13 +60,14 @@ nav .menu .logo {
     flex: 0 0 auto;
     order: 0;
     user-select: none;
+    padding: 5px 0px;
 }
 
 nav .menu .logo a img {
     background-color: white;
     border-radius: 5px;
     padding: 5px;
-    height: 40px;
+    height: 50px;
 }
 
 nav .menu .item.active {
@@ -116,7 +117,8 @@ nav .menu .toggle .bars::after {
     top: -5px;
 }
 
-#submenu ul {
+#submenu ul,
+#submenu-right ul {
     list-style: none;
     display: none;
     position: relative;
@@ -126,17 +128,20 @@ nav .menu .toggle .bars::after {
     margin-top: 15px;
 }
 
-#submenu ul li:hover {
+#submenu ul li:hover,
+#submenu-right ul li:hover {
     background-color: #0864c0;
     border-radius: 5px;
 }
 
-#submenu ul li a {
+#submenu ul li a,
+#submenu-right ul li a {
     display: block;
     text-decoration: none;
 }
 
-#submenu:hover > ul {
+#submenu:hover > ul,
+#submenu-right:hover > ul {
     display: block;
 }
 
@@ -155,12 +160,16 @@ nav .menu .toggle .bars::after {
 }
 
 #sesion button img {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 #sesion button a {
     text-decoration: none;
     font-size: 16px;
+}
+
+#separator {
+    display: none;
 }
 
 /*
@@ -197,7 +206,7 @@ nav .menu .toggle .bars::after {
 *  Page styles at min width 768px
 *  ##############################
 */
-@media all and (min-width:780px) {  
+@media all and (min-width:904px) {  
     nav .menu .tag {
         position: relative;
         text-decoration: none;
@@ -219,10 +228,6 @@ nav .menu .toggle .bars::after {
         transform-origin: left;
         transform: scaleX(1);
     }
-    nav .menu .logo {
-        flex: 0 0 auto;
-        order: 0;
-    }
     nav .menu .item {
         display: block;
         width: auto;
@@ -238,17 +243,33 @@ nav .menu .toggle .bars::after {
     nav .menu li {
         padding: 15px 10px;
     }
+    nav .menu .logo {
+        flex: 0 0 auto;
+        order: 0;
+        padding: 5px 0px;
+    }
     #sesion {
         order: 2;
         padding-right: 0;
+        padding: 0px;
     }
     nav .menu .item.active {
         border-bottom: none;
     }
-    #submenu ul {
+    #submenu ul,
+    #submenu-right ul {
         box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.4);
-        transform: translateX(-80px);
         position: absolute;
+    }
+    #submenu ul {
+        transform: translateX(-80px);
+    }
+    #submenu-right ul {
+        transform: translateX(-50px);
+    }
+    #separator {
+        display: block;
+        padding: 0px;
     }
 }
 

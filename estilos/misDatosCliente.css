@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+
+.background{
+    background-image: url(../imagenes/mesaConPantallas.jpg);
+    
+}
+
+
+.container{
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
