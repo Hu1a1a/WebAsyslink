@@ -1,7 +1,7 @@
 ## Trabajar con Xampp
 Estos son los pasos a seguir para poder conectarse a Xammp.
 
-- Descargar Xampp. La pagina de descarga es <a href="">.
+- Descargar Xampp. Esta es <a href="https://www.apachefriends.org/es/download.html">la pagina de descarga</a>.
 - Tras instalar Xampp, mover la carpeta de este repositorio a la ruta `C:\xampp\htdocs`.
 - La ruta del repositorio local sera entonces `C:\xampp\htdocs\WebAsyslink`.
 - Para empezar a usarlo, ejecutar Xampp y pulsar solo el boton `Start` de Apache.
