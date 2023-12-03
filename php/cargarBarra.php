@@ -7,8 +7,6 @@
         $_SESSION['login_type'] = 'none';
     }
     
-    // Obtener las credenciales de esta sesion del
-    // usuario. 
     if($_SESSION['login_type']=="none") {
         echo "
             <nav>
