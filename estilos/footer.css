@@ -1,0 +1,33 @@
+footer {
+    background-image: url('../imagenes/backup_footer.jpg');
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    color: white;
+}
+
+footer .content-left {
+    margin: 50px 50px; 
+    float: left;
+}
+
+footer .content-right {
+    margin: 50px 50px;
+    float: right;
+}
+
+footer .content-left h3 {
+    margin-top: 15px;
+}
+
+footer .content-left p {
+    margin-top: 3px;
+}
+
+footer .content-right button {
+    margin-top: 30px;
+    float: right;
+    padding: 5px 50px;
+    color: #353535;
+    cursor: pointer;
+}

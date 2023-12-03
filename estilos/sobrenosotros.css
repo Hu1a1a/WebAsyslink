@@ -4,23 +4,6 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.guide {
-    background-color: #0c62b7;
-    border-top: 2px solid #e7e6e6;
-    padding-left: 10px;
-    padding-top: 2px;
-    padding-bottom: 3px;
-    padding: 5px;
-}
-
-.guide p {
-    color: #ccc;
-}
-
-.guide p a {
-    color: white;
-}
-
 .block1 {
     background-image: url('../imagenes/nosotros1.jpg');
     width: 100%;
@@ -113,43 +96,4 @@ h2 {
 
 .block3 .content h2 {
     font-weight: 600;
-}
-
-
-
-
-
-
-footer {
-    background-image: url('../imagenes/backup_footer.jpg');
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-    color: white;
-}
-
-footer .content-left {
-    margin: 50px 50px; 
-    float: left;
-}
-
-footer .content-right {
-    margin: 50px 50px;
-    float: right;
-}
-
-footer .content-left h3 {
-    margin-top: 15px;
-}
-
-footer .content-left p {
-    margin-top: 3px;
-}
-
-footer .content-right button {
-    margin-top: 30px;
-    float: right;
-    padding: 5px 50px;
-    color: #353535;
-    cursor: pointer;
 }

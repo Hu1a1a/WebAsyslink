@@ -1,3 +1,10 @@
+body {
+   background-image:url('../imagenes/fondoInicioSesion.jpeg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
 .container {
    font-family: Arial, sans-serif;
    display: block;
@@ -36,13 +43,13 @@ h2 {
    color: rgb(0, 84, 166);
 }
 
-label {
+form label {
    display: block;
    font-weight: bold;
    margin-top: 10px;
 }
 
-input {
+form input {
    width: 95%;
    padding: 10px;
    margin-top: 5px;
@@ -50,7 +57,7 @@ input {
    border-radius: 4px;
 }
 
-button {
+form button {
    display: block;
    width: 40%;
    padding: 10px;
@@ -72,13 +79,6 @@ button {
 .signup-button {
    background-color: #22983e;
    margin-left: auto;
-}
-
-body {
-   background-image:url('../imagenes/fondoInicioSesion.jpeg');
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-size: cover;
 }
 
 .superior {

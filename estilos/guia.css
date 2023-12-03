@@ -9,6 +9,8 @@
 
 .guia p,
 .guia a {
+    padding-left: 10px;
+    text-decoration: none;
     display: inline-block;
 }
 
@@ -18,4 +20,11 @@
 
 .guia a {
     color: white;
+}
+
+@media all and (min-width:1500px) {
+    .guia {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }

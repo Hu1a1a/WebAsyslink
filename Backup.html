@@ -1,59 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset='utf-8'>
         <title>Asyslink - Backup</title>
-        <link rel="stylesheet" href="estilos/estilos.css">
         <link rel="stylesheet" href="estilos/backup.css">
         <link rel="stylesheet" href="estilos/guia.css">
-        <script src="javascript/manejarURL.js"></script>
+        <link rel="stylesheet" href="estilos/barra.css">
+        <link rel="stylesheet" href="estilos/footer.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+        <script src="javascript/cargarBarra.js"></script>
+        <script src="javascript/botonBarra.js"></script>
     </head>
     <body>
-        <header>
-            <nav>
-            <ul>
-                <li> <!-- Logo de la pagina -->
-                    <a href="index.html"><img id="logo" src="imagenes/logo.png" alt="inicio"></a>
-                </li>
-                <li> <!-- Seccion Sobre nosotros -->
-                    <a class="lmenu" href="SobreNosotros.html">Sobre nosotros</a>
-                </li>
-                
-                <!-- Separator -->
-                <div class="vertical-line"></div>
-                <!-- Separator -->
-
-                <li> <!-- Desplegable de servicios -->
-                    <div class="desplegable">
-                        <br><br><a class="lmenu" href="#">Servicios</a><br><br><br>
-                        <div class="submenu">
-                            <a href="Infraestructura.html">Infraestructura</a><hr>
-                            <a href="Seguridad.html">Seguridad</a><hr>
-                            <a href="ContinuidadNegocio.html">Continuidad de Negocio</a><hr>
-                            <a href="TransformacionDigital.html">Transformacion digital</a><hr>
-                            <a href="Backup.html">Backup</a><hr>
-                            <a href="Mantenimiento.html">Mantenimiento</a>
-                        </div>
-                    </div>
-                </li>
-                
-                <!-- Separator -->
-                <div class="vertical-line"></div>
-                <!-- Separator -->
-
-                <!-- Seccion Contactar -->
-                <li><a class="lmenu" href="InicioSesionContactar.html">Contactar</a></li>
-            </ul>
-            <ul class="sesion"> <!-- Seccion de inicio de sesion -->
-                <li><a class="lmenu" href="InicioSesion.html">Inicio sesion</a></li>
-            </ul>
-            </nav>
-        </header>   
+        <!-- Barra del menu -->
+        <div class="barra"></div>
     
         <!-- Barra de navegacion -->
         <div class="guia">
             <p>Servicios</p>
             <p>></p><!-- separador -->       
-            <a href="#"> Backup</a>
+            <a> Backup</a>
         </div>          
 
         <!-- Contenido1 -->
@@ -98,7 +64,7 @@
 
         <!-- Boton de servicios backup -->
         <div class="boton-planes">
-            <button onclick="redirigir('#')">Probar servicio de backup</button>
+            <button onclick="">Probar servicio de backup</button>
         </div>
 
         <!-- Footer -->
@@ -117,7 +83,7 @@
             </div>
             <div class="content-right">
                 <h3>¿Necesitas más información?</h3>
-                <button onclick="redirigir('InicioSesion.html')">Reúnete con nosotros</button>
+                <button onclick="location.href='InicioSesion.html'">Reúnete con nosotros</button>
             </div>
         </footer>
     </body>
