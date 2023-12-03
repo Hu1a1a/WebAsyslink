@@ -20,9 +20,9 @@
 
 | Nombre de la pagina              | Asignado a | Estado Frontend    | Estado Backend |
 | -------------------------------- | ---------- | ------------------ | -------------- |
-| Datos de la solicitud (usuario)  | Jose       | :x:                | :x:            |
-| Modificar Solicitud (usuario)    | Jose       | :x:                | :x:            |
-| Ticketing Cliente (usuario)      | Jose       | :x:                | :x:            |
+| Datos de la solicitud (usuario)  | Jose       | :heavy_check_mark: | :x:            |
+| Modificar Solicitud (usuario)    | Jose       | :heavy_check_mark: | :x:            |
+| Ticketing Cliente (usuario)      | Jose       | :heavy_check_mark: | :x:            |
 | Listado de clientes (admin)      | Jose       | :x:                | :x:            |
 | Mi cuenta o datos (usuario)      | Daniel G   | :x:                | :x:            |
 | Modificar mis datos (usuario)    | Daniel G   | :x:                | :x:            |
@@ -33,10 +33,10 @@
 | Historial de tickets (usuario)   | Daniel P   | :heavy_check_mark: | :x:            |
 | Listado servicios (admin)        | Daniel P   | :heavy_check_mark: | :x:            |
 | Historial de tickets (admin)     | Daniel P   | :heavy_check_mark: | :x:            |
-| Contactar sesion iniciada        | Juan       | :x:                | :x:            |
-| Contactar sin registro           | Juan       | :x:                | :x:            |
-| Contactar con registro           | Juan       | :x:                | :x:            |
-| Registrarse                      | Juan       | :x:                | :x:            |
+| Contactar sesion iniciada        | Juan       | :heavy_check_mark: | :x:            |
+| Contactar sin registro           | Juan       | :heavy_check_mark: | :x:            |
+| Contactar con registro           | Juan       | :heavy_check_mark: | :x:            |
+| Registrarse                      | Juan       | :heavy_check_mark: | :x:            |
 | Portal cliente con menu          | Juan       | :x:                | :x:            |
 | Nuevo ticket (usuario)           | Elena      | :x:                | :x:            |
 | Datos tickets cliente (usuario)  | Elena      | :x:                | :x:            |
