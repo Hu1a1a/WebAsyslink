@@ -1,3 +1,16 @@
+## Trabajar con Xampp
+Estos son los pasos a seguir para poder conectarse a Xammp.
+
+- Descargar Xampp. Esta es <a href="https://www.apachefriends.org/es/download.html">la pagina de descarga</a>.
+- Tras instalar Xampp, mover la carpeta de este repositorio a la ruta `C:\xampp\htdocs`.
+- La ruta del repositorio local sera entonces `C:\xampp\htdocs\WebAsyslink`.
+- Para empezar a usarlo, ejecutar Xampp y pulsar solo el boton `Start` de Apache.
+- Para poder ver la pagina web, abrir el navegador con la ruta `http://localhost/WebAsyslink/index.html`.
+- Para ver otra pagina, cambia el nombre de la pagina html de la ruta `http://localhost/WebAsyslink/`.
+
+> [!WARNING]  
+> Si cambias el codigo CSS o HTML y la pagina del navegador no se actualiza, pulsa `CTRL+F5` en el navegador, a veces no funciona `F5` ni refrescar la pagina.
+
 ## Lista de tareas
 
 ### Paginas Estaticas
