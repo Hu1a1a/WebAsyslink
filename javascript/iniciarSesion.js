@@ -14,6 +14,8 @@ $(document).ready(function() {
                     window.location.href = "index.html";
                 } else if(result == "error") {
                     // Dar mensaje de error
+                    var err_label = document.querySelector('#error-login');
+                    err_label.innerHTML = "Usuario o contrasena incorrectos."
                 } else { alert('Algo ha ido mal'); }
             }
         });
