@@ -14,7 +14,7 @@ VALUES
 INSERT INTO `mydb`.`Cliente` 
 (`idUsuario`, `correo`, `passwd`, `empresa`, `nombre`, `apellido`, `telefono`, `direccion`, `idCategoria`) 
 VALUES
-(1, 'cliente1@example.com', 'password1', 'Empresa A', 'Juan', 'Perez', '123456789', 'Calle 123, Ciudad A', 1),
+(1, 'user@gmail.com', '123', 'Empresa A', 'Juan', 'Perez', '123456789', 'Calle 123, Ciudad A', 1),
 (2, 'cliente2@example.com', 'password2', 'Empresa B', 'Maria', 'Gomez', '987654321', 'Calle 456, Ciudad B', 2),
 (3, 'cliente3@example.com', 'password3', 'Empresa C', 'Carlos', 'Lopez', '111223344', 'Calle 789, Ciudad C', 3),
 (4, 'cliente4@example.com', 'password4', 'Empresa D', 'Laura', 'Fernandez', '444555666', 'Calle 012, Ciudad D', 4),
@@ -54,7 +54,7 @@ VALUES
 INSERT INTO `mydb`.`Administrador` 
 (`idAdministrador`, `correo`, `passwd`, `nombre`, `apellidos`, `telefono`)
 VALUES
-(1, 'admin1@example.com', 'adminpass1', 'Admin', 'Apellido1', '111222333'),
+(1, 'admin@gmail.com', '123', 'Admin', 'Apellido1', '111222333'),
 (2, 'admin2@example.com', 'adminpass2', 'Admin', 'Apellido2', '444555666'),
 (3, 'admin3@example.com', 'adminpass3', 'Admin', 'Apellido3', '777888999'),
 (4, 'admin4@example.com', 'adminpass4', 'Admin', 'Apellido4', '000111222'),
