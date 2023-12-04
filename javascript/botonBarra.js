@@ -5,3 +5,16 @@ $(document).ready(function() {
         $('.toggle').toggleClass('active');
     });
 });
+
+$(document).ready(function() {
+    $(document).on('click', '.cerrarSesion', function() {
+        $.ajax({
+            url: './php/cerrarSesion.php',
+            type: 'get',
+            success: function() {
+                window.location.href = 'index.html';
+            }
+        });
+        return false;
+    });
+});
