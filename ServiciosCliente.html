@@ -2,143 +2,28 @@
 <html>
     <head>
         <title>Asyslink - Sevicios Cliente</title>
-        <link rel="stylesheet" href="estilos/estilos.css">
         <link rel="stylesheet" href="estilos/serviciosCliente.css">
+        <link rel="stylesheet" href="estilos/barra.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+        <script src="javascript/cargarBarra.js"></script>
+        <script src="javascript/botonBarra.js"></script>
+        <script src="javascript/listadoServicios.js"></script>
     </head>
     <body>
-        <header>
-            <nav>
-            <ul>
-                <li> <!-- Logo de la pagina -->
-                    <a href="index.html"><img id="logo" src="imagenes/logo.png" alt="inicio"></a>
-                </li>
-                <li> <!-- Nombre del usuario -->
-                    <h2>Usuario1</h2>
-                </li>
-                <li> <!-- Titulo de la pagina -->
-                    <h2>: Servicios</h2>
-                </li>
-            </ul>
-
-            <!-- Seccion de inicio sesion -->
-            <ul class="sesion"> <!-- Seccion de inicio de sesion -->
-                <li><a class="lmenu" href="InicioSesion.html">Inicio sesion</a></li>
-            </ul>
-            </nav>
-        </header>      
+        <!-- Barra del menu -->
+        <div class="barra"></div>      
 
         <main>
-            <form>
+            <form id="formServiciosCliente">
                 <!-- Barra de busqueda -->
                 <div class="busqueda">
                     <p><b>Buscar</b></p>
-                    <input>
-                    <button action="">OK</button>
+                    <input type="text" name="servicio" required>
+                    <button type="submit" class="search-button">OK</button>
                 </div>
 
-                <!-- Listado de ejemplo -->
-                <div class="listado">
-                    <div class="item">
-                        <p><b>Servicio1</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio2</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio3</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio4</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio5</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio6</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio7</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio8</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio9</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio10</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio11</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio12</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio13</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio14</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio15</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio16</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio17</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio18</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio19</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Servicio20</b></p>
-                        <p>(Tipo de servicio):</p>
-                        <p>Descripcion del servicio</p>
-                    </div>
-                </div>
+                <!-- Listado de servicios -->
+                <div class="listadoCliente"></div>
             </form>
         </main>
     </body>

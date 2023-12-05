@@ -60,7 +60,7 @@ main form .busqueda p {
     font-size: 17px;
 }
 
-main form .listado {
+main form .listadoCliente {
     margin-top: 20px;
     border-radius: 8px;
     padding: 0px 10px;
@@ -69,14 +69,14 @@ main form .listado {
     overflow-y: auto;
 }
 
-main form .listado .item {
+main form .listadoCliente .item {
     background-color: #e6e2e2;
     margin-bottom: 10px;
     border-radius: 5px;
     padding: 15px;
 }
 
-main form .listado .item p {
+main form .listadoCliente .item p {
     display: inline-block;
     font-size: 17px;
 }
