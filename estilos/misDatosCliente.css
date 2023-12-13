@@ -3,7 +3,11 @@
 
 .background{
     background-image: url(../imagenes/mesaConPantallas.jpg);
-    
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: flex-end;
 }
 
 
@@ -12,7 +16,36 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
-    margin-left: 40%;
-    margin-right: 40%;
+    justify-content: center;
+    margin-left: 30vw;
+    margin-top: 20vh;
+
+    height: 40vh;
+    width: 40vw;
+
+    color:  #0c62b7;
+    padding: 5%;
+    
+    position: absolute;
+    border-radius: 5%;
 }
+
+h1, h2{
+    margin-bottom: 2vh;
+}
+
+button{
+    width: 30vh;
+    background-color: #0c62b7;
+    border: none;
+}
+
+button a{
+    color: white;
+    font-family:  'Space Grotesk', sans-serif;
+    font-weight: bold;
+}
+
+
+
+
