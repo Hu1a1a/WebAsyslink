@@ -2,7 +2,7 @@
 
 
 .background{
-    background-image: url(../imagenes/mesaConPantallas.jpg);
+    background-image: url(../imagenes/desk.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -26,7 +26,7 @@
     color:  #0c62b7;
     padding: 5%;
     padding-top: 0%;
-    
+
     position: absolute;
     border-radius: 5%;
 }
@@ -55,7 +55,3 @@ button a{
     font-family:  'Space Grotesk', sans-serif;
     font-weight: bold;
 }
-
-
-
-
