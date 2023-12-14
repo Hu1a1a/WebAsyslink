@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ModificarMisDatosCliente</title>
     <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/modificarMisDatosClienteAdmin.css">
 </head>
 
 <header>
@@ -49,17 +50,26 @@
     <div class="background">
         <div class="container">
             <h1>Modificar Datos</h1>
-            <h2>Empresa</h2>
-            <div class="label"></div>
-            <h2>Nombre</h2>
-            <div class="label"></div>
-            <h2>Apellidos</h2>
-            <div class="label"></div>
-            <h2>Correo Electrónico</h2>
-            <div class="label"></div>
-            <h2>Numero Teléfono</h2>
-            <div class="label"></div>
-            <button><a href="DatosClienteAdmin.html">Confirmar Cambios</a></button>
+
+            <form action="modificarDatosClienteAdmin.php" method="post">
+
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" required>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+
+                <label for="email">Correo Electrónico</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="tel">Numero Teléfono</label>
+                <input type="text" id="tel" name="tel" required>
+
+                <button type="submit"><a href="DatosClienteAdmin.html">Confirmar Cambios</a></button>
+            </form>
         </div>
     </div>   
 </body>
