@@ -76,10 +76,41 @@ mantener un aspecto consistente en la pagina. Para ello, sigue estos pasos:
 
 ## Requisitos de las paginas dinamicas
 
+### Modelo Vista-Controlador
 Las paginas dinamicas deben seguir el modelo vista-controlador, tal y como pide el profesor. Si no sabes que es el modelo vista-controlador, *'te recomiendo'* que veas <a href="https://www.youtube.com/watch?v=HU7pwZBHsC8">este video</a> que el profesor puso en el aula virtual sobre el tema. 
 
 > [!NOTE]  
 > Si no te queda claro, puedes ver paginas de ejemplo que ya estan finalizadas como <ins>ServiciosAdmin.html</ins> o <ins>ServiciosCliente.html</ins>.
+
+### Acceso Cliente y Admin
+
+Se han disenado dos scripts que comprueban si el usuario tiene la autorizacion necesaria para acceder a ciertas paginas. Por ejemplo,
+queremos evitar que un Cliente acceda a una pagina de Administrador, que un Administrador acceda a una pagina de usuario, o que 
+directamente que un usuario no logueado acceda a una pagina de Cliente o Administrador.
+
+Si tu pagina solo debe ser accedida por un Administrador, copia el siguiente codigo:
+
+```html
+<head>
+    ....
+    <!-- Debes copiar esto -->
+    <script src="javascript/accesoAdmin.js"></script>
+    ...
+</head>
+```
+
+Si tu pagina solo debe ser accedida por un Cliente, copia el siguiente codigo:
+
+```html
+<head>
+    ....
+    <!-- Debes copiar esto -->
+    <script src="javascript/accesoCliente.js"></script>
+    ...
+</head>
+```
+
+
 
 ## Trabajar con Xampp
 Estos son los pasos a seguir para poder conectarse a Xammp.
