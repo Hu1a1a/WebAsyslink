@@ -2,13 +2,12 @@
 
 ## Indice
 
-- <a href="#requisitos">Requisitos de una pagina</a>
+- <a href="#requisitos-de-todas-las-paginas">Requisitos de todas las paginas</a>
+- <a href="#requisitos-de-las-paginas-dinamicas">Requisitos de las paginas dinamicas</a>
 - <a href="#trabajar-con-xampp">Trabajar con Xampp</a>
 - <a href="#lista-de-tareas">Lista de Tareas</a>
 
-
-## Requisitos de cada pagina
-
+## Requisitos de todas las paginas
 ### Barra del menu
 
 ![image](https://github.com/jfs291/WebAsyslink/assets/113710742/f1504036-2d17-4112-8c85-d300add629e9)
@@ -75,6 +74,12 @@ mantener un aspecto consistente en la pagina. Para ello, sigue estos pasos:
 
 ![image](https://github.com/jfs291/WebAsyslink/assets/113710742/fc7b7598-dba9-4bfb-a59f-6dc1e57c2781)
 
+## Requisitos de las paginas dinamicas
+
+Las paginas dinamicas deben seguir el modelo vista-controlador, tal y como pide el profesor. Si no sabes que es el modelo vista-controlador, *'te recomiendo'* que veas <a href="https://www.youtube.com/watch?v=HU7pwZBHsC8">este video</a> que el profesor puso en el aula virtual sobre el tema. 
+
+> [!NOTE]  
+> Si no te queda claro, puedes ver paginas de ejemplo que ya estan finalizadas como <ins>ServiciosAdmin.html</ins> o <ins>ServiciosCliente.html</ins>.
 
 ## Trabajar con Xampp
 Estos son los pasos a seguir para poder conectarse a Xammp.
