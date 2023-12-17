@@ -1,84 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
 body {
     background: radial-gradient(circle, rgba(249,249,249,1) 0%, rgba(0,0,0,0.1) 100%);
 }
 
-.intro {
-    max-width: 1300px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
+.block1 {
+    background-image: url('../imagenes/inicio.jpg');
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    margin-bottom: 50px;
 }
 
-.intro .left {
-    width: 30%; 
-    text-align: center;
-    float: left;
-    margin: auto;
-}
-
-.intro .center{
-    display: inline-block;
-    width: 40%;
-    height: 50%;
-    text-align: center;
-    margin: auto;
-}
-
-.intro .right{
-    width: 30%;
-    text-align: center;
+.block1 .content {
+    font-family: 'Space Grotesk', sans-serif;;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    text-align: right;
+    color: white;
+    width:35%;
+    padding: 5%;
+    line-height: 1.56;
     float: right;
-    margin: auto;
+    margin-top: 5%;
+    margin-right: 5%;
 }
 
-.cuadro, .circulo {
-    -webkit-box-shadow: 10px 10px 43px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 10px 10px 43px 0px rgba(0,0,0,0.3);
-    box-shadow: 10px 10px 43px 0px rgba(0,0,0,0.3);
+h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: .5rem;
 }
 
-.cuadro {
-    display: block;
-    width: 60%;
-    height: 60px;
-    margin-top: 20%;
-    margin-bottom: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 5px solid #3274b6;
-    border-radius: 5px;
-    background-color: rgb(248, 243, 243);
-    padding: 10px;
-}
-
-.cuadro h4 {
-  margin-bottom: 3px;
-}
-
-.circulo{
-    width: 95%;
-    padding-top:30%;
-    padding-bottom: 30%;
-    border-radius: 50%;
-    margin-top: 30%;
-    margin-bottom: 20%;
-    display: block;
-    text-align: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center; 
-    border: 10px solid #3274b6;
-    background-color: rgb(248, 243, 243);
-}
-
-.circulo h2 {
-    font-size: 20px;
-}
-
-.circulo h1 {
-    font-size: 35px;
+.block1 .content p {
+    font-size: 18px;
 }
 
 .break {
@@ -131,49 +86,12 @@ body {
     width: 85%;
     padding-top: 3%;
     padding-bottom: 3%;
-}
-
-footer {
-    display: inline-block;
-    background-image: url('../imagenes/backup_footer.jpg');
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-    color: white;
-}
-
-footer .content-left {
-    margin: 50px 50px; 
-    float: left;
-}
-
-footer .content-right {
-    margin: 50px 50px;
-    float: right;
-}
-
-footer .content-left h3 {
-    margin-top: 15px;
-}
-
-footer .content-left p {
-    margin-top: 3px;
-}
-
-footer .content-right button {
-    margin-top: 30px;
-    float: right;
-    padding: 5px 50px;
-    color: #353535;
+    border-radius: 5px;
+    border: 2px solid #353535;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
+.servicios .botones button:hover {
+    background-color: #e3e0e0;
+}
