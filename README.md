@@ -44,7 +44,7 @@ Estos son los pasos a seguir para poder conectarse a Xammp.
 | Servicios cliente (usuario)      | Daniel P   | :heavy_check_mark: | :heavy_check_mark: |
 | Solicitudes de info (usuario)    | Daniel P   | :heavy_check_mark: | :x:                |
 | Historial de tickets (usuario)   | Daniel P   | :heavy_check_mark: | :x:                |
-| Listado servicios (admin)        | Daniel P   | :heavy_check_mark: | :x:                |
+| Listado servicios (admin)        | Daniel P   | :heavy_check_mark: | :heavy_check_mark: |
 | Historial de tickets (admin)     | Daniel P   | :heavy_check_mark: | :x:                |
 | Contactar sesion iniciada        | Juan       | :heavy_check_mark: | :x:                |
 | Contactar sin registro           | Juan       | :heavy_check_mark: | :x:                |
