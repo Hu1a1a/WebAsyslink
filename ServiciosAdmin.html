@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Asyslink - Sevicios Cliente</title>
+        <title>Asyslink - Sevicios Admin</title>
         <link rel="stylesheet" href="estilos/serviciosAdmin.css">
         <link rel="stylesheet" href="estilos/barra.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
@@ -14,16 +14,16 @@
         <div class="barra"></div>     
 
         <main>
-            <form class="formServiciosAdmin">
+            <form id="formServiciosAdmin">
                 <!-- Barra de busqueda -->
                 <div class="busqueda">
                     <p><b>Buscar</b></p>
-                    <input type="text" name="servicio" required>
+                    <input type="text" name="nombre" required>
                     <button type="submit" class="search-button">OK</button>
                 </div>
 
                 <!-- Listado de servicios -->
-                <div class="listado"></div>
+                <div class="listadoAdmin"></div>
             </form>
         </main>
     </body>
