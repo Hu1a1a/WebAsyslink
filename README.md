@@ -1,3 +1,72 @@
+## Requisitos de cada pagina
+
+### Barra del menu
+
+![image](https://github.com/jfs291/WebAsyslink/assets/113710742/f1504036-2d17-4112-8c85-d300add629e9)
+
+Cada pagina debe incluir la barra del menu principal que se ha disenado para la web y no otra. Para ello, deberas copiar los siguientes
+codigos en tu archivo `.html` que estes disenando, siguiendo estos pasos.
+
+1. Incluye los archivos necesarios en tu pagina:
+```html
+<head>
+    ....
+    <!-- Debes copiar esto -->
+    <link rel="stylesheet" href="estilos/barra.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="javascript/cargarBarra.js"></script>
+    <script src="javascript/botonBarra.js"></script>
+    ...
+</head>
+```
+
+2. Crea una seccion arriba del todo de la pagina donde aparecera la barra:
+```html
+<body>
+    <!-- Barra del menu -->
+    <div class="barra"></div>
+
+    ...
+</body>
+```
+
+### Barra de navegacion
+
+![image](https://github.com/jfs291/WebAsyslink/assets/113710742/e55fa916-cc38-46dc-8b8f-5b82fe3c9a8a)
+
+Al igual que con la barra del menu, se ha disenado una barra para la navegacion de la pagina y se debera usar esta y no otra para
+mantener un aspecto consistente en la pagina. Para ello, sigue estos pasos:
+
+1. Incluye los archivos necesarios en tu pagina:
+```html
+<head>
+    ....
+    <!-- Debes copiar esto -->
+    <link rel="stylesheet" href="estilos/guia.css">
+    ...
+</head>
+```
+2. Pon la barra de navegacion debajo de la barra del menu:
+
+```html
+<body>
+   <!-- Barra del menu -->
+   <div class="barra"></div>
+    
+   <!-- Barra de navegacion -->
+   <div class="guia">
+   <p>Servicios</p>
+   <p>></p>
+   <a> Backup</a>
+   </div>          
+</body>
+```
+
+3. Debera quedar asi todo el menu
+
+![image](https://github.com/jfs291/WebAsyslink/assets/113710742/fc7b7598-dba9-4bfb-a59f-6dc1e57c2781)
+
+
 ## Trabajar con Xampp
 Estos son los pasos a seguir para poder conectarse a Xammp.
 
