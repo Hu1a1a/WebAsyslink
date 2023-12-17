@@ -1,3 +1,12 @@
+# WebAsyslink
+
+## Indice
+
+- <a href="#requisitos">Requisitos de una pagina</a>
+- <a href="#trabajar-con-xampp">Trabajar con Xampp</a>
+- <a href="#lista-de-tareas">Lista de Tareas</a>
+
+
 ## Requisitos de cada pagina
 
 ### Barra del menu
@@ -57,7 +66,7 @@ mantener un aspecto consistente en la pagina. Para ello, sigue estos pasos:
    <div class="guia">
    <p>Servicios</p>
    <p>></p>
-   <a> Backup</a>
+   <a>Backup</a>
    </div>          
 </body>
 ```
