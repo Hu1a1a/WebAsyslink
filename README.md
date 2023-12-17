@@ -2,8 +2,8 @@
 
 ## Indice
 
-- <a href="#requisitos-de-todas-las-paginas">Requisitos de todas las paginas</a>
-- <a href="#requisitos-de-las-paginas-dinamicas">Requisitos de las paginas dinamicas</a>
+- <a href="#requisitos-de-todas-las-paginas">Requisitos de todas las páginas</a>
+- <a href="#requisitos-de-las-paginas-dinamicas">Requisitos de las páginas dinámicas</a>
 - <a href="#trabajar-con-xampp">Trabajar con Xampp</a>
 - <a href="#lista-de-tareas">Lista de Tareas</a>
 
@@ -12,10 +12,11 @@
 
 ![image](https://github.com/jfs291/WebAsyslink/assets/113710742/f1504036-2d17-4112-8c85-d300add629e9)
 
-Cada pagina debe incluir la barra del menu principal que se ha disenado para la web y no otra. Para ello, deberas copiar los siguientes
-codigos en tu archivo `.html` que estes disenando, siguiendo estos pasos.
+Cada página debe incluir la barra del menú principal que se ha diseñado para la web y no otra. 
+Para ello, deberás copiar los siguientes códigos en tu archivo `.html` que estés diseñando,
+siguiendo estos pasos.
 
-1. Incluye los archivos necesarios en tu pagina:
+1. Incluye los archivos necesarios en tu página:
 ```html
 <head>
     ....
@@ -28,7 +29,7 @@ codigos en tu archivo `.html` que estes disenando, siguiendo estos pasos.
 </head>
 ```
 
-2. Crea una seccion arriba del todo de la pagina donde aparecera la barra:
+2. Crea una sección arriba del todo de la página donde aparecerá la barra:
 ```html
 <body>
     <!-- Barra del menu -->
@@ -42,10 +43,11 @@ codigos en tu archivo `.html` que estes disenando, siguiendo estos pasos.
 
 ![image](https://github.com/jfs291/WebAsyslink/assets/113710742/e55fa916-cc38-46dc-8b8f-5b82fe3c9a8a)
 
-Al igual que con la barra del menu, se ha disenado una barra para la navegacion de la pagina y se debera usar esta y no otra para
-mantener un aspecto consistente en la pagina. Para ello, sigue estos pasos:
+Al igual que con la barra del menú, se ha diseñado una barra para la navegación de la página y 
+se deberá usar esta, y no otra, para mantener un aspecto consistente en la página. Para ello,
+sigue estos pasos:
 
-1. Incluye los archivos necesarios en tu pagina:
+1. Incluye los archivos necesarios en tu página:
 ```html
 <head>
     ....
@@ -54,7 +56,8 @@ mantener un aspecto consistente en la pagina. Para ello, sigue estos pasos:
     ...
 </head>
 ```
-2. Pon la barra de navegacion debajo de la barra del menu:
+
+2. Pon la barra de navegación debajo de la barra del menú:
 
 ```html
 <body>
@@ -70,26 +73,30 @@ mantener un aspecto consistente en la pagina. Para ello, sigue estos pasos:
 </body>
 ```
 
-3. Debera quedar asi todo el menu
+3. Deberá quedar así todo el menú
 
 ![image](https://github.com/jfs291/WebAsyslink/assets/113710742/fc7b7598-dba9-4bfb-a59f-6dc1e57c2781)
 
 ## Requisitos de las paginas dinamicas
-
 ### Modelo Vista-Controlador
-Las paginas dinamicas deben seguir el modelo vista-controlador, tal y como pide el profesor. Si no sabes que es el modelo vista-controlador, *'te recomiendo'* que veas <a href="https://www.youtube.com/watch?v=HU7pwZBHsC8">este video</a> que el profesor puso en el aula virtual sobre el tema. 
+
+Las páginas dinámicas deben seguir el modelo vista-controlador, tal y como pide el profesor. Si no 
+sabes qué es el modelo vista-controlador, te recomiendo que veas 
+<a href="https://www.youtube.com/watch?v=HU7pwZBHsC8">este video</a> que el profesor puso en el aula
+virtual sobre el tema.
 
 > [!NOTE]  
-> Si no te queda claro, puedes ver paginas de ejemplo que ya estan finalizadas como <ins>ServiciosAdmin.html</ins> o <ins>ServiciosCliente.html</ins>.
+> Si no te queda claro, puedes ver páginas de ejemplo que ya están finalizadas como
+> <ins>ServiciosAdmin.html</ins> o <ins>ServiciosCliente.html</ins>.
 
 ### Acceso Cliente y Admin
 
-Se han disenado dos scripts que comprueban si el usuario tiene la autorizacion necesaria para acceder a ciertas paginas. Por ejemplo,
-queremos evitar que un Cliente acceda a una pagina de Administrador, que un Administrador acceda a una pagina de usuario, o que 
-directamente que un usuario no logueado acceda a una pagina de Cliente o Administrador.
+Se han diseñado dos scripts que comprueban si el usuario tiene la autorización necesaria para acceder
+a ciertas páginas. Por ejemplo, queremos evitar que un Cliente acceda a una página de Administrador,
+que un Administrador acceda a una página de usuario, o que directamente un usuario no logueado acceda 
+a una página de Cliente o Administrador.
 
-Si tu pagina solo debe ser accedida por un Administrador, copia el siguiente codigo:
-
+Si tu página solo debe ser accedida por un Administrador, copia el siguiente código:
 ```html
 <head>
     ....
@@ -99,8 +106,7 @@ Si tu pagina solo debe ser accedida por un Administrador, copia el siguiente cod
 </head>
 ```
 
-Si tu pagina solo debe ser accedida por un Cliente, copia el siguiente codigo:
-
+Si tu página solo debe ser accedida por un Cliente, copia el siguiente código:
 ```html
 <head>
     ....
@@ -115,18 +121,17 @@ Si tu pagina solo debe ser accedida por un Cliente, copia el siguiente codigo:
 ## Trabajar con Xampp
 Estos son los pasos a seguir para poder conectarse a Xammp.
 
-- Descargar Xampp. Esta es <a href="https://www.apachefriends.org/es/download.html">la pagina de descarga</a>.
+- Descargar Xampp. Esta es <a href="https://www.apachefriends.org/es/download.html">la página de descarga</a>.
 - Tras instalar Xampp, mover la carpeta de este repositorio a la ruta `C:\xampp\htdocs`.
-- La ruta del repositorio local sera entonces `C:\xampp\htdocs\WebAsyslink`.
+- La ruta del repositorio local será entonces `C:\xampp\htdocs\WebAsyslink`.
 - Para empezar a usarlo, ejecutar Xampp y pulsar solo el boton `Start` de Apache.
 - Para poder ver la pagina web, abrir el navegador con la ruta `http://localhost/WebAsyslink/index.html`.
-- Para ver otra pagina, cambia el nombre de la pagina html de la ruta `http://localhost/WebAsyslink/`.
+- Para ver otra página, cambia el nombre de la pagina html de la ruta `http://localhost/WebAsyslink/`.
 
 > [!WARNING]  
 > Si cambias el codigo CSS o HTML y la pagina del navegador no se actualiza, pulsa `CTRL+F5` en el navegador, a veces no funciona `F5` ni refrescar la pagina.
 
 ## Lista de tareas
-
 ### Paginas Estaticas
 
 | Nombre de la pagina    | Asignado a | Estado             |
