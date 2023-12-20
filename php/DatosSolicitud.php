@@ -17,28 +17,23 @@
         echo "<p>Error inesperado pongase en contacto con nosotros.</p>";
     } else {
         while ($fila = $resultado->fetch_object()) {
+
         // Ejemplo de solicitud con codigo HTML:
         //
-        //     <div class="block1">
+        //     <div class=block1>
         //     <div>
-        //         <p> Servicio sobre el que se solicita informacion: </p> 
-        //         <br>
-        //         <p> Empresa solicitante: </p> 
-        //         <br>
-        //         <p> Nombre y apellidos del solicitante: </p> 
-        //         <br>
-        //         <p> Direccion de correo electrónico del solicitante: </p> 
-        //         <br>
-        //         <p> Numero de telefono del solicitante: </p> 
-        //         <br>
+        //         <p> Servicio sobre el que se solicita informacion: </p><br>
+        //         <p> Empresa solicitante: </p><br>
+        //         <p> Nombre y apellidos del solicitante: </p><br>
+        //         <p> Direccion de correo electrónico del solicitante: </p><br>
+        //         <p> Numero de telefono del solicitante: </p><br>
         //         <p> Fecha de envio de la solicitud: </p> 
-        //         <br>
-        //         <p> Fecha de la reunion: </p> 
-        //         <br>
-        //         <br>
-        //         <button onclick="location.href='modificarSolicitud.html'">Modificar</button>
+        //         <br><p> Fecha de la reunion: </p> 
+        //         <br><br>
+        //         <button onclick=location.href='modificarSolicitud.html'>Modificar</button>
         //     </div>
         // </div>
+
                 echo"<div class="block1">"
                 echo"<div>"
 
