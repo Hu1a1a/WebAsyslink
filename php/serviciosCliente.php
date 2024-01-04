@@ -14,7 +14,7 @@
 
     $resultado = $mysqli->query($consulta);
     if($resultado->num_rows == 0) {
-        echo "<p style='color:#d06b68';>Sin resultados para la busqueda.</p>";
+        echo "<p style='color:#d06b68';>Sin resultados para la búsqueda.</p>";
     } else {
         while ($fila = $resultado->fetch_object()) {
             // Ejemplo de servicio con codigo HTML:

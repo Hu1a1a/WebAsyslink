@@ -1,60 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset='utf-8'>
+    <title>Asyslink-Iniciar Sesion</title>
     <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
     <link rel="stylesheet" type="text/css" href="estilos/inicioSesionContactar.css">
-    
+    <link rel="stylesheet" href="estilos/barra.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="javascript/iniciarSesion.js"></script>
+    <script src="javascript/cargarBarra.js"></script>
+    <script src="javascript/botonBarra.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li> <!-- Logo de la pagina -->
-                    <a href="index.html"><img src="imagenes/logo.png" alt="inicio"></a>
-                </li>
-                <li> <!-- Seccion Sobre nosotros -->
-                    <a class="lmenu" href="SobreNosotros.html">Sobre nosotros</a>
-                </li>
-                
-                <!-- Separador -->
-                <div class="vertical-line"></div>
-                <!-- Separador -->
-
-                <li> <!-- Desplegable de servicios -->
-                    <div class="desplegable">
-                        <br><br><a class="lmenu" href="#">Servicios</a><br><br><br>
-                        <div class="submenu">
-                            <a href="Infraestructura.html">Infraestructura</a><hr>
-                            <a href="Seguridad.html">Seguridad</a><hr>
-                            <a href="ContinuidadNegocio.html">Continuidad de Negocio</a><hr>
-                            <a href="TransformacionDigital.html">Transformacion digital</a><hr>
-                            <a href="Backup.html">Backup</a><hr>
-                            <a href="Mantenimiento.html">Mantenimiento</a>
-                        </div>
-                    </div>
-                </li>
-                
-                <!-- Separator -->
-                <div class="vertical-line"></div>
-                <!-- Separator -->
-
-                <!-- Seccion Contactar -->
-                <li><a class="lmenu" href="InicioSesionContactar.html">Contactar</a></li>
-                
-            </ul>
-            <ul class="sesion"> <!-- Seccion de inicio de sesion -->
-                <li>   
-                    <a class="lmenu" href="InicioSesion.html">Inicio sesion</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
+    <!-- Barra del menu -->
+    <div class="barra"></div> 
 
      <div class="container">
         <div class="form-wrapper">
             <div class="form">
                 <h2>Inicia sesión</h2>
+
+                <!-- Hueco donde poner el mensaje de error de inicio de sesion -->
+                <div id="error-login" style="color: #d06b68; margin-bottom: 15px;"></div>
+
                 <form id="loginform">
                     <label for="login-username">Correo electrónico:</label>
                     <input type="text" id="login-username" name="login-username" required>
@@ -72,6 +40,10 @@
                     <input type="password" id="signup-password" name="signup-password" required>
                     <label for="confirm-password">Confirmar contraseña:</label>
                     <input type="password" id="confirm-password" name="confirm-password" required>
+                    <div class="checkbox">
+                        <input type="checkbox" id="politica_privacidad" name="politica_privacidad" required>
+                        <label for="politica_privacidad">He leído y acepto la <a href="privacidad.html">Política de Privacidad</a></label>
+                   </div>
                     <button type="submit" class="signup-button">Confirmar</button>
                 </form>
             </div>

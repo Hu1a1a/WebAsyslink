@@ -63,16 +63,16 @@ button {
    font-size: 16px;
    margin-top: 10px;
    min-width: 100%;
-   margin-left: auto;
-   margin-right: auto;
 }
 
 .login-button {
    background-color: rgb(0, 84, 166);
+   margin-left:auto;
 }
-
+ 
 .signup-button {
    background-color: #22983e;
+   margin-left:auto;
 }
 
 .continue-button {

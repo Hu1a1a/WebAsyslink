@@ -1,5 +1,5 @@
 <?php
-    include_once ('Conexion.php');
+    include_once ('conexion.php');
     session_start();
     
     // Comprobar si se ha iniciado sesion
@@ -25,7 +25,7 @@
                         </ul>
                     </li>
 
-                    <li class='item'><a class='tag' href='Contactar.html'>Contactar</a></li>
+                    <li class='item'><a class='tag' href='InicioSesionContactar.html'>Contactar</a></li>
                     <li class='end'></li>
    
                     <li class='item' id='sesion'>
@@ -55,7 +55,7 @@
                     <li><a href='Mantenimiento.html'>Mantenimiento</a></li>
                     </ul>
                 </li>
-                <li class='item'><a class='tag' href='Contactar.html'>Contactar</a></li>
+                <li class='item'><a class='tag' href='ContactarSesionIniciada.html'>Contactar</a></li>
 
                 <!-- Separador de derecha e izquierda -->
                 <li class='end'></li>
@@ -63,12 +63,12 @@
 
                 <li class='item' id='submenu-right'>
                     <!-- Submenu de servicios -->
-                    <a class='tag' href='#'>Portal Cliente ▼</a>
+                    <a class='tag' href='PortalCliente.html'>Portal Cliente ▼</a>
                     <ul>
-                        <li><a href='#'>Mi cuenta</a></li>
-                        <li><a href='#'>Mis solicitudes</a></li>
-                        <li><a href='#'>Servicios Contratados</a></li>
-                        <li><a href='#'>Ticketing</a></li>
+                        <li><a href='MisDatosCliente.html'>Mi cuenta</a></li>
+                        <li><a href='SolicitudesInformacionCliente.html'>Mis solicitudes</a></li>
+                        <li><a href='ServiciosCliente.html'>Servicios Contratados</a></li>
+                        <li><a href='TicketingCliente.html'>Ticketing</a></li>
                     </ul>
                 </li>
 
@@ -115,12 +115,12 @@
 
                 <li class='item' id='submenu-right'>
                     <!-- Submenu de servicios -->
-                    <a class='tag' href='#'>Portal Administrador ▼</a>
+                    <a class='tag' href='PortalAdmin.html'>Portal Administrador ▼</a>
                     <ul>
-                        <li><a href='#'>Mis clientes</a></li>
-                        <li><a href='#'>Solicitudes de informacion</a></li>
-                        <li><a href='#'>Servicios Contratados</a></li>
-                        <li><a href='#'>Ticketing</a></li>
+                        <li><a href='ClientesAdmin.html'>Mis clientes</a></li>
+                        <li><a href='SolicitudesInformacionAdmin.html'>Solicitudes de informacion</a></li>
+                        <li><a href='ServiciosAdmin.html'>Servicios Contratados</a></li>
+                        <li><a href='TicketingAdmin.html'>Ticketing</a></li>
                     </ul>
                 </li>
 
