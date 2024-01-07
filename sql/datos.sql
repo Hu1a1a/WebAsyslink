@@ -32,13 +32,13 @@ VALUES
 
 -- Inserciones para la tabla Ticketing
 INSERT INTO `mydb`.`Ticketing` 
-(`idTicketing`, `asunto`, `fecha`, `texto`, `archivoAdjunto`, `idServicio`)
+(`idTicketing`, `asunto`, `fecha`, `texto`, `archivoAdjunto`, `idServicio`, `estado`)
 VALUES
-(1, 'Asunto 1', '2023-01-01', 'Texto del Ticket 1', 'adjunto1.pdf', 1),
-(2, 'Asunto 2', '2023-02-02', 'Texto del Ticket 2', 'adjunto2.doc', 2),
-(3, 'Asunto 3', '2023-03-03', 'Texto del Ticket 3', 'adjunto3.jpg', 3),
-(4, 'Asunto 4', '2023-04-04', 'Texto del Ticket 4', 'adjunto4.txt', 4),
-(5, 'Asunto 5', '2023-05-05', 'Texto del Ticket 5', 'adjunto5.png', 5);
+(1, 'Asunto 1', '2023-01-01', 'Texto del Ticket 1', 'adjunto1.pdf', 1, 1),
+(2, 'Asunto 2', '2023-02-02', 'Texto del Ticket 2', 'adjunto2.doc', 2, 0),
+(3, 'Asunto 3', '2023-03-03', 'Texto del Ticket 3', 'adjunto3.jpg', 3, 0),
+(4, 'Asunto 4', '2023-04-04', 'Texto del Ticket 4', 'adjunto4.txt', 4, 1),
+(5, 'Asunto 5', '2023-05-05', 'Texto del Ticket 5', 'adjunto5.png', 5, 1);
 
 -- Inserciones para la tabla HistorialTickets
 INSERT INTO `mydb`.`HistorialTickets` 

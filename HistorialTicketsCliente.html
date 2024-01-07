@@ -9,6 +9,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
         <script src="javascript/cargarBarra.js"></script>
         <script src="javascript/botonBarra.js"></script>
+        <script src="javascript/accesoCliente.js"></script>
+        <script src="javascript/listadoTickets.js"></script>
     </head>
     <body>
         <!-- Barra del menu -->
@@ -18,168 +20,35 @@
         <div class="guia">
             <p>Portal Cliente</p>
             <p>></p><!-- separador -->       
-            <a href="#">Tickets</a>
+            <a href="TicketingCliente.html">Ticketing</a>
             <p>></p><!-- separador -->       
             <a href="#">Historial de Tickets</a>
         </div>  
 
         <main>
-            <form>
+            <form id="formTicketsCliente">
                 <h2>Mis Tickets</h2>
 
                 <!-- Barra de busqueda -->
                 <div class="busqueda">
-                    <p><b>Buscar</b></p>
-                    <input>
-                    <button action="">OK</button>
-                </div>
-                <br>
-                <div class="orden">
-                    <p><b>Ordenar</b></p>
-                    <select id="opcionesDesplegable" name="opcionesDesplegable">
+                    <label>Ordenar</label>
+                    <select id="orden" name="orden">
                         <option value="opcion1">Fecha (mas cercanas primero)</option>
                         <option value="opcion2">Fecha (mas lejanas primero)</option>
                     </select>
-                </div>
+                    <label>
+                        <input type="checkbox" name="activos" value="true" checked>
+                        Mostrar Activos
+                    </label>
+                    <label>
+                        <input type="checkbox" name="cerrados" value="true" checked>
+                        Mostrar Cerrados
+                    </label>
+                    <button type="submit">OK</button>
+                </div><br>
 
-                <!-- Listado de ejemplo -->
-                <div class="listado">
-                    <div class="item">
-                        <p><b>Ticket1</b></p>
-                        <p> : </p>
-                        <p>[Fecha de apertura]</p>
-                        <p> - </p>
-                        <p>[Asunto]</p>
-                        <p> - </p>
-                        <p>[Estado]</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Ticket2</b></p>
-                        <p> : </p>
-                        <p>28/03/23</p>
-                        <p> - </p>
-                        <p>Error de acceso</p>
-                        <p> - </p>
-                        <p>Abierto</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Ticket3</b></p>
-                        <p> : </p>
-                        <p>28/03/23</p>
-                        <p> - </p>
-                        <p>Problema en dispositivo</p>
-                        <p> - </p>
-                        <p>Cerrado</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Ticket4</b></p>
-                        <p> : </p>
-                        <p>28/03/23</p>
-                        <p> - </p>
-                        <p>Error de acceso</p>
-                        <p> - </p>
-                        <p>Abierto</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Ticket5</b></p>
-                        <p> : </p>
-                        <p>28/03/23</p>
-                        <p> - </p>
-                        <p>Problema en dispositivo</p>
-                        <p> - </p>
-                        <p>Cerrado</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Ticket6</b></p>
-                        <p> : </p>
-                        <p>28/03/23</p>
-                        <p> - </p>
-                        <p>Error de acceso</p>
-                        <p> - </p>
-                        <p>Abierto</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Ticket7</b></p>
-                        <p> : </p>
-                        <p>28/03/23</p>
-                        <p> - </p>
-                        <p>Problema en dispositivo</p>
-                        <p> - </p>
-                        <p>Cerrado</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Ticket8</b></p>
-                        <p> : </p>
-                        <p>28/03/23</p>
-                        <p> - </p>
-                        <p>Error de acceso</p>
-                        <p> - </p>
-                        <p>Abierto</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Ticket9</b></p>
-                        <p> : </p>
-                        <p>28/03/23</p>
-                        <p> - </p>
-                        <p>Problema en dispositivo</p>
-                        <p> - </p>
-                        <p>Cerrado</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Ticket10</b></p>
-                        <p> : </p>
-                        <p>28/03/23</p>
-                        <p> - </p>
-                        <p>Error de acceso</p>
-                        <p> - </p>
-                        <p>Abierto</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Ticket11</b></p>
-                        <p> : </p>
-                        <p>28/03/23</p>
-                        <p> - </p>
-                        <p>Problema en dispositivo</p>
-                        <p> - </p>
-                        <p>Cerrado</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Ticket12</b></p>
-                        <p> : </p>
-                        <p>28/03/23</p>
-                        <p> - </p>
-                        <p>Error de acceso</p>
-                        <p> - </p>
-                        <p>Abierto</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Ticket13</b></p>
-                        <p> : </p>
-                        <p>28/03/23</p>
-                        <p> - </p>
-                        <p>Problema en dispositivo</p>
-                        <p> - </p>
-                        <p>Cerrado</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Ticket14</b></p>
-                        <p> : </p>
-                        <p>28/03/23</p>
-                        <p> - </p>
-                        <p>Error de acceso</p>
-                        <p> - </p>
-                        <p>Abierto</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Ticket15</b></p>
-                        <p> : </p>
-                        <p>28/03/23</p>
-                        <p> - </p>
-                        <p>Problema en dispositivo</p>
-                        <p> - </p>
-                        <p>Cerrado</p>
-                    </div>                    
-                </div>
+                <!-- Listado de tickets -->
+                <div class="listadoCliente"></div>
             </form>
         </main>
     </body>
