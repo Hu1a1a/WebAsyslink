@@ -111,15 +111,6 @@
     padding-top: 20px;
  }
  
- .checkbox {
-    display: inline-flex;
-    align-items: center;
- }
- 
- .checkbox a{
-    text-decoration: underline;
- }
-
  .cancelar button{
     display: block;
     width: 35%;
@@ -127,4 +118,30 @@
     margin: auto;
     background-color: red;
  }
+ 
+
+
+.checkbox{
+   display: flex;
+   align-items: center;
+   /* margin: auto; */
+}
+.checkbox input{
+   display: block;
+   /* margin: auto; */
+   max-width: 15px;
+}
+
+.checkbox label{
+   text-align: left;
+   margin: auto;
+   font-weight: normal;
+   margin-left: 5px;
+   color: rgb(0, 0, 0);
+}
+
+
+
+
+
 
