@@ -24,7 +24,7 @@
             <div class="container">
                     <div class="form">
                         <br>
-                        <form action=".php" method="POST">
+                        <form action="modificarsolicitud.php" method="POST">
                             <h2>Modificar solicitud numero.</h2>
                             <label for="fecha_hora">Fecha y hora:</label>
                             <br>
@@ -32,8 +32,37 @@
                             <br>
                             <label for="servicios">Servicios de interés:</label>
                             <br>
-                            <textarea id="servicios" name="servicios"></textarea>
-    
+                            <div class="checkbox">
+                            <input type="checkbox" id="infraestructura" name="servicios[]" value="Infraestructura">
+                            <label for="infraestructura">Infraestructura</label>
+                            </div><br>
+                            <div class="checkbox">
+                                <input type="checkbox" id="seguridad" name="servicios[]" value="Seguridad">
+                                <label for="seguridad">Seguridad</label>
+                            </div><br>
+                            
+                            <div class="checkbox">
+                                <input type="checkbox" id="continuidad" name="servicios[]" value="Continuidad de negocio">
+                                <label for="continuidad">Continuidad de negocio</label>
+                            </div><br>
+                            
+                            <div class="checkbox">
+                                <input type="checkbox" id="transformacion" name="servicios[]" value="Transformación digital">
+                                <label for="transformacion">Transformación digital</label>
+                            </div><br>
+                            
+                            <div class="checkbox">
+                                <input type="checkbox" id="backup" name="servicios[]" value="Backup">
+                                <label for="backup">Backup</label>
+                            </div><br>
+                            
+                            <div class="checkbox">
+                                <input type="checkbox" id="mantenimiento" name="servicios[]" value="Mantenimiento">
+                                <label for="mantenimiento">Mantenimiento</label>
+                            </div><br>
+                            
+                            <!-- <textarea id="servicios" name="servicios"></textarea> -->
+                            
                             <button type="submit">Confirmar cambios</button>
                             <br>
                             <div class="cancelar">

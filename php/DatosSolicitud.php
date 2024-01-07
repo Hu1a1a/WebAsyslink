@@ -10,7 +10,7 @@
         JOIN Servicios_Citas SC ON S.idCita = SC.idCita
         JOIN Servicios S ON SC.idServicios = S.idServicios
         WHERE(
-            C.correo = '" . $_SESSION['idCita'] ";
+            C.idCita = '" . $_POST['idCita'] ";
 
     $resultado = $mysqli->query($consulta);
     if($resultado->num_rows == 0) {
