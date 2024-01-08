@@ -3,75 +3,37 @@
 <head>
     <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
     <link rel="stylesheet" type="text/css" href="estilos/privacidad.css">
-    
+    <link rel="stylesheet" href="estilos/barra.css">
+    <link rel="stylesheet" href="estilos/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="javascript/cargarBarra.js"></script>
+    <script src="javascript/botonBarra.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li> <!-- Logo de la pagina -->
-                    <a href="index.html"><img src="imagenes/logo.png" alt="inicio"></a>
-                </li>
-                <li> <!-- Seccion Sobre nosotros -->
-                    <a class="lmenu" href="SobreNosotros.html">Sobre nosotros</a>
-                </li>
-                
-                <!-- Separador -->
-                <div class="vertical-line"></div>
-                <!-- Separador -->
-
-                <li> <!-- Desplegable de servicios -->
-                    <div class="desplegable">
-                        <br><br><a class="lmenu" href="#">Servicios</a><br><br><br>
-                        <div class="submenu">
-                            <a href="Infraestructura.html">Infraestructura</a><hr>
-                            <a href="Seguridad.html">Seguridad</a><hr>
-                            <a href="ContinuidadNegocio.html">Continuidad de Negocio</a><hr>
-                            <a href="TransformacionDigital.html">Transformacion digital</a><hr>
-                            <a href="Backup.html">Backup</a><hr>
-                            <a href="Mantenimiento.html">Mantenimiento</a>
-                        </div>
-                    </div>
-                </li>
-                
-                <!-- Separator -->
-                <div class="vertical-line"></div>
-                <!-- Separator -->
-
-                <!-- Seccion Contactar -->
-                <li><a class="lmenu" href="InicioSesionContactar.html">Contactar</a></li>
-                
-            </ul>
-            <ul class="sesion"> <!-- Seccion de inicio de sesion -->
-                <li>   
-                    <a class="lmenu" href="InicioSesion.html">Inicio sesion</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="barra"></div>
 
     <div class="block2">
         <h2>Politica de privacidad de la pagina web</h2>
             <div class="content">
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Minima reprehenderit aliquam architecto 
-                        facilis facere atque asperiores placeat mollitia. Delectus, 
-                        dolor ex. Facilis eius quisquam rem placeat soluta molestias, 
-                        quidem inventore!
+                El presente Política de Privacidad establece los términos en que Asyslink usa y protege la información
+                que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está
+                comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos
+                de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se
+                empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad
+                puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar
+                continuamente esta página para asegurarse que está de acuerdo con dichos cambios.
                 </p>
             </div>
     </div>
     <hr>
     <div class="block2">
-        <h2>¿Quien es el responsable de sus datos?</h2>
+        <h2>¿Que datos recogemos?</h2>
             <div class="content">
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Minima reprehenderit aliquam architecto 
-                        facilis facere atque asperiores placeat mollitia. Delectus, 
-                        dolor ex. Facilis eius quisquam rem placeat soluta molestias, 
-                        quidem inventore!
+                    Nuestro sitio web podrá recoger información sobre tu empresa por ejemplo:
+                     Nombre, apellidos, telefono de contacto, 
+                     dirección de correo electrónica, empresa y direccion.
                 </p>
             </div>
     </div>
@@ -80,15 +42,14 @@
         <h2>¿Por que y para que tratamos sus datos?</h2>
             <div class="content">
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Minima reprehenderit aliquam architecto 
-                        facilis facere atque asperiores placeat mollitia. Delectus, 
-                        dolor ex. Facilis eius quisquam rem placeat soluta molestias, 
-                        quidem inventore!
+                    Nuestro sitio web podrá recoger información personal por ejemplo: Nombre, información de contacto
+                    como su dirección de correo electrónica e información demográfica. Así mismo cuando sea necesario
+                    podrá ser requerida información específica para procesar algún pedido o realizar una entrega o
+                    facturación.
                 </p>
             </div>
     </div>
-    <hr>
+    <!-- <hr>
     <div class="block2">
         <h2>¿Cuanto tiempo conservamos sus datos?</h2>
             <div class="content">
@@ -100,35 +61,35 @@
                         quidem inventore!
                 </p>
             </div>
-    </div>
+    </div> -->
     <hr>
     <div class="block2">
-        <h2>¿Como protegemos sus datos?</h2>
+        <h2>Enlaces a terceros.</h2>
             <div class="content">
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Minima reprehenderit aliquam architecto 
-                        facilis facere atque asperiores placeat mollitia. Delectus, 
-                        dolor ex. Facilis eius quisquam rem placeat soluta molestias, 
-                        quidem inventore!
+                    Este sitio web pudiera contener enlaces a otros sitios que pudieran ser de su interés. Una vez que
+                    usted de clic en estos enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que
+                    es redirigido y por lo tanto no somos responsables de los términos o privacidad ni de la protección de
+                    sus datos en esos otros sitios terceros. Dichos sitios están sujetos a sus propias políticas de
+                    privacidad por lo cual es recomendable que los consulte para confirmar que usted está de acuerdo
+                    con estas.
                 </p>
             </div>
     </div>
     <hr>
     <div class="block2">
-        <h2>¿Cuales son sus derechos cuando nos facilita sus datos?</h2>
+        <h2>Tratamiento de su informacion personal</h2>
             <div class="content">
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Minima reprehenderit aliquam architecto 
-                        facilis facere atque asperiores placeat mollitia. Delectus, 
-                        dolor ex. Facilis eius quisquam rem placeat soluta molestias, 
-                        quidem inventore!
+                    Asyslink no venderá, cederá ni distribuirá la información personal que es recopilada sin su
+                    consentimiento, salvo que sea requerido por un juez con un orden judicial.
+                    Asyslink Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en
+                    cualquier momento.
                 </p>
             </div>
     </div>
     <hr>
-    <div class="block2">
+    <!-- <div class="block2">
         <h2>Reclamaciones realacionadas con proteccion de datos</h2>
             <div class="content">
                 <p>
@@ -140,7 +101,7 @@
                 </p>
             </div>
     </div>
-    <hr>
+    <hr> -->
 
 
 
