@@ -1,6 +1,7 @@
 <?php
+    include "configLenguaje.php";
     include_once ('conexion.php');
-    session_start();
+    //session_start();
     
     // Comprobar si se ha iniciado sesion
     if (!isset($_SESSION['login_type'])) {
@@ -11,26 +12,29 @@
         echo "
             <nav>
                 <ul class='menu'>
-                    <li class='logo'><a href='index.html'><img src='imagenes/logo.png' draggable='false'></a></li>
-                    <li class='item'><a class='tag' href='SobreNosotros.html'>Sobre nosotros</a></li>
+                    <li class='logo'><a href='index.php'><img src='imagenes/logo.png' draggable='false'></a></li>
+                    <li class='item'><a class='tag' href='SobreNosotros.html'>" . $langBarra['Nosotros'] . "</a></li>
                     <li class='item' id='submenu'>
-                        <a class='tag' href='#'>Servicios ▼</a>
+                        <a class='tag' href='#'>" . $langBarra['Servicios'] . "▼</a>
                         <ul>
-                            <li><a href='Infraestructura.html'>Infraestructura</a></li>
-                            <li><a href='Seguridad.html'>Seguridad</a></li>
-                            <li><a href='ContinuidadNegocio.html'>Continuidad de Negocio</a></li>
-                            <li><a href='TransformacionDigital.html'>Transformacion Digital</a></li>
-                            <li><a href='Backup.html'>Backup</a></li>
-                            <li><a href='Mantenimiento.html'>Mantenimiento</a></li>
+                            <li><a href='Infraestructura.html'>" . $langBarra['Infraestructura'] . "</a></li>
+                            <li><a href='Seguridad.html'>" . $langBarra['Seguridad'] . "</a></li>
+                            <li><a href='ContinuidadNegocio.html'>" . $langBarra['Continuidad'] . "</a></li>
+                            <li><a href='TransformacionDigital.php'>" . $langBarra['Transformacion'] . "</a></li>
+                            <li><a href='Backup.html'>" . $langBarra['Backup'] . "</a></li>
+                            <li><a href='Mantenimiento.html'>" . $langBarra['Mantenimiento'] . "</a></li>
                         </ul>
                     </li>
 
-                    <li class='item'><a class='tag' href='InicioSesionContactar.html'>Contactar</a></li>
+                    <li class='item'><a class='tag' href='InicioSesionContactar.html'>" . $langBarra['Contactar'] . "</a></li>
                     <li class='end'></li>
    
+                    <li class='item'><a href='index.php?lang=es'>" . $langInicio['es'] . "</a></li>
+                    <li class='item'><a href='index.php?lang=en'>" . $langInicio['en'] . "</a></li>
+
                     <li class='item' id='sesion'>
                         <button onclick='location.href=\"InicioSesion.html\"'>
-                            <a>Iniciar sesion</a>
+                            <a>" . $langBarra['InicSes'] . "</a>
                             <img src='imagenes/usuario.svg' height='35px'>
                         </button>
                     </li>
@@ -42,20 +46,20 @@
         echo "
         <nav>
             <ul class='menu'>
-                <li class='logo'><a href='index.html'><img src='imagenes/logo.png' draggable='false'></a></li>
-                <li class='item'><a class='tag' href='SobreNosotros.html'>Sobre nosotros</a></li>
+                <li class='logo'><a href='index.php'><img src='imagenes/logo.png' draggable='false'></a></li>
+                <li class='item'><a class='tag' href='SobreNosotros.html'>" . $langBarra['Nosotros'] . "</a></li>
                 <li class='item' id='submenu'>
-                    <a class='tag' href='#'>Servicios ▼</a>
+                    <a class='tag' href='#'>" . $langBarra['Servicios'] . "▼</a>
                     <ul>
-                    <li><a href='Infraestructura.html'>Infraestructura</a></li>
-                    <li><a href='Seguridad.html'>Seguridad</a></li>
-                    <li><a href='ContinuidadNegocio.html'>Continuidad de Negocio</a></li>
-                    <li><a href='TransformacionDigital.html'>Transformacion Digital</a></li>
-                    <li><a href='Backup.html'>Backup</a></li>
-                    <li><a href='Mantenimiento.html'>Mantenimiento</a></li>
+                        <li><a href='Infraestructura.html'>" . $langBarra['Infraestructura'] . "</a></li>
+                        <li><a href='Seguridad.html'>" . $langBarra['Seguridad'] . "</a></li>
+                        <li><a href='ContinuidadNegocio.html'>" . $langBarra['Continuidad'] . "</a></li>
+                        <li><a href='TransformacionDigital.php'>" . $langBarra['Transformacion'] . "</a></li>
+                        <li><a href='Backup.html'>" . $langBarra['Backup'] . "</a></li>
+                        <li><a href='Mantenimiento.html'>" . $langBarra['Mantenimiento'] . "</a></li>
                     </ul>
                 </li>
-                <li class='item'><a class='tag' href='ContactarSesionIniciada.html'>Contactar</a></li>
+                <li class='item'><a class='tag' href='ContactarSesionIniciada.html'>" . $langBarra['Contactar'] . "</a></li>
 
                 <!-- Separador de derecha e izquierda -->
                 <li class='end'></li>
@@ -63,11 +67,11 @@
 
                 <li class='item' id='submenu-right'>
                     <!-- Submenu de servicios -->
-                    <a class='tag' href='PortalCliente.html'>Portal Cliente ▼</a>
+                    <a class='tag' href='PortalCliente.html'>" . $langBarra['Cliente'] . "▼</a>
                     <ul>
-                        <li><a href='MisDatosCliente.html'>Mi cuenta</a></li>
-                        <li><a href='SolicitudesInformacionCliente.html'>Mis solicitudes</a></li>
-                        <li><a href='ServiciosCliente.html'>Servicios Contratados</a></li>
+                        <li><a href='MisDatosCliente.html'>" . $langBarra['Cuenta'] . "</a></li>
+                        <li><a href='SolicitudesInformacionCliente.html'>" . $langBarra['Solicitudes'] . "</a></li>
+                        <li><a href='ServiciosCliente.html'>" . $langBarra['Servicios'] . "</a></li>
                         <li><a href='TicketingCliente.html'>Ticketing</a></li>
                     </ul>
                 </li>
@@ -79,7 +83,7 @@
                 <!-- Social media links -->
                 <li class='item' id='sesion'>
                     <button class='cerrarSesion'>
-                        <a>Cerrar sesion</a>
+                        <a>" . $langBarra['Cerrar'] . "</a>
                         <img src='imagenes/cerrar_session.svg' height='35px'>
                     </button>
                 </li>
@@ -92,21 +96,20 @@
         <nav> <!-- Main benu box -->
             <ul class='menu'>
                 <!-- Page logo and some links -->
-                <li class='logo'><a href='index.html'><img src='imagenes/logo.png' draggable='false'></a></li>
-                <li class='item'><a class='tag' href='SobreNosotros.html'>Sobre nosotros</a></li>
+                <li class='logo'><a href='index.php'><img src='imagenes/logo.png' draggable='false'></a></li>
+                <li class='item'><a class='tag' href='SobreNosotros.html'>" . $langBarra['Nosotros'] . "</a></li>
                 <li class='item' id='submenu'>
-                    <!-- Submenu de servicios -->
-                    <a class='tag' href='#'>Servicios ▼</a>
+                    <a class='tag' href='#'>" . $langBarra['Servicios'] . "▼</a>
                     <ul>
-                        <li><a href='Infraestructura.html'>Infraestructura</a></li>
-                        <li><a href='Seguridad.html'>Seguridad</a></li>
-                        <li><a href='ContinuidadNegocio.html'>Continuidad de Negocio</a></li>
-                        <li><a href='TransformacionDigital.html'>Transformacion Digital</a></li>
-                        <li><a href='Backup.html'>Backup</a></li>
-                        <li><a href='Mantenimiento.html'>Mantenimiento</a></li>
+                        <li><a href='Infraestructura.html'>" . $langBarra['Infraestructura'] . "</a></li>
+                        <li><a href='Seguridad.html'>" . $langBarra['Seguridad'] . "</a></li>
+                        <li><a href='ContinuidadNegocio.html'>" . $langBarra['Continuidad'] . "</a></li>
+                        <li><a href='TransformacionDigital.php'>" . $langBarra['Transformacion'] . "</a></li>
+                        <li><a href='Backup.html'>" . $langBarra['Backup'] . "</a></li>
+                        <li><a href='Mantenimiento.html'>" . $langBarra['Mantenimiento'] . "</a></li>
                     </ul>
                 </li>
-                <li class='item'><a class='tag' href='Contactar.html'>Contactar</a></li>
+                <li class='item'><a class='tag' href='Contactar.html'>" . $langBarra['Contactar'] . "</a></li>
 
                 <!-- Separador de derecha e izquierda -->
                 <li class='end'></li>
@@ -131,7 +134,7 @@
                 <!-- Social media links -->
                 <li class='item' id='sesion'>
                     <button class='cerrarSesion'>
-                        <a>Cerrar sesion</a>
+                        <a>" . $langBarra['Cerrar'] . "</a>
                         <img src='imagenes/cerrar_session.svg' height='35px'>
                     </button>
                 </li>

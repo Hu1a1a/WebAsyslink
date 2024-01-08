@@ -1,3 +1,6 @@
+<?php
+    include "php/configLenguaje.php"
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,12 +22,12 @@
     <div class="guia">
         <p>Servicios</p>
         <p>></p><!-- separador -->       
-        <a> Transformacion Digital</a>
+        <a> <?php echo $langTrans['Transformacion']?></a>
     </div>
 
     <div class="block1">
         <div class="content">
-            <h2>Transformación Digital</h2>
+            <h2><?php echo $langTrans['Transformacion']?></h2>
             <p>
                 Descubre nuevos enfoques para acelerar y mejorar
                 la cultura de innovación en su organización.
