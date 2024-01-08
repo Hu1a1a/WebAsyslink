@@ -12,7 +12,7 @@ $(document).ready(function() {
             url: './php/cerrarSesion.php',
             type: 'get',
             success: function() {
-                window.location.href = 'index.html';
+                window.location.href = 'index.php';
             }
         });
         return false;
