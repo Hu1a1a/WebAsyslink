@@ -30,6 +30,7 @@ main form h2 {
 
 main form .orden {
     margin-top: 15px;
+    margin-right: 10px;
     display: inline-flex;
 }
 
@@ -83,7 +84,7 @@ main form .busqueda p {
     font-size: 17px;
 }
 
-main form .listado {
+main form .listadoAdmin {
     margin-top: 20px;
     border-radius: 8px;
     padding: 0px 10px;
@@ -92,14 +93,14 @@ main form .listado {
     overflow-y: auto;
 }
 
-main form .listado .item {
+main form .listadoAdmin .item {
     background-color: #e6e2e2;
     margin-bottom: 10px;
     border-radius: 5px;
     padding: 15px;
 }
 
-main form .listado .item p {
+main form .listadoAdmin .item p {
     display: inline-block;
     font-size: 17px;
 }
@@ -113,4 +114,8 @@ main form .listado .item p {
 }
 ::-webkit-scrollbar-track {
     background-color: #f0f0f0;
+}
+
+main form label {
+    margin: 0px 10px 0px 5px;
 }

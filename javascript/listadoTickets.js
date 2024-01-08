@@ -28,7 +28,6 @@ $(document).ready(function() {
                     listadoCliente.innerHTML = result;
                 }
             });
-            return false;
         });
     }   
     else if(listadoAdmin != null) {
@@ -56,7 +55,6 @@ $(document).ready(function() {
                     listadoAdmin.innerHTML = result;
                 }   
             });
-            return false;
         });
     }
 });
