@@ -1,174 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset='utf-8'>
         <title>Asyslink - Historial de Tickets (Admin)</title>
-        <link rel="stylesheet" href="estilos/estilos.css">
         <link rel="stylesheet" href="estilos/guia.css">
         <link rel="stylesheet" href="estilos/ticketsCurso.css">
         <link rel="stylesheet" href="estilos/barra.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
         <script src="javascript/cargarBarra.js"></script>
         <script src="javascript/botonBarra.js"></script>
+        <script src="javascript/listadoClientes.js"></script>
     </head>
     <body>
         <div class="barra"></div>
 
         <!-- Barra de navegacion -->
         <div class="guia">
-            <p>Portal Administrador</p>
+            <p><a href="PortalAdmin.html">Portal Administrador</p>
             <p>></p><!-- separador -->       
             <a href="#">Mis Clientes</a>
-        </div>  
+        </div>
+
         <main>
-            <form>
+            <form id="formClientes">
                 <h2>Mis Clientes</h2>
 
                 <!-- Barra de busqueda -->
                 <div class="busqueda">
                     <p><b>Buscar Cliente</b></p>
-                    <input>
-                    <button action="">OK</button>
+                    <input type="text" name="correo" placeholder="Correo del cliente">
+                    <button type="submit">OK</button>
                 </div>
                 <br>
                 <div class="orden">
                     <p><b>Ordenar</b></p>
-                    <select id="opcionesDesplegable" name="opcionesDesplegable">
+                    <select id="opcionesDesplegable" name="orden">
                         <option value="opcion1">Empresa (A-Z)</option>
                         <option value="opcion2">Empresa (Z-A)</option>
                     </select>
                 </div>
 
                 <!-- Listado de ejemplo -->
-                <div class="listado">
-                    <div class="item">
-                        <p><b>Empresa</b></p>
-                        <p> : </p>
-                        <p>[Nombre Cliente]</p>
-                        <p> - </p>
-                        <p>[Servicio]</p>
-                    </div>
-                    <div class="item">
-                        <p><b>Empresa</b></p>
-                        <p> : </p>
-                        <p>[Nombre Cliente]</p>
-                        <p> - </p>
-                        <p>[Servicio]</p>
-                        
-                        
-                    </div>
-                    <div class="item">
-                        <p><b>Empresa</b></p>
-                        <p> : </p>
-                        <p>[Nombre Cliente]</p>
-                        <p> - </p>
-                        <p>[Servicio]</p>
-                        
-                        
-                    </div>
-                    <div class="item">
-                        <p><b>Empresa</b></p>
-                        <p> : </p>
-                        <p>[Nombre Cliente]</p>
-                        <p> - </p>
-                        <p>[Servicio]</p>
-                        
-                        
-                    </div>
-                    <div class="item">
-                        <p><b>Empresa</b></p>
-                        <p> : </p>
-                        <p>[Nombre Cliente]</p>
-                        <p> - </p>
-                        <p>[Servicio]</p>
-                        
-                        
-                    </div>
-                    <div class="item">
-                        <p><b>Empresa</b></p>
-                        <p> : </p>
-                        <p>[Nombre Cliente]</p>
-                        <p> - </p>
-                        <p>[Servicio]</p>
-                        
-                        
-                    </div>
-                    <div class="item">
-                        <p><b>Empresa</b></p>
-                        <p> : </p>
-                        <p>[Nombre Cliente]</p>
-                        <p> - </p>
-                        <p>[Servicio]</p>
-                        
-                        
-                    </div>
-                    <div class="item">
-                        <p><b>Empresa</b></p>
-                        <p> : </p>
-                        <p>[Nombre Cliente]</p>
-                        <p> - </p>
-                        <p>[Servicio]</p>
-                        
-                        
-                    </div>
-                    <div class="item">
-                        <p><b>Empresa</b></p>
-                        <p> : </p>
-                        <p>[Nombre Cliente]</p>
-                        <p> - </p>
-                        <p>[Servicio]</p>
-                        
-                        
-                    </div>
-                    <div class="item">
-                        <p><b>Empresa</b></p>
-                        <p> : </p>
-                        <p>[Nombre Cliente]</p>
-                        <p> - </p>
-                        <p>[Servicio]</p>
-                        
-                        
-                    </div>
-                    <div class="item">
-                        <p><b>Empresa</b></p>
-                        <p> : </p>
-                        <p>[Nombre Cliente]</p>
-                        <p> - </p>
-                        <p>[Servicio]</p>
-                        
-                    </div>
-                    <div class="item">
-                        <p><b>Empresa</b></p>
-                        <p> : </p>
-                        <p>[Nombre Cliente]</p>
-                        <p> - </p>
-                        <p>[Servicio]</p>
-                        
-                    </div>
-                    <div class="item">
-                        <p><b>Empresa</b></p>
-                        <p> : </p>
-                        <p>[Nombre Cliente]</p>
-                        <p> - </p>
-                        <p>[Servicio]</p>
-                        
-                    </div>
-                    <div class="item">
-                        <p><b>Empresa</b></p>
-                        <p> : </p>
-                        <p>[Nombre Cliente]</p>
-                        <p> - </p>
-                        <p>[Servicio]</p>
-                        
-                    </div>
-                    <div class="item">
-                        <p><b>Empresa</b></p>
-                        <p> : </p>
-                        <p>[Nombre Cliente]</p>
-                        <p> - </p>
-                        <p>[Servicio]</p>
-                        
-                    </div>                    
-                </div>
+                <div class="listado"></div>
             </form>
         </main>
     </body>
