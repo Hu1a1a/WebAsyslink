@@ -2,7 +2,7 @@
     include "php/configLenguaje.php"
 ?>
 <!DOCTYPE html>
-<html lang = "en">
+<html lang = "es">
     <head>
         <meta charset='utf-8'>
         <title>Asyslink-Inicio</title>
@@ -47,12 +47,12 @@
         </div>
 
         <div class="botones">
-            <button onclick="location.href='Infraestructura.html'"><?php echo $langInicio['Infraestructura']?></button>
-            <button onclick="location.href='Seguridad.html'"><?php echo $langInicio['Seguridad']?></button>
-            <button onclick="location.href='ContinuidadNegocio.html'"><?php echo $langInicio['Continuidad']?></button>
-            <button onclick="location.href='TransformacionDigital.html'"><?php echo $langInicio['Transformacion']?></button>
-            <button onclick="location.href='Backup.html'"><?php echo $langInicio['Backup']?></button>
-            <button onclick="location.href='Mantenimiento.html'"><?php echo $langInicio['Mantenimiento']?></button>
+            <button onclick="location.href='Infraestructura.php'"><?php echo $langInicio['Infraestructura']?></button>
+            <button onclick="location.href='Seguridad.php'"><?php echo $langInicio['Seguridad']?></button>
+            <button onclick="location.href='ContinuidadNegocio.php'"><?php echo $langInicio['Continuidad']?></button>
+            <button onclick="location.href='TransformacionDigital.php'"><?php echo $langInicio['Transformacion']?></button>
+            <button onclick="location.href='Backup.php'"><?php echo $langInicio['Backup']?></button>
+            <button onclick="location.href='Mantenimiento.php'"><?php echo $langInicio['Mantenimiento']?></button>
         </div>
     </div>
 
@@ -72,7 +72,7 @@
         </div>
         <div class="content-right">
             <h3><?php echo $langFooter['Info'] ?></h3>
-            <button onclick="location.href='InicioSesion.html'"><?php echo $langFooter['Reunion'] ?></button>
+            <button onclick="location.href='InicioSesionContactar.php'"><?php echo $langFooter['Reunion'] ?></button>
         </div>
     </footer>
 </body>
