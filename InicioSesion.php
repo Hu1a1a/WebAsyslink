@@ -47,7 +47,7 @@
                     <input type="password" id="confirm-password" name="confirm-password" required>
                    <div class="checkbox">
                         <input type="checkbox" id="politica_privacidad" name="politica_privacidad" required>
-                        <label for="politica_privacidad">He leído y acepto la <a href="privacidad.html">Política de Privacidad</a></label>
+                        <label for="politica_privacidad">He leído y acepto la <a href="privacidad.php">Política de Privacidad</a></label>
                    </div>
                     <button type="submit" class="signup-button">Confirmar</button>
                 </form>

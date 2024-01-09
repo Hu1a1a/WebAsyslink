@@ -13,17 +13,17 @@
 <body>
     <div class="barra"></div>
     <div class="content">
-        <a href='NuevoTicketCliente.html' class="block">
+        <a href='NuevoTicketCliente.php' class="block">
             <h2>Nuevo ticket</h2>
         </a>
 
-        <a href='ticketsCurso.html' class="block">
+        <a href='ticketsCurso.php' class="block">
             <h2>Tickets en curso</h2>
         </a>
     </div>
 
     <div class="content">
-        <a href='HistorialTicketsCliente.html' class="block">
+        <a href='HistorialTicketsCliente.php' class="block">
             <h2>Historial de tickets</h2>
         </a>
     </div>

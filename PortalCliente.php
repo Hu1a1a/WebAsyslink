@@ -19,17 +19,17 @@
             <h2>Mi cuenta</h2>
         </a>
 
-        <a href='SolicitudesInformacionCliente.html' class="block">
+        <a href='ServiciosCliente.php' class="block">
             <h2>Mis servicios</h2>
         </a>
     </div>
 
     <div class="content">
-        <a href='ServiciosCliente.html' class="block">
+        <a href='SolicitudesInformacionCliente.php' class="block">
             <h2>Solicitudes de Información</h2>
         </a>
 
-        <a href='TicketingCliente.html' class="block">
+        <a href='TicketingCliente.php' class="block">
             <h2>Ticketing</h2>
         </a>
     </div>

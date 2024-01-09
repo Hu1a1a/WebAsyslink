@@ -16,12 +16,12 @@
 
         <!-- Barra de navegacion -->
         <div class="guia">
-            <p>Portal Administrador</p>
+            <p>Portal Cliente</p>
             <p>></p><!-- separador -->       
-            <a href="#">Tickets</a>
+            <a href="TicketingCliente.php">Tickets</a>
             <p>></p><!-- separador -->       
             <a href="#">Tickets en curso</a>
-        </div>  
+        </div>
 
         <main>
             <form>
