@@ -49,7 +49,7 @@
             </div>
         </div>
         <hr>
-        <button type="submit" class="continue-button">Continuar sin iniciar sesión</button>
+        <button onclick="location.href='Contactar.php'" class="continue-button">Continuar sin iniciar sesión</button>
     </div>
 </body>
 </html>

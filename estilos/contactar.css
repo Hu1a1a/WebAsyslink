@@ -89,11 +89,21 @@ form button {
    padding-top: 20px;
 }
 
-.checkbox {
-   display: inline-flex;
+.checkbox{
+   display: flex;
    align-items: center;
+   /* margin: auto; */
+}
+.checkbox input{
+   display: block;
+   /* margin: auto; */
+   max-width: 15px;
 }
 
-.checkbox a{
-   text-decoration: underline;
+.checkbox label{
+   text-align: left;
+   margin: auto;
+   font-weight: normal;
+   margin-left: 5px;
+   color: rgb(0, 0, 0);
 }
