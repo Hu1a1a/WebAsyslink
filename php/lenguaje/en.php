@@ -80,7 +80,7 @@
         "Transformacion" => "Digital transformation",
         "Mantenimiento" => "Maintenance",
         "Cerrar" => "Sign out",
-        "Cliente" => "Cutomer zone",
+        "Cliente" => "Customer zone",
         "Cuenta" => "My account",
         "Solicitudes" => "My requests",
         "ServiciosC" => "Hired services"

@@ -1,3 +1,6 @@
+<?php
+    include "php/configLenguaje.php"
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -65,19 +68,21 @@
         <footer>
             <div class="content-left">
                 <img src="imagenes/footer_logo.png" height="50px">
-                <h3>Número de teléfono</h3>
+                <h3><?php echo $langFooter['NumTlf'] ?></h3>
                 <p>Sebastian Aparicio (+34) 670 70 34 88</p>
     
-                <h3>Correo electrónico</h3>
+                <h3><?php echo $langFooter['Correo'] ?></h3>
                 <p>info@asyslink.com</p>
     
-                <h3>Dirección</h3>
+                <h3><?php echo $langFooter['Direccion'] ?></h3>
                 <p>Ctra. Torrecárdenas, 153, 04230</p>
                 <p>Huércal de Almería, Almería</p>
+                <a href="index.php?lang=es"> <?php echo $langInicio['es'] ?> </a> | <a href="index.php?lang=en"> <?php echo $langInicio['en'] ?></a>
+         </div>
             </div>
             <div class="content-right">
-                <h3>¿Necesitas más información?</h3>
-                <button onclick="location.href='InicioSesion.html'">Reúnete con nosotros</button>
+                <h3><?php echo $langFooter['Info'] ?></h3>
+                <button onclick="location.href='InicioSesionContactar.html'"><?php echo $langFooter['Reunion'] ?></button>
             </div>
         </footer>
     </body>

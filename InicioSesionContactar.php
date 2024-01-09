@@ -4,10 +4,10 @@
     <meta charset='utf-8'>
     <title>Asyslink-Iniciar Sesion</title>
     <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
-    <link rel="stylesheet" type="text/css" href="estilos/inicioSesionContactar.css">
+    <link rel="stylesheet" type="text/css" href="estilos/contactar.css">
     <link rel="stylesheet" href="estilos/barra.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
-    <script src="javascript/iniciarSesion.js"></script>
+    <script src="javascript/iniciarSesionContactar.js"></script>
     <script src="javascript/cargarBarra.js"></script>
     <script src="javascript/botonBarra.js"></script>
 </head>
@@ -17,6 +17,7 @@
 
      <div class="container">
         <div class="form-wrapper">
+
             <div class="form">
                 <h2>Inicia sesión</h2>
 
@@ -25,14 +26,15 @@
 
                 <form id="loginform">
                     <label for="login-username">Correo electrónico:</label>
-                    <input type="text" id="login-username" name="login-username" required>
+                    <input type="text" id="login-username" name="correo" required>
                     <label for="login-password">Contraseña:</label>
-                    <input type="password" id="login-password" name="login-password" required>
+                    <input type="password" id="login-password" name="password" required>
                     <button type="submit" class="login-button">Confirmar</button>
                 </form>
             </div>
             <div class="form">
                 <h2>Regístrate</h2>
+
                 <form id="signupform">
                     <label for="signup-username">Correo electrónico:</label>
                     <input type="text" id="signup-username" name="signup-username" required>
