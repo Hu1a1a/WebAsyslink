@@ -1,3 +1,6 @@
+<?php
+    include "php/configLenguaje.php"
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,16 +22,15 @@
         <div class="guia">
             <p>Asyslink</p>
             <p>></p>       
-            <a> Sobre Nosotros</a>
+            <a> <?php echo $langNosotros['t1']?></a>
         </div>  
 
         <!-- Contenido1 -->
         <div class="block1">
             <div class="content">
-                <h2>Acerca de nosotros</h2>
+                <h2><?php echo $langNosotros['t2']?></h2>
                 <p>
-                    Profesionales altamente calificados para asistir desde la necesidad de acceso
-                    rápido a tecnología esencial del día a día.
+                <?php echo $langNosotros['p1']?>
                 </p>
             </div>
         </div>
@@ -36,22 +38,14 @@
         <!-- Contenido2 -->
         <div class="block3">
             <div class="content">
-                <h2>Nuestra misión</h2>
+                <h2><?php echo $langNosotros['t3']?></h2>
                 <hr>
-                <p>Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Minima reprehenderit aliquam architecto 
-                    facilis facere atque asperiores placeat mollitia. Delectus, 
-                    dolor ex. Facilis eius quisquam rem placeat soluta molestias, 
-                    quidem inventore!</p>
+                <p><?php echo $langNosotros['p2']?></p>
             </div>
             <div class="content">
-                <h2>Nuestra visión</h2>
+                <h2><?php echo $langNosotros['t4']?></h2>
                 <hr>
-                <p>Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Minima reprehenderit aliquam architecto 
-                    facilis facere atque asperiores placeat mollitia. Delectus, 
-                    dolor ex. Facilis eius quisquam rem placeat soluta molestias, 
-                    quidem inventore!</p>
+                <p><?php echo $langNosotros['p3']?></p>
             </div>
         </div>
         <!-- Contenido2 -->
@@ -72,22 +66,23 @@
 
         <!-- Footer -->
         <footer>
-            <div class="content-left">
-                <img src="imagenes/logo.png">
-                <h3>Número de teléfono</h3>
-                <p>Sebastián Aparicio (+34) 670 70 34 88</p>
+        <div class="content-left">
+            <img src="imagenes/footer_logo.png" height="50px">
+            <h3><?php echo $langFooter['NumTlf'] ?></h3>
+            <p>Sebastian Aparicio (+34) 670 70 34 88</p>
 
-                <h3>Correo electrónico</h3>
-                <p>info@asyslink.com</p>
+            <h3><?php echo $langFooter['Correo'] ?></h3>
+            <p>info@asyslink.com</p>
 
-                <h3>Némero de teléfono</h3>
-                <p>Ctra. Torrecárdenas, 153, 04230</p>
-                <p>Huércal de Almería, Almería</p>
-            </div>
-            <div class="content-right">
-                <h3>¿Necesitas más información?</h3>
-                <button onclick="location.href='InicioSesion.html'">Reúnete con nosotros</button>
-            </div>
-        </footer>
+            <h3><?php echo $langFooter['Direccion'] ?></h3>
+            <p>Ctra. Torrecárdenas, 153, 04230</p>
+            <p>Huércal de Almería, Almería</p>
+     </div>
+        </div>
+        <div class="content-right">
+            <h3><?php echo $langFooter['Info'] ?></h3>
+            <button onclick="location.href='InicioSesionContactar.php'"><?php echo $langFooter['Reunion'] ?></button>
+        </div>
+    </footer>
     </body>
 </html>
