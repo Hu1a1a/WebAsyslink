@@ -57,12 +57,13 @@ main form .busqueda button {
     color: white;
     background-color: #0054a6;
     border: none;
-    font-size: medium;
+    font-size: 13px;
     padding: 3px 0px 3px 0px;
     width: 15%;
     max-width: 150px;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 main form .busqueda label {
