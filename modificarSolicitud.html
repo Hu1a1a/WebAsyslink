@@ -24,7 +24,7 @@
             <div class="container">
                     <div class="form">
                         <br>
-                        <form action="modificarsolicitud.php" method="POST">
+                        <form action="php/modificarSolicitud.php" method="POST">
                             <h2>Modificar solicitud numero.</h2>
                             <label for="fecha_hora">Fecha y hora:</label>
                             <br>
@@ -59,6 +59,13 @@
                             <div class="checkbox">
                                 <input type="checkbox" id="mantenimiento" name="servicios[]" value="Mantenimiento">
                                 <label for="mantenimiento">Mantenimiento</label>
+                            </div><br>
+
+                            <hr><br>
+
+                            <div class="checkbox">
+                                <input type="checkbox" id="PDF" name="pdf" value="1">
+                                <label for="pdf">Generar PDF</label>
                             </div><br>
                             
                             <!-- <textarea id="servicios" name="servicios"></textarea> -->
