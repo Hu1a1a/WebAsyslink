@@ -15,7 +15,7 @@ $result = $mysqli->query($sql);
     } 
     else{
 // Sentencia SQL para actualizar los campos
-$consulta = "UPDATE Citas SET FechaCita='$fecha_hora', servicio='$servicios' WHERE idCita='$idCita'";
+$consulta = "UPDATE Citas SET FechaCita='$fecha_hora' WHERE idCita='$idCita'";
 
 $resultado = $mysqli->query($consulta);
     if($resultado->num_rows == 0) {

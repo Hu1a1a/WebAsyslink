@@ -50,7 +50,34 @@
                         <input type="datetime-local" id="fecha_hora" name="fecha_hora" required>
 
                         <label for="servicios">Servicios de interés:</label>
-                        <textarea id="servicios" name="servicios"></textarea>
+                        <div class="checkbox">
+                            <input type="checkbox" id="infraestructura" name="servicios[]" value="Infraestructura">
+                            <label for="infraestructura">Infraestructura</label>
+                            </div><br>
+                            <div class="checkbox">
+                                <input type="checkbox" id="seguridad" name="servicios[]" value="Seguridad">
+                                <label for="seguridad">Seguridad</label>
+                            </div><br>
+                            
+                            <div class="checkbox">
+                                <input type="checkbox" id="continuidad" name="servicios[]" value="Continuidad de negocio">
+                                <label for="continuidad">Continuidad de negocio</label>
+                            </div><br>
+                            
+                            <div class="checkbox">
+                                <input type="checkbox" id="transformacion" name="servicios[]" value="Transformación digital">
+                                <label for="transformacion">Transformación digital</label>
+                            </div><br>
+                            
+                            <div class="checkbox">
+                                <input type="checkbox" id="backup" name="servicios[]" value="Backup">
+                                <label for="backup">Backup</label>
+                            </div><br>
+                            
+                            <div class="checkbox">
+                                <input type="checkbox" id="mantenimiento" name="servicios[]" value="Mantenimiento">
+                                <label for="mantenimiento">Mantenimiento</label>
+                            </div><br>
 
                         <button type="submit">Confirmar</button>
                     </form>

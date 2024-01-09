@@ -21,7 +21,7 @@
                             <li><a href='Seguridad.html'>" . $langBarra['Seguridad'] . "</a></li>
                             <li><a href='ContinuidadNegocio.html'>" . $langBarra['Continuidad'] . "</a></li>
                             <li><a href='TransformacionDigital.php'>" . $langBarra['Transformacion'] . "</a></li>
-                            <li><a href='Backup.html'>" . $langBarra['Backup'] . "</a></li>
+                            <li><a href='Backup.php'>" . $langBarra['Backup'] . "</a></li>
                             <li><a href='Mantenimiento.html'>" . $langBarra['Mantenimiento'] . "</a></li>
                         </ul>
                     </li>
@@ -55,7 +55,7 @@
                         <li><a href='Seguridad.html'>" . $langBarra['Seguridad'] . "</a></li>
                         <li><a href='ContinuidadNegocio.html'>" . $langBarra['Continuidad'] . "</a></li>
                         <li><a href='TransformacionDigital.php'>" . $langBarra['Transformacion'] . "</a></li>
-                        <li><a href='Backup.html'>" . $langBarra['Backup'] . "</a></li>
+                        <li><a href='Backup.php'>" . $langBarra['Backup'] . "</a></li>
                         <li><a href='Mantenimiento.html'>" . $langBarra['Mantenimiento'] . "</a></li>
                     </ul>
                 </li>
@@ -71,7 +71,7 @@
                     <ul>
                         <li><a href='MisDatosCliente.html'>" . $langBarra['Cuenta'] . "</a></li>
                         <li><a href='SolicitudesInformacionCliente.html'>" . $langBarra['Solicitudes'] . "</a></li>
-                        <li><a href='ServiciosCliente.html'>" . $langBarra['Servicios'] . "</a></li>
+                        <li><a href='ServiciosCliente.html'>" . $langBarra['ServiciosC'] . "</a></li>
                         <li><a href='TicketingCliente.html'>Ticketing</a></li>
                     </ul>
                 </li>
@@ -105,7 +105,7 @@
                         <li><a href='Seguridad.html'>" . $langBarra['Seguridad'] . "</a></li>
                         <li><a href='ContinuidadNegocio.html'>" . $langBarra['Continuidad'] . "</a></li>
                         <li><a href='TransformacionDigital.php'>" . $langBarra['Transformacion'] . "</a></li>
-                        <li><a href='Backup.html'>" . $langBarra['Backup'] . "</a></li>
+                        <li><a href='Backup.php'>" . $langBarra['Backup'] . "</a></li>
                         <li><a href='Mantenimiento.html'>" . $langBarra['Mantenimiento'] . "</a></li>
                     </ul>
                 </li>

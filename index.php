@@ -51,7 +51,7 @@
             <button onclick="location.href='Seguridad.html'"><?php echo $langInicio['Seguridad']?></button>
             <button onclick="location.href='ContinuidadNegocio.html'"><?php echo $langInicio['Continuidad']?></button>
             <button onclick="location.href='TransformacionDigital.html'"><?php echo $langInicio['Transformacion']?></button>
-            <button onclick="location.href='Backup.html'"><?php echo $langInicio['Backup']?></button>
+            <button onclick="location.href='Backup.php'"><?php echo $langInicio['Backup']?></button>
             <button onclick="location.href='Mantenimiento.html'"><?php echo $langInicio['Mantenimiento']?></button>
         </div>
     </div>
@@ -73,7 +73,7 @@
         </div>
         <div class="content-right">
             <h3><?php echo $langFooter['Info'] ?></h3>
-            <button onclick="location.href='InicioSesion.html'"><?php echo $langFooter['Reunion'] ?></button>
+            <button onclick="location.href='InicioSesionContactar.html'"><?php echo $langFooter['Reunion'] ?></button>
         </div>
     </footer>
 </body>
