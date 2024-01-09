@@ -17,12 +17,12 @@
                     <li class='item' id='submenu'>
                         <a class='tag' href='#'>" . $langBarra['Servicios'] . "▼</a>
                         <ul>
-                            <li><a href='Infraestructura.html'>" . $langBarra['Infraestructura'] . "</a></li>
-                            <li><a href='Seguridad.html'>" . $langBarra['Seguridad'] . "</a></li>
-                            <li><a href='ContinuidadNegocio.html'>" . $langBarra['Continuidad'] . "</a></li>
+                            <li><a href='Infraestructura.php'>" . $langBarra['Infraestructura'] . "</a></li>
+                            <li><a href='Seguridad.php'>" . $langBarra['Seguridad'] . "</a></li>
+                            <li><a href='ContinuidadNegocio.php'>" . $langBarra['Continuidad'] . "</a></li>
                             <li><a href='TransformacionDigital.php'>" . $langBarra['Transformacion'] . "</a></li>
-                            <li><a href='Backup.html'>" . $langBarra['Backup'] . "</a></li>
-                            <li><a href='Mantenimiento.html'>" . $langBarra['Mantenimiento'] . "</a></li>
+                            <li><a href='Backup.php'>" . $langBarra['Backup'] . "</a></li>
+                            <li><a href='Mantenimiento.php'>" . $langBarra['Mantenimiento'] . "</a></li>
                         </ul>
                     </li>
 
@@ -51,12 +51,12 @@
                 <li class='item' id='submenu'>
                     <a class='tag' href='#'>" . $langBarra['Servicios'] . "▼</a>
                     <ul>
-                        <li><a href='Infraestructura.html'>" . $langBarra['Infraestructura'] . "</a></li>
-                        <li><a href='Seguridad.html'>" . $langBarra['Seguridad'] . "</a></li>
-                        <li><a href='ContinuidadNegocio.html'>" . $langBarra['Continuidad'] . "</a></li>
+                        <li><a href='Infraestructura.php'>" . $langBarra['Infraestructura'] . "</a></li>
+                        <li><a href='Seguridad.php'>" . $langBarra['Seguridad'] . "</a></li>
+                        <li><a href='ContinuidadNegocio.php'>" . $langBarra['Continuidad'] . "</a></li>
                         <li><a href='TransformacionDigital.php'>" . $langBarra['Transformacion'] . "</a></li>
-                        <li><a href='Backup.html'>" . $langBarra['Backup'] . "</a></li>
-                        <li><a href='Mantenimiento.html'>" . $langBarra['Mantenimiento'] . "</a></li>
+                        <li><a href='Backup.php'>" . $langBarra['Backup'] . "</a></li>
+                        <li><a href='Mantenimiento.php'>" . $langBarra['Mantenimiento'] . "</a></li>
                     </ul>
                 </li>
                 <li class='item'><a class='tag' href='ContactarSesionIniciada.html'>" . $langBarra['Contactar'] . "</a></li>
@@ -101,12 +101,12 @@
                 <li class='item' id='submenu'>
                     <a class='tag' href='#'>" . $langBarra['Servicios'] . "▼</a>
                     <ul>
-                        <li><a href='Infraestructura.html'>" . $langBarra['Infraestructura'] . "</a></li>
-                        <li><a href='Seguridad.html'>" . $langBarra['Seguridad'] . "</a></li>
-                        <li><a href='ContinuidadNegocio.html'>" . $langBarra['Continuidad'] . "</a></li>
+                        <li><a href='Infraestructura.php'>" . $langBarra['Infraestructura'] . "</a></li>
+                        <li><a href='Seguridad.php'>" . $langBarra['Seguridad'] . "</a></li>
+                        <li><a href='ContinuidadNegocio.php'>" . $langBarra['Continuidad'] . "</a></li>
                         <li><a href='TransformacionDigital.php'>" . $langBarra['Transformacion'] . "</a></li>
-                        <li><a href='Backup.html'>" . $langBarra['Backup'] . "</a></li>
-                        <li><a href='Mantenimiento.html'>" . $langBarra['Mantenimiento'] . "</a></li>
+                        <li><a href='Backup.php'>" . $langBarra['Backup'] . "</a></li>
+                        <li><a href='Mantenimiento.php'>" . $langBarra['Mantenimiento'] . "</a></li>
                     </ul>
                 </li>
                 <li class='item'><a class='tag' href='Contactar.html'>" . $langBarra['Contactar'] . "</a></li>
