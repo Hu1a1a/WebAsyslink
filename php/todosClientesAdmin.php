@@ -2,16 +2,7 @@
     include_once('conexion.php');
     session_start();
 
-
-    $consulta = "SELECT * FROM cliente ";
-
-    if($_POST['correo'] != "")
-        $consulta .= " WHERE (cliente.correo = '" . $_POST['correo'] . "') ";
-
-    if($_POST['orden'] == "opcion1")
-        $consulta .= "ORDER BY cliente.empresa DESC;";
-    else $consulta .= "ORDER BY cliente.empresa ASC;";
-
+    $consulta = "SELECT * FROM cliente;";
     $resultado = $mysqli->query($consulta);
 
     if($resultado->num_rows == 0) {
