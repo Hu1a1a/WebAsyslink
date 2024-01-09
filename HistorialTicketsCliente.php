@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset='utf-8'>
         <title>Asyslink - Historial de Tickets</title>
         <link rel="stylesheet" href="estilos/estilos.css">
         <link rel="stylesheet" href="estilos/guia.css">
@@ -18,9 +19,9 @@
 
         <!-- Barra de navegacion -->
         <div class="guia">
-            <p>Portal Cliente</p>
+            <p><a href="PortalCliente.php">Portal Cliente</a></p>
             <p>></p><!-- separador -->       
-            <a href="TicketingCliente.html">Ticketing</a>
+            <a href="TicketingCliente.php">Ticketing</a>
             <p>></p><!-- separador -->       
             <a href="#">Historial de Tickets</a>
         </div>  
@@ -36,14 +37,6 @@
                         <option value="opcion1">Fecha (mas cercanas primero)</option>
                         <option value="opcion2">Fecha (mas lejanas primero)</option>
                     </select>
-                    <label>
-                        <input type="checkbox" name="activos" value="true" checked>
-                        Mostrar Activos
-                    </label>
-                    <label>
-                        <input type="checkbox" name="cerrados" value="true" checked>
-                        Mostrar Cerrados
-                    </label>
                     <button type="submit">OK</button>
                 </div><br>
 

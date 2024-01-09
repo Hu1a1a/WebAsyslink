@@ -6,7 +6,8 @@
     $consulta = "SELECT t.*, c.* 
         FROM Ticketing t
         JOIN HistorialTickets ht ON t.idTicketing = ht.idTicketing
-        JOIN Cliente c ON ht.idUsuario = c.idUsuario
+        JOIN Cliente c ON ht.idUsuario = c.idUsuario 
+        WHERE (t.estado = 0)
         ORDER BY t.fecha DESC;";    
 
     $resultado = $mysqli->query($consulta);

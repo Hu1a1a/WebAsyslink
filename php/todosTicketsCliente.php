@@ -9,7 +9,7 @@
         FROM Ticketing t
         JOIN HistorialTickets ht ON t.idTicketing = ht.idTicketing
         JOIN Cliente c ON ht.idUsuario = c.idUsuario
-        WHERE c.correo ='" . $correo . "'" .
+        WHERE (c.correo ='" . $correo . "' AND t.estado = '0') " .
         "ORDER BY t.fecha DESC;";    
 
     $resultado = $mysqli->query($consulta);

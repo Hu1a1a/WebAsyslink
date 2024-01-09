@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset='utf-8'>
         <title>Asyslink - Solicitudes de Informacion</title>
         <link rel="stylesheet" href="estilos/estilos.css">
         <link rel="stylesheet" href="estilos/guia.css">
