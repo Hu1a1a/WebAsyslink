@@ -17,9 +17,9 @@
 
         <!-- Barra de navegacion -->
         <div class="guia">
-            <p>Portal Cliente</p>
+            <p><a href="PortalCliente.php">Portal Cliente</a></p>
             <p>></p><!-- separador -->       
-            <a href="TicketingCliente.php">Tickets</a>
+            <a href="TicketingCliente.php">Ticketing</a>
             <p>></p><!-- separador -->       
             <a href="#">Tickets en curso</a>
         </div>

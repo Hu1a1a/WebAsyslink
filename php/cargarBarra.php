@@ -10,7 +10,7 @@
     
     if($_SESSION['login_type']=="none") {
         echo "
-            <nav>
+            <nav id='navegation'>
                 <ul class='menu'>
                     <li class='logo'><a href='index.php'><img src='imagenes/logo.png' draggable='false'></a></li>
                     <li class='item'><a class='tag' href='SobreNosotros.php'>" . $langBarra['Nosotros'] . "</a></li>
@@ -48,7 +48,7 @@
 
     } else if($_SESSION['login_type'] == 'user') {
         echo "
-        <nav>
+        <nav id='navegation'>
             <ul class='menu'>
                 <li class='logo'><a href='index.php'><img src='imagenes/logo.png' draggable='false'></a></li>
                 <li class='item'><a class='tag' href='SobreNosotros.php'>" . $langBarra['Nosotros'] . "</a></li>
@@ -101,7 +101,7 @@
 
     } else if($_SESSION['login_type'] == 'admin') {
         echo "
-        <nav> <!-- Main benu box -->
+        <nav id='navegation'>
             <ul class='menu'>
                 <!-- Page logo and some links -->
                 <li class='logo'><a href='index.php'><img src='imagenes/logo.png' draggable='false'></a></li>

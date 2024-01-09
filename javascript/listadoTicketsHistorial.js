@@ -8,7 +8,7 @@ $(document).ready(function() {
         // Al principio, se mostraran todos los tickets 
         // del usuario. Luego, el usuario podra filtrar.
         $.ajax({
-            url: './php/todosTicketsCliente.php',
+            url: './php/todosTicketsHistorialCliente.php',
             type: 'post',
             success: function(result) {
                 listadoCliente.innerHTML = result;
@@ -20,7 +20,7 @@ $(document).ready(function() {
         $('#formTicketsCliente').submit(function(e) {
             e.preventDefault();
             $.ajax({
-                url: './php/ticketsCliente.php',
+                url: './php/ticketsHistorialCliente.php',
                 type: 'post',
                 data: $('#formTicketsCliente').serialize(),
             
@@ -35,7 +35,7 @@ $(document).ready(function() {
         // Al principio, se mostraran todos los tickets 
         // de los usuarios. Luego, se podra filtrar.
         $.ajax({
-            url: './php/todosTicketsAdmin.php',
+            url: './php/todosTicketsHistorialAdmin.php',
             type: 'post',
             success: function(result) {
                 listadoAdmin.innerHTML = result;
@@ -47,13 +47,13 @@ $(document).ready(function() {
         $('#formTicketsAdmin').submit(function(e) {
             e.preventDefault();
             $.ajax({
-                url: './php/ticketsAdmin.php',
+                url: './php/ticketsHistorialAdmin.php',
                 type: 'post',
                 data: $('#formTicketsAdmin').serialize(),
             
                 success: function(result) {
                     listadoAdmin.innerHTML = result;
-                }   
+                }
             });
         });
     }

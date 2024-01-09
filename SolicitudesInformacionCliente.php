@@ -17,7 +17,7 @@
         
         <!-- Barra de navegacion -->
         <div class="guia">
-            <p>Portal Cliente</p>
+            <p><a href="PortalCliente.php">Portal Cliente</a></p>
             <p>></p><!-- separador -->       
             <a href="#">Solicitudes de Informacion</a>
         </div>  

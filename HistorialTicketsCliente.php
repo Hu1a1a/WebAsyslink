@@ -11,7 +11,7 @@
         <script src="javascript/cargarBarra.js"></script>
         <script src="javascript/botonBarra.js"></script>
         <script src="javascript/accesoCliente.js"></script>
-        <script src="javascript/listadoTickets.js"></script>
+        <script src="javascript/listadoTicketsHistorial.js"></script>
     </head>
     <body>
         <!-- Barra del menu -->
