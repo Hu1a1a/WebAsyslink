@@ -1,9 +1,10 @@
 <?php
     include_once('conexion.php');
+    require('fpdf/fpdf.php');
     session_start();
 
     $consulta = "
-        SELECT *
+        SELECT C.*, S.nombreServicio
         FROM Cliente CL
         JOIN Citas_Cliente CC on CL.idUsuario= CC.idUsuario
         JOIN Cita C on CC.idCita=C.idCita
@@ -48,4 +49,5 @@
                 echo"</div>"
         }
     }
+           
 ?>
