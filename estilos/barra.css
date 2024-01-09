@@ -20,6 +20,10 @@ body {
     background-color: #ededed;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*
 *  #############################
 *      Navigation bar styles

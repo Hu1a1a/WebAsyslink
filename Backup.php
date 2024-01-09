@@ -52,12 +52,6 @@
                         quis labore atque obcaecati sunt quod impedit consectetur 
                         temporibus, eligendi laudantium minima quasi, quidem adipisci.
                         Iusto, optio.</li>
-
-                    <li><b>Seguridad adicional:</b> Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Modi corrupti dolorum deleniti dignissimos
-                        perferendis! Ipsam dicta possimus id laudantium iusto
-                        aspernatur odit! Nulla architecto commodi explicabo dicta? 
-                        Omnis, laudantium? Cumque!</li>
                 </ul>
             </div>
         </div>
