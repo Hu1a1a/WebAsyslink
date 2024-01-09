@@ -68,7 +68,6 @@
             <h3><?php echo $langFooter['Direccion'] ?></h3>
             <p>Ctra. Torrecárdenas, 153, 04230</p>
             <p>Huércal de Almería, Almería</p>
-            <a href="index.php?lang=es"> <?php echo $langInicio['es'] ?> </a> | <a href="index.php?lang=en"> <?php echo $langInicio['en'] ?></a>
      </div>
         </div>
         <div class="content-right">

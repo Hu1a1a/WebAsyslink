@@ -37,7 +37,7 @@
 
     <!-- Backup Archive -->
     <div class="block2">
-        <img src="imagenes/contNegocio2.jpg">
+        <img src="imagenes/programacion.jpg">
         <div class="content">
             <h2>Backup Archive</h2>
             <hr>
