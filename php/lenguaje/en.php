@@ -45,7 +45,7 @@
         "Cliente" => "Cutomer zone",
         "Cuenta" => "My account",
         "Solicitudes" => "My requests",
-        "Servicios" => "Hired services"
+        "ServiciosC" => "Hired services"
     );
 
 ?>

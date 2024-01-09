@@ -54,7 +54,7 @@
         "Cliente" => "Portal cliente",
         "Cuenta" => "Mi cuenta",
         "Solicitudes" => "Mis solicitudes",
-        "Servicios" => "Servicios contratados"
+        "ServiciosC" => "Servicios contratados"
 
     );
 

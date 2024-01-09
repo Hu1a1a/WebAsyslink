@@ -79,7 +79,7 @@
                     <ul>
                         <li><a href='MisDatosCliente.html'>" . $langBarra['Cuenta'] . "</a></li>
                         <li><a href='SolicitudesInformacionCliente.php'>" . $langBarra['Solicitudes'] . "</a></li>
-                        <li><a href='ServiciosCliente.php'>" . $langBarra['Servicios'] . "</a></li>
+                        <li><a href='ServiciosCliente.php'>" . $langBarra['ServiciosC'] . "</a></li>
                         <li><a href='TicketingCliente.php'>Ticketing</a></li>
                     </ul>
                 </li>
