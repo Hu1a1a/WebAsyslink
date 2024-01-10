@@ -12,7 +12,7 @@
 
     $resultado = $mysqli->query($consulta);
     if($resultado->num_rows == 0) {
-        echo "<p style='color:#d06b68';>Sin resultados para la búsqueda.</p>";
+        echo "<p style='color:#d06b68';>No hay tickets cerrados de ningun usuario actualmente.</p>";
     } else {
         while ($fila = $resultado->fetch_object()) {
             echo "<div class='item'>";

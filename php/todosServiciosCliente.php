@@ -13,7 +13,7 @@
 
     $resultado = $mysqli->query($consulta);
     if($resultado->num_rows == 0) {
-        echo "<p>No tienes servicios contratados</p>";
+        echo "<p>No tienes servicios contratados actualmente.</p>";
     } else {
         while ($fila = $resultado->fetch_object()) {
             // Ejemplo de servicio con codigo HTML:

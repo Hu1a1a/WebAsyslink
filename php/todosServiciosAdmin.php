@@ -10,7 +10,7 @@
 
     $resultado = $mysqli->query($consulta);
     if($resultado->num_rows == 0) {
-        echo "<p>No hay servicios del usuario seleccionado</p>";
+        echo "<p>No hay servicios de ningun usuario actualmente.</p>";
     } else {
         while ($fila = $resultado->fetch_object()) {
             echo "<div class='item'>";

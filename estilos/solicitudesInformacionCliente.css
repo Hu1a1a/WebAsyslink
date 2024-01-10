@@ -68,6 +68,7 @@ main form .busqueda button {
     max-width: 150px;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 main form .busqueda input {
@@ -83,7 +84,7 @@ main form .busqueda p {
     font-size: 17px;
 }
 
-main form .listado {
+main form .listadoSolicitudesCliente {
     margin-top: 20px;
     border-radius: 8px;
     padding: 0px 10px;
@@ -92,14 +93,32 @@ main form .listado {
     overflow-y: auto;
 }
 
-main form .listado .item {
+main form .listadoSolicitudesCliente .item {
     background-color: #e6e2e2;
     margin-bottom: 10px;
     border-radius: 5px;
     padding: 15px;
 }
 
-main form .listado .item p {
-    display: inline-block;
+main form .listadoSolicitudesCliente .item {
     font-size: 17px;
+}
+
+main form .listadoSolicitudesCliente .item .container {
+    display: table;
+    overflow: hidden;
+    display: table-cell; 
+    vertical-align: middle;
+}
+
+main form .listadoSolicitudesCliente .item .containerTexto {
+    width: 90%;
+}
+
+main form .listadoSolicitudesCliente .item .containerBoton {
+    width: 10%;
+}
+
+main form .listadoSolicitudesCliente .item .container button {
+    padding: 5px;
 }

@@ -14,7 +14,7 @@
 
     $resultado = $mysqli->query($consulta);
     if($resultado->num_rows == 0) {
-        echo "<p style='color:#d06b68';>Sin resultados para la búsqueda.</p>";
+        echo "<p style='color:#d06b68';>No tienes tickets cerrados actualmente.</p>";
     } else {
         while ($fila = $resultado->fetch_object()) {
             echo "<div class='item'>";
