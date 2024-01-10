@@ -161,7 +161,7 @@ Estos son los pasos a seguir para poder conectarse a Xammp.
 | Datos del cliente (admin)        | Daniel G   | :x:                | :x:                |
 | Modificar datos clientes (admin) | Daniel G   | :x:                | :x:                |
 | Servicios cliente (usuario)      | Daniel P   | :heavy_check_mark: | :heavy_check_mark: |
-| Solicitudes de info (usuario)    | Daniel P   | :heavy_check_mark: | :x:                |
+| Solicitudes de info (usuario)    | Daniel P   | :heavy_check_mark: | :heavy_check_mark: |
 | Historial de tickets (usuario)   | Daniel P   | :heavy_check_mark: | :heavy_check_mark: |
 | Listado servicios (admin)        | Daniel P   | :heavy_check_mark: | :heavy_check_mark: |
 | Historial de tickets (admin)     | Daniel P   | :heavy_check_mark: | :heavy_check_mark: |
