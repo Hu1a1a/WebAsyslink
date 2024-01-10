@@ -91,6 +91,9 @@ body {
     margin-bottom: 5px;
     padding: 5px;
     border-radius: 5px;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .box button {

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilos/guia.css">
     <link rel="stylesheet" href="estilos/barra.css">
     <link rel="stylesheet" href="estilos/footer.css">
-    <link rel="stylesheet" href="estilos/continuidadNegocio.css">
+    <link rel="stylesheet" href="estilos/seguridad.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
     <script src="javascript/cargarBarra.js"></script>
     <script src="javascript/botonBarra.js"></script>
@@ -20,7 +20,7 @@
     <div class="guia">
         <p>Servicios</p>
         <p>></p><!-- separador -->       
-        <a> Continuidad del negocio</a>
+        <a>Seguridad</a>
     </div>  
 
     <!-- Contenido1 -->
@@ -37,7 +37,7 @@
 
     <!-- Backup Archive -->
     <div class="block2">
-        <img src="imagenes/programacion.jpg">
+        <img src="imagenes/seguridad1.jpg">
         <div class="content">
             <h2>Backup Archive</h2>
             <hr>
@@ -57,56 +57,6 @@
                 hacia su activo más importante: la información.
             </p>
         </div>
-    </div>
-
-    <div class="container4">
-        <div class="container5">
-            <h2>Disaster Recovery Plan</h2>
-            <p1><span> Plan de recuperación ante desastres, estructurando los pasos y acciones necesarios para que una organización pueda
-                recuperar su operación después de un incidente. Siendo la información el núcleo de su negocio, es
-                imprescindible contar con la asesoría adecuada para ejecutar un correcto análisis de riesgos y análisis
-                del impacto del negocio.</span>
-            </p1>
-            <h3>Nuestra metodología incluye:</h3>
-            <ul>
-                <li>Un diseño óptimo de la estrategia de la continuidad del negocio</li>
-                <li>Definición de requerimientos de recuperación de TI en el centro de datos alterno, nube privada o
-                    púbilica</li>
-                <li>Trabajo en conjunto con las áreas de TI y consultoría</li>
-            </ul>
-        </div>
-        <ol>
-            <li>
-                <div>
-                    <h3>Recopilación de Información</h3>
-                    <p>Detalle por proceso crítico y estrategia.</p>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <h3>Análisis</h3>
-                    <p>De Capacidad de Recuperación Real, Propuesta y de proveedores. </p>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <h3>Análisis Costo - Beneficio</h3>
-                    <p>De las alternativas de recuperación propuestas en una Estrategia consolidada.</p>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <h3>Validación de resultados</h3>
-                    <p>Con áreas de TI, el sponsor del proyecto y Alta Gerencia</p>
-                </div>    
-            </li>
-            <li>
-                <div>
-                    <h3>Documentación</h3>
-                    <p>Elaboración del Informe de Estrategia de Recuperación ante desastres propuesta.</p>
-                </div>
-            </li>
-        </ol>
     </div>
 
     <!-- Backup Archive -->
@@ -130,7 +80,31 @@
                 hacia su activo más importante: la información.
             </p>
         </div>
-        <img src="imagenes/contNegocio4.jpg">
+        <img src="imagenes/seguridad2.jpg">
+    </div>
+
+    <!-- Backup Archive -->
+    <div class="block2">
+        <img src="imagenes/seguridad3.jpg">
+        <div class="content">
+            <h2>Backup Archive</h2>
+            <hr>
+            <p>
+                ¿Porque debemos respaldar nuestros archivos?
+            </p>
+            <ul>
+                <li>Borrado accidental</li>
+                <li>Politicas de retencion</li>
+                <li>Amenazas internas de seguridad</li>
+                <li>Amenazas externas de seguridad</li>
+                <li>Requerimientos legales y compliance </li>
+            </ul>
+            <p>
+                Analizamos y deseñamos un plan integral de respaldo de archivos y 
+                documentación en su organización, previniendo potenciales ataques
+                hacia su activo más importante: la información.
+            </p>
+        </div>
     </div>
 
     <div class="end"></div>

@@ -25,7 +25,6 @@
                 <p>Caracteristica del plan</p>
                 <p>Caracteristica del plan</p>
                 <p>Caracteristica del plan</p>
-                <button>Elegir plan</button>
             </div>
             <div class="box" id="plata">
                 <h4>Plan plata</h4>
@@ -33,7 +32,6 @@
                 <p>Caracteristica del plan</p>
                 <p>Caracteristica del plan</p>
                 <p>Caracteristica del plan</p>
-                <button>Elegir plan</button>
             </div>
             <div class="box" id="oro">
                 <h4>Plan oro</h4>
@@ -41,7 +39,6 @@
                 <p>Caracteristica del plan</p>
                 <p>Caracteristica del plan</p>
                 <p>Caracteristica del plan</p>
-                <button>Elegir plan</button>
             </div>
         </div>
     </body>
