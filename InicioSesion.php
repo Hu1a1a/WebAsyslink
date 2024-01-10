@@ -9,13 +9,12 @@
     <script src="javascript/cargarBarra.js"></script>
     <script src="javascript/botonBarra.js"></script>
     <script src="javascript/iniciarSesion.js"></script>
-    <link rel="stylesheet" type="text/css" href="estilos/contactar.css">
 </head>
 <body>
     <!-- Barra del menu -->
     <div class="barra"></div>
 
-     <div class="container">
+    <div class="container">
         <div class="form-wrapper">
             
             <div class="form">
@@ -45,7 +44,7 @@
                     <input type="password" id="signup-password" name="signup-password" required>
                     <label for="confirm-password">Confirmar contraseña:</label>
                     <input type="password" id="confirm-password" name="confirm-password" required>
-                   <div class="checkbox">
+                   <div class="checkbox" id="politica">
                         <input type="checkbox" id="politica_privacidad" name="politica_privacidad" required>
                         <label for="politica_privacidad">He leído y acepto la <a href="privacidad.php">Política de Privacidad</a></label>
                    </div>

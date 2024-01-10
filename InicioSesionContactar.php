@@ -42,7 +42,7 @@
                     <input type="password" id="signup-password" name="signup-password" required>
                     <label for="confirm-password">Confirmar contraseña:</label>
                     <input type="password" id="confirm-password" name="confirm-password" required>
-                    <div class="checkbox">
+                    <div class="checkbox" id="politica">
                         <input type="checkbox" id="politica_privacidad" name="politica_privacidad" required>
                         <label for="politica_privacidad">He leído y acepto la <a href="privacidad.html">Política de Privacidad</a></label>
                    </div>

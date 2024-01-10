@@ -34,7 +34,7 @@
                 <div class="form">
                     <h2><?php echo $langContactar['t2']?></h2>
                     <form action="procesar_formulario.php" method="POST">
-                        <label for="nombre"><?php echo $langContactar['p4']?>:</label>
+                        <label for="nombre" ><?php echo $langContactar['p4']?>:</label>
                         <input type="text" id="nombre" name="nombre" required>
 
                         <label for="apellidos"><?php echo $langContactar['p5']?>:</label>
@@ -52,37 +52,37 @@
                         <label for="fecha_hora"><?php echo $langContactar['p8']?>:</label>
                         <input type="datetime-local" id="fecha_hora" name="fecha_hora" required>
 
-                        <label for="servicios"><?php echo $langContactar['p9']?>:</label>
+                        <label for="servicios" id="labelServicios"><?php echo $langContactar['p9']?>:</label>
                         <div class="checkbox">
                             <input type="checkbox" id="infraestructura" name="servicios[]" value="Infraestructura">
                             <label for="infraestructura"><?php echo $langInicio['Infraestructura']?></label>
-                            </div><br>
-                            <div class="checkbox">
-                                <input type="checkbox" id="seguridad" name="servicios[]" value="Seguridad">
-                                <label for="seguridad"><?php echo $langInicio['Seguridad']?></label>
-                            </div><br>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="seguridad" name="servicios[]" value="Seguridad">
+                            <label for="seguridad"><?php echo $langInicio['Seguridad']?></label>
+                        </div>
                             
                             <div class="checkbox">
                                 <input type="checkbox" id="continuidad" name="servicios[]" value="Continuidad de negocio">
                                 <label for="continuidad"><?php echo $langInicio['Continuidad']?></label>
-                            </div><br>
+                            </div>
                             
                             <div class="checkbox">
                                 <input type="checkbox" id="transformacion" name="servicios[]" value="Transformación digital">
                                 <label for="transformacion"><?php echo $langInicio['Transformacion']?></label>
-                            </div><br>
+                            </div>
                             
                             <div class="checkbox">
                                 <input type="checkbox" id="backup" name="servicios[]" value="Backup">
                                 <label for="backup"><?php echo $langInicio['Backup']?></label>
-                            </div><br>
+                            </div>
                             
                             <div class="checkbox">
                                 <input type="checkbox" id="mantenimiento" name="servicios[]" value="Mantenimiento">
                                 <label for="mantenimiento"><?php echo $langInicio['Mantenimiento']?></label>
-                            </div><br>
+                            </div>
 
-                        <button type="submit"><?php echo $langContactar['p10']?></button>
+                        <button type="submit" id="botonContactar"><?php echo $langContactar['p10']?></button>
                     </form>
                 </div>
             </div>

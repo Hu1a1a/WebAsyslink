@@ -5,11 +5,10 @@ body {
    background-size: cover;
 }
 
-button {
+.container button {
    display: block;
    width: 40%;
    padding: 10px;
-   background-color: rgb(0, 84, 166);
    color: #fff;
    border: none;
    border-radius: 4px;
@@ -17,6 +16,10 @@ button {
    font-size: 16px;
    margin-top: 10px;
    min-width: 100%;
+}
+
+button {
+   background-color: rgb(0, 84, 166);
 }
 
 .container {
@@ -104,20 +107,42 @@ form button {
 }
 
 .checkbox{
-   display: flex;
-   align-items: center;
-   /* margin: auto; */
-}
-.checkbox input{
+   margin: 0px;
    display: block;
-   /* margin: auto; */
-   max-width: 15px;
+   align-items: normal;
+   margin-bottom: 7px;
 }
 
-.checkbox label{
-   text-align: left;
-   margin: auto;
+.checkbox input {
+   max-width: 15px;
+   display: inline-block;
+}
+
+.checkbox label {
+   display: inline;
+   cursor: pointer;
+   color: black;
    font-weight: normal;
-   margin-left: 5px;
-   color: rgb(0, 0, 0);
+   align-self: auto;
+}
+
+#politica {
+   margin: 10px 0px 15px 0px;
+}
+
+#labelServicios {
+   margin: 12px 0px 12px 0px;
+}
+
+#botonContactar {
+   margin-top: 25px;
+}
+
+.checkbox label a {
+   text-decoration: underline;
+   color: #005dff;
+}
+
+hr {
+   color: #c5c4c47d;
 }
