@@ -2,7 +2,7 @@
     // Datos de conexion
     $host = "localhost";
     $user = "root";
-    $password = "root";
+    $password = "da2003";
     $database = "mydb";
     
     // Conectar a la base de datos
