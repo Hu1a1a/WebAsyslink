@@ -5,34 +5,46 @@
 
 
     // Recibir la información del formulario
-$fecha_hora = $_POST['fecha_hora'];
-$servicios = $_POST['servicios[]'];
-$idCita= $_POST['idCita'];
-$pdf=$_POST['pdf'];
+    $fecha_hora = $_POST['fecha_hora'];
+    //$servicios = $_POST['servicios[]'];
+    $idCita= 1;//$_POST['idCita'];
+    $pdf=$_POST['pdf'];
 
-$sql = "DELETE FROM Servicios_citas WHERE id_cita=$idCita";
-$result = $mysqli->query($sql);
-    if($resultado->num_rows != 0) {
+    //$sql = "DELETE FROM Servicios_citas WHERE idCita=$idCita";
+    //$result = $mysqli->query($sql);
+    if(1 == 0) {
         echo "<p>Error inesperado pongase en contacto con nosotros.</p>";
     } 
     else{
-// Sentencia SQL para actualizar los campos
-$consulta = "UPDATE Citas SET FechaCita='$fecha_hora', servicio='$servicios' WHERE idCita='$idCita'";
+        // Sentencia SQL para actualizar los campos
+        $consulta = "UPDATE Citas SET FechaCita='$fecha_hora' WHERE idCita='$idCita'";
 
-$resultado = $mysqli->query($consulta);
-    if($resultado->num_rows == 0) {
+        $resultado = $mysqli->query($consulta);
+        if($resultado == 0) {
         echo "<p>Error inesperado pongase en contacto con nosotros.</p>";
-    } 
-    else{
+         }else{/*
         foreach ($servicios as $servicio){
           $consulta2 = "INSERT INTO Servicios_citas (id_cita, servicio) VALUES ($idCita, '$servicio')";
           $resultado2 = $mysqli->query($consulta2);
             if($resultado2->num_rows == 0) {
              echo "<p>Error inesperado pongase en contacto con nosotros.</p>";
          } 
-        }
+         
+        }*/
         if($pdf==1){
             
+            $consulta = "SELECT C.*, CL.*
+            FROM Cliente CL
+            JOIN Citas_Cliente CC on CL.idUsuario= CC.idUsuario
+            JOIN Citas C on CC.idCita=C.idCita
+            JOIN Servicios_Citas SC ON C.idCita = SC.idCita
+            JOIN Servicios S ON SC.idServicios = S.idServicios
+            WHERE(C.idCita = '" . $idCita . "')";
+            $resultado = $mysqli->query($consulta);
+            if($resultado->num_rows != 1) {
+                echo "<p>dwrdwddwadError inesperado pongase en contacto con nosotros.</p>";
+            } else {
+                $fila = $resultado->fetch_object();
             // create document
             $pdf = new FPDF();
             $pdf->AddPage();
@@ -49,30 +61,26 @@ $resultado = $mysqli->query($consulta);
             
             // add text
             $pdf->SetFont('Arial', '', 12);
-            $pdf->MultiCell(0, 7, utf8_decode('Empresa solicitante:" . $fila->empresa ."'), 0, 1);
+            $pdf->MultiCell(0, 7, utf8_decode('Empresa solicitante: ' . $fila->empresa), 0, 1);
             $pdf->Ln();
-            $pdf->MultiCell(0, 7, utf8_decode('Nombre y apellidos del solicitante: " . $fila->nombre . $fila->apellido . "'), 0, 1);
+            $pdf->MultiCell(0, 7, utf8_decode('Nombre y apellidos del solicitante: ' . $fila->nombre . ' ' . $fila->apellido), 0, 1);
             $pdf->Ln();
-            $pdf->MultiCell(0, 7, utf8_decode('Direccion de correo electrónico del solicitante: ". $fila->correo."'), 0, 1);
+            $pdf->MultiCell(0, 7, utf8_decode('Dirección de correo electrónico del solicitante: ' . $fila->correo), 0, 1);
             $pdf->Ln();
-            $pdf->MultiCell(0, 7, utf8_decode('Numero de telefono del solicitante: ". $fila->telefono ."'), 0, 1);
+            $pdf->MultiCell(0, 7, utf8_decode('Número de teléfono del solicitante: ' . $fila->telefono), 0, 1);
             $pdf->Ln();
-            $pdf->MultiCell(0, 7, utf8_decode('Fecha de envio de la solicitud:" . $fila->FechaCreacion  ."'), 0, 1);
+            $pdf->MultiCell(0, 7, utf8_decode('Fecha de envío de la solicitud: ' . $fila->FechaCreacion ), 0, 1);
             $pdf->Ln();
-            $pdf->MultiCell(0, 7, utf8_decode('Fecha de la reunion: ". $fila->FechaCita ."'), 0, 1);
+            $pdf->MultiCell(0, 7, utf8_decode('Fecha de la reunión: ' . $fila->FechaCita ), 0, 1);
             $pdf->Ln();
             
             // output file
-            $pdf->Output('', 'CitaAsyslink.pdf');
+            $pdf->Output('CitaAsyslink.pdf','D');
+            }
          }
-        header("Location: DatosSolicitud.html");
+        //header("Location: ../DatosSolicitud.html");
         exit();
         
+        }
     }
-}
-
-  
-  
-  // Cerrar la conexión
-  $conn->close();
   ?>

@@ -14,7 +14,7 @@
     <div class="barra"></div>
 
     <div class="block2">
-        <h2>Politica de privacidad de la pagina web</h2>
+        <h2>Política de privacidad de la página web</h2>
             <div class="content">
                 <p>
                 El presente Política de Privacidad establece los términos en que Asyslink usa y protege la información
@@ -29,22 +29,22 @@
     </div>
     <hr>
     <div class="block2">
-        <h2>¿Que datos recogemos?</h2>
+        <h2>¿Qué datos recogemos?</h2>
             <div class="content">
                 <p>
                     Nuestro sitio web podrá recoger información sobre tu empresa por ejemplo:
-                     Nombre, apellidos, telefono de contacto, 
-                     dirección de correo electrónica, empresa y direccion.
+                     Nombre, apellidos, teléfono de contacto, 
+                     dirección de correo electrónico, empresa y dirección.
                 </p>
             </div>
     </div>
     <hr>
     <div class="block2">
-        <h2>¿Por que y para que tratamos sus datos?</h2>
+        <h2>¿Por qué y para qué tratamos sus datos?</h2>
             <div class="content">
                 <p>
                     Nuestro sitio web podrá recoger información personal por ejemplo: Nombre, información de contacto
-                    como su dirección de correo electrónica e información demográfica. Así mismo cuando sea necesario
+                    como su dirección de correo electrónica. Así mismo cuando sea necesario
                     podrá ser requerida información específica para procesar algún pedido o realizar una entrega o
                     facturación.
                 </p>
@@ -79,7 +79,7 @@
     </div>
     <hr>
     <div class="block2">
-        <h2>Tratamiento de su informacion personal</h2>
+        <h2>Tratamiento de su información personal</h2>
             <div class="content">
                 <p>
                     Asyslink no venderá, cederá ni distribuirá la información personal que es recopilada sin su
@@ -109,7 +109,7 @@
     <footer>
         <div class="content-left">
             <img src="imagenes/logo.png">
-            <h3>Numero de telefono</h3>
+            <h3>Número de telefono</h3>
             <p>Sebastian Aparicio (+34) 670 70 34 88</p>
 
             <h3>Correo electrónico</h3>

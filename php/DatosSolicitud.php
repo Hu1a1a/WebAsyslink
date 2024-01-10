@@ -3,15 +3,14 @@
     require('fpdf/fpdf.php');
     session_start();
 
-    $consulta = "
-        SELECT C.*, S.nombreServicio
+    $consulta = "SELECT C.*, S.nombreServicio
         FROM Cliente CL
         JOIN Citas_Cliente CC on CL.idUsuario= CC.idUsuario
         JOIN Cita C on CC.idCita=C.idCita
         JOIN Servicios_Citas SC ON S.idCita = SC.idCita
         JOIN Servicios S ON SC.idServicios = S.idServicios
         WHERE(
-            C.idCita = '" . $_POST['idCita'] ";
+            C.idCita = '" . $_POST['idCita'] . "'";
 
     $resultado = $mysqli->query($consulta);
     if($resultado->num_rows == 0) {

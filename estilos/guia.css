@@ -1,10 +1,8 @@
 .guia {
     background-color: #0c62b7;
-    border-top: 2px solid #e7e6e6;
+    border-top: 2px solid #095aab;
     padding-left: 10px;
-    padding-top: 2px;
-    padding-bottom: 3px;
-    padding: 5px;
+    padding: 5px 5px 7px 5px;
 }
 
 .guia p,

@@ -1,3 +1,6 @@
+<?php
+    include "php/configLenguaje.php"
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,17 +19,17 @@
 
     <div class="content">
         <a href='MisDatosCliente.html' class="block">
-            <h2>Mi cuenta</h2>
+            <h2><?php echo $langBarra['Cuenta']?></h2>
         </a>
 
         <a href='ServiciosCliente.php' class="block">
-            <h2>Mis servicios</h2>
+            <h2><?php echo $langBarra['ServiciosC']?></h2>
         </a>
     </div>
 
     <div class="content">
         <a href='SolicitudesInformacionCliente.php' class="block">
-            <h2>Solicitudes de Información</h2>
+            <h2><?php echo $langBarra['Solicitudes']?></h2>
         </a>
 
         <a href='TicketingCliente.php' class="block">

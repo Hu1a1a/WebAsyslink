@@ -1,7 +1,6 @@
 <?php
 
     $langInicio = array(
-
         "en" => "Inglés",
         "es" => "Español",
         "Nosotros" => "Sobre nosotros",
@@ -27,7 +26,6 @@
     );
 
     $langTrans = array(
-
         "Transformacion" => "Transformacion digital",
         "p1" => "Descubre nuevos enfoques para acelerar y mejorar la cultura de innovación en su organización.",
         "t1" => "Gestión del Portafolio de Proyectos",
@@ -57,7 +55,6 @@
         "p10" => "Utiliza servicios cognitivos para mejorar las respuestas",
         "p11" => "Mejora la experiencia de usuario",
         "p12" => "Atención al cliente mejorada"
-
     );
 
     $langNosotros = array(
@@ -95,7 +92,21 @@
         "Cuenta" => "Mi cuenta",
         "Solicitudes" => "Mis solicitudes",
         "ServiciosC" => "Servicios contratados"
+    );
 
+    $langContactar = array(
+        "t1" => "Información de contacto",
+        "p1" => "Número de teléfono",
+        "p2" => "Correo electrónico",
+        "p3" => "Visítanos en nuestra oficina",
+        "t2" => "Reúnete con nosotros",
+        "p4" => "Nombre",
+        "p5" => "Apellidos",
+        "p6" => "Empresa",
+        "p7" => "Dirección",
+        "p8" => "Fecha y hora",
+        "p9" => "Servicios de interés",
+        "p10" => "Comfirmar"
     );
 
 ?>

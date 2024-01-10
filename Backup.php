@@ -1,3 +1,6 @@
+<?php
+    include "php/configLenguaje.php"
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -41,17 +44,22 @@
                 <h2>Beneficios</h2>
                 <hr>
                 <ul>
-                    <li><b>Capacidad de respueta:</b> Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Minima reprehenderit aliquam architecto 
-                        facilis facere atque asperiores placeat mollitia. Delectus, 
-                        dolor ex. Facilis eius quisquam rem placeat soluta molestias, 
-                        quidem inventore!</li>
+                    <li>
+                        <b>Capacidad de respueta:</b> Nuestro servicio de backup se 
+                        destaca por su respuesta ágil ante emergencias. Garantizamos 
+                        tiempos de recuperación rápidos, automatización eficiente para
+                        copias de seguridad y monitorización en tiempo real, asegurando
+                        que sus datos estén siempre disponibles cuando los necesite.
+                    </li>
                     
-                    <li><b>Incremento de confianza del cliente:</b> Lorem ipsum, dolor sit amet 
-                        consectetur adipisicing elit. Eius deleniti quo molestiae error,
-                        quis labore atque obcaecati sunt quod impedit consectetur 
-                        temporibus, eligendi laudantium minima quasi, quidem adipisci.
-                        Iusto, optio.</li>
+                    <li>
+                        <b>Incremento de confianza del cliente:</b> Aumentamos la confianza
+                        de nuestros clientes mediante una seguridad robusta con cifrado en
+                        tránsito y en reposo, cumplimiento normativo, transparencia en las
+                        prácticas y pruebas regulares de recuperación. Su información está
+                        protegida y accesible, generando la tranquilidad que nuestros 
+                        clientes necesitan.
+                    </li>
                 </ul>
             </div>
         </div>
@@ -65,19 +73,20 @@
         <footer>
             <div class="content-left">
                 <img src="imagenes/footer_logo.png" height="50px">
-                <h3>Número de teléfono</h3>
+                <h3><?php echo $langFooter['NumTlf'] ?></h3>
                 <p>Sebastian Aparicio (+34) 670 70 34 88</p>
     
-                <h3>Correo electrónico</h3>
+                <h3><?php echo $langFooter['Correo'] ?></h3>
                 <p>info@asyslink.com</p>
     
-                <h3>Dirección</h3>
+                <h3><?php echo $langFooter['Direccion'] ?></h3>
                 <p>Ctra. Torrecárdenas, 153, 04230</p>
                 <p>Huércal de Almería, Almería</p>
+         </div>
             </div>
             <div class="content-right">
-                <h3>¿Necesitas más información?</h3>
-                <button onclick="location.href='InicioSesion.html'">Reúnete con nosotros</button>
+                <h3><?php echo $langFooter['Info'] ?></h3>
+                <button onclick="location.href='InicioSesionContactar.html'"><?php echo $langFooter['Reunion'] ?></button>
             </div>
         </footer>
     </body>

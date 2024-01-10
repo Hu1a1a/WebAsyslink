@@ -129,6 +129,8 @@
         </div>
     </div>
 
+    <div class="end"></div>
+
     <!-- Footer -->
     <footer>
         <div class="content-left">

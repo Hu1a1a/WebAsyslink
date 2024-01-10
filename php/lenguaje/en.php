@@ -80,10 +80,25 @@
         "Transformacion" => "Digital transformation",
         "Mantenimiento" => "Maintenance",
         "Cerrar" => "Sign out",
-        "Cliente" => "Cutomer zone",
+        "Cliente" => "Customer zone",
         "Cuenta" => "My account",
         "Solicitudes" => "My requests",
         "ServiciosC" => "Hired services"
+    );
+
+    $langContactar = array(
+        "t1" => "Contact information",
+        "p1" => "Phone number",
+        "p2" => "Email",
+        "p3" => "Visit our offices",
+        "t2" => "Have a meeting with us",
+        "p4" => "Name",
+        "p5" => "Last name",
+        "p6" => "Company",
+        "p7" => "Address",
+        "p8" => "Date and time",
+        "p9" => "Services of interest",
+        "p10" => "Confirm"
     );
 
 ?>

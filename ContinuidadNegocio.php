@@ -112,26 +112,28 @@
     <!-- Backup Archive -->
     <div class="block4">
         <div class="content">
-            <h2>Backup Archive</h2>
+            <h2>Business Continuity Management (BCM)</h2>
             <hr>
             <p>
-                ¿Porque debemos respaldar nuestros archivos?
+                La gestión de la continuidad de negocio (BCM) es la gestión de 
+                riegos diseñada para abordar la amenaza de interrupciones en las 
+                actividades o procesos comerciales. Implica hacer y validar planes
+                de continuidad comercial (BCP) para garantizar que pueda responder
+                y recuperarse de posibles amenazas de la manera más efectiva posible.
             </p>
-            <ul>
-                <li>Borrado accidental</li>
-                <li>Politicas de retencion</li>
-                <li>Amenazas internas de seguridad</li>
-                <li>Amenazas externas de seguridad</li>
-                <li>Requerimientos legales y compliance </li>
-            </ul>
+            <br>
             <p>
-                Analizamos y deseñamos un plan integral de respaldo de archivos y 
-                documentación en su organización, previniendo potenciales ataques
-                hacia su activo más importante: la información.
+                Asyslink ejecuta una estrategia en conjunto con el cliente, en la cual
+                se definen requerimientos de recuperación de la operación en sus 
+                diferentes departamentos y áreas, estableciendo así la estrategia de
+                continuidad con diferentes estrategias y herramientas, como por ejemplo
+                sitios alternos, trabajo remoto, entre otros. 
             </p>
         </div>
         <img src="imagenes/contNegocio4.jpg">
     </div>
+
+    <div class="end"></div>
 
     <!-- Footer -->
     <footer>
