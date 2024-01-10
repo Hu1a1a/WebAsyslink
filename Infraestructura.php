@@ -26,11 +26,11 @@
     <!-- Contenido1 -->
     <div class="block1">
         <div class="content">
-            <h2>Backup</h2>
+            <h2>infraestructura</h2>
             <p>
-                Es una copia que se realiza frecuentemente
-                a los datos, archivos o informacion critica
-                para protegerla.
+            Ya sea en la nube, on premises o un ambiente híbrido,
+            nuestro equipo cuenta con la experiencia y especialización
+            para solventar sus necesidades de infraestructura.
             </p>
         </div>
     </div>
@@ -39,45 +39,40 @@
     <div class="block2">
         <img src="imagenes/infraestructura1.jpg">
         <div class="content">
-            <h2>Backup Archive</h2>
+            <h2>Almacenamiento</h2>
             <hr>
             <p>
-                ¿Porque debemos respaldar nuestros archivos?
+                Acelere la modernización de su negocio aprovechando 
+                el poder de sus datos con soluciones de almacenamiento
+                completas, que permitan renovar e integrar su infraestructura
+                de TI, reduciendo costos y complementando eficientemente su
+                entorno.
             </p>
+            <br>
+            <p><b>Beneficios</b></p>
             <ul>
-                <li>Borrado accidental</li>
-                <li>Politicas de retencion</li>
-                <li>Amenazas internas de seguridad</li>
-                <li>Amenazas externas de seguridad</li>
-                <li>Requerimientos legales y compliance </li>
+                <li>Protección de datos</li>
+                <li>Simplificación de sus procesos</li>
+                <li>Aceleración de transformación de datos</li>
+                <li>Fortalecimiento de capacidades de su infraestructura</li>
             </ul>
-            <p>
-                Analizamos y deseñamos un plan integral de respaldo de archivos y 
-                documentación en su organización, previniendo potenciales ataques
-                hacia su activo más importante: la información.
-            </p>
         </div>
     </div>
 
     <!-- Backup Archive -->
     <div class="block4">
         <div class="content">
-            <h2>Backup Archive</h2>
+            <h2>Servidores</h2>
             <hr>
             <p>
-                ¿Porque debemos respaldar nuestros archivos?
-            </p>
-            <ul>
-                <li>Borrado accidental</li>
-                <li>Politicas de retencion</li>
-                <li>Amenazas internas de seguridad</li>
-                <li>Amenazas externas de seguridad</li>
-                <li>Requerimientos legales y compliance </li>
-            </ul>
-            <p>
-                Analizamos y deseñamos un plan integral de respaldo de archivos y 
-                documentación en su organización, previniendo potenciales ataques
-                hacia su activo más importante: la información.
+                Porque entendemos que el procesamiento de sus
+                datos y cargas de trabajo son críticos para responder
+                rápidamente a las necesidades de su negocio, trabajamos
+                de la mano de los fabricantes más importantes a nivel 
+                mundial, para ofrecer un servicio de asesoramiento, 
+                configuración y dimensionamiento completo, para cubrir 
+                sus requerimientos de infraestructura de forma ágil,
+                potente y segura.
             </p>
         </div>
         <img src="imagenes/infraestructura2.jpg">
