@@ -12,6 +12,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
         <script src="javascript/cargarBarra.js"></script>
         <script src="javascript/botonBarra.js"></script>
+        <script src="javascript/cookie.js"></script>
     </head>
     <body>
 
@@ -55,6 +56,31 @@
             <button onclick="location.href='Mantenimiento.php'"><?php echo $langInicio['Mantenimiento']?></button>
         </div>
     </div>
+
+        <section class="cookies">
+          <h2 class="cookies__titulo">¿Aceptar Cookies?</h2>
+          <p class="cookies__texto">Usamos cookies para mejorar tu experiencia en la web.</p>
+          <a href="Privacidad.php">Mas Informacion</a>
+          <div class="cookies__botones">
+            <button class="cookies-no">No</button>
+            <button class="cookies-si">Si</button>
+          </div>
+        </section>
+
+
+        <script>
+            function hideSection() {
+                var section = document.querySelector(".cookies");
+                section.style.display = "none";
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "datosCookie.php", true);
+                xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhr.send("data=Datos que deseas almacenar");
+            }
+    
+             document.querySelector(".cookies-si").addEventListener("click", hideSection);
+        </script>
+
 
     <footer>
         <div class="content-left">
