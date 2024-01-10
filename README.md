@@ -144,8 +144,8 @@ Estos son los pasos a seguir para poder conectarse a Xammp.
 | Inicio Sesion          | Juan       | :heavy_check_mark: |
 | Backup                 | Daniel P   | :heavy_check_mark: |
 | Mantenimiento          | Daniel P   | :heavy_check_mark: |
-| Infraestructura        | Elena      | :x:                |
-| Seguridad              | Elena      | :x:                | 
+| Infraestructura        | Elena      | :heavy_check_mark: |
+| Seguridad              | Elena      | :heavy_check_mark: | 
 
 
  ### Paginas Dinamicas
@@ -169,7 +169,7 @@ Estos son los pasos a seguir para poder conectarse a Xammp.
 | Contactar sin registro           | Juan       | :heavy_check_mark: | :x:                |
 | Contactar con registro           | Juan       | :heavy_check_mark: | :x:                |
 | Registrarse                      | Juan       | :heavy_check_mark: | :x:                |
-| Portal cliente con menu          | Juan       | :x:                | :x:                |
+| Portal cliente con menu          | Juan       | :heavy_check_mark: | :heavy_check_mark: |
 | Nuevo ticket (usuario)           | Elena      | :x:                | :x:                |
 | Datos tickets cliente (usuario)  | Elena      | :x:                | :x:                |
 | Datos tickets (admin)            | Elena      | :x:                | :x:                |
