@@ -30,6 +30,9 @@
     padding-top: 50px;
     padding-bottom: 25px;
     align-items: flex-start;
+    font-size: 18px;
+    color: rgb(37, 37, 37);
+    line-height: 28.0833px;
 }
 
 .block2 img,

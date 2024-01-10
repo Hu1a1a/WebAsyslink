@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asyslink - Continuidad del Negocio</title>
+    <title>Asyslink - Infraestructura</title>
     <link rel="stylesheet" href="estilos/guia.css">
     <link rel="stylesheet" href="estilos/barra.css">
     <link rel="stylesheet" href="estilos/footer.css">
@@ -20,13 +20,13 @@
     <div class="guia">
         <p>Servicios</p>
         <p>></p><!-- separador -->       
-        <a>Seguridad</a>
+        <a>Infraestructura</a>
     </div>  
 
     <!-- Contenido1 -->
     <div class="block1">
         <div class="content">
-            <h2>infraestructura</h2>
+            <h2>Infraestructura</h2>
             <p>
             Ya sea en la nube, on premises o un ambiente híbrido,
             nuestro equipo cuenta con la experiencia y especialización
