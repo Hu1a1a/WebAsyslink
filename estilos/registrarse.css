@@ -45,7 +45,7 @@ input {
    border-radius: 4px;
 }
 
-button {
+.form button {
    display: block;
    width: 40%;
    padding: 10px;
@@ -70,7 +70,7 @@ button {
 }
 
 body {
-   background-image:url('../imagenes/fondoInicioSesion.jpeg');
+   background-image:url('../imagenes/fondoInicioSesion.jpg');
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-size: cover;

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+    <meta charset='utf-8'>
     <link rel="stylesheet" type="text/css" href="estilos/registrarse.css">
     <link rel="stylesheet" href="estilos/barra.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
     <script src="javascript/cargarBarra.js"></script>
     <script src="javascript/botonBarra.js"></script>
+    <script src="javascript/registrarInicio.js"></script>
 </head>
 <body>
     <!-- Barra del menu -->
@@ -14,10 +15,12 @@
     
     <section id="contenido">
         <div class="container">
-
                 <div class="form">
                     <h2>Regístrate</h2>
-                    <form action="procesar_formulario.php" method="POST">
+                    <form id="finRegistroInicio">
+                        <!-- Hueco donde poner el mensaje de error de inicio de sesion -->
+                        <div id="error-register" style="color: #d06b68; margin-bottom: 15px;"></div>
+
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required>
 

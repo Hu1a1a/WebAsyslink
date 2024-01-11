@@ -1,13 +1,18 @@
+<?php
+    include "php/configLenguaje.php"
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
+    <title>Asyslink- Contactar Registrar</title>
     <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
     <link rel="stylesheet" type="text/css" href="estilos/contactar.css">
     <link rel="stylesheet" href="estilos/barra.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
     <script src="javascript/cargarBarra.js"></script>
     <script src="javascript/botonBarra.js"></script>
+    <script src="javascript/registrarContactar.js"></script>
 </head>
 <body>
     <!-- Barra del menu -->
@@ -31,7 +36,10 @@
 
                 <div class="form">
                     <h2>Regístrate y reúnete con nosotros</h2>
-                    <form action="procesar_formulario.php" method="POST">
+                    <form id="finRegistroContactar">
+                        <!-- Hueco donde poner el mensaje de error de inicio de sesion -->
+                        <div id="error-register" style="color: #d06b68; margin-bottom: 15px;"></div>
+
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre" required>
 
@@ -50,9 +58,31 @@
                         <label for="fecha_hora">Fecha y hora:</label>
                         <input type="datetime-local" id="fecha_hora" name="fecha_hora" required>
 
-                        <label for="servicios">Servicios de interés:</label>
-                        <textarea id="servicios" name="servicios"></textarea>
-
+                        <label for="servicios" id="labelServicios"><?php echo $langContactar['p9']?>:</label>
+                        <div class="checkbox">
+                            <input type="checkbox" id="infraestructura" name="Infraestructura" value="1">
+                            <label for="infraestructura"><?php echo $langInicio['Infraestructura']?></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="seguridad" name="Seguridad" value="1">
+                            <label for="seguridad"><?php echo $langInicio['Seguridad']?></label>
+                        </div>    
+                        <div class="checkbox">
+                            <input type="checkbox" id="continuidad" name="Continuidad" value="1">
+                            <label for="continuidad"><?php echo $langInicio['Continuidad']?></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="transformacion" name="Transformacion" value="1">
+                            <label for="transformacion"><?php echo $langInicio['Transformacion']?></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="backup" name="Backup" value="1">
+                            <label for="backup"><?php echo $langInicio['Backup']?></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="mantenimiento" name="Mantenimiento" value="1">
+                            <label for="mantenimiento"><?php echo $langInicio['Mantenimiento']?></label>
+                        </div>
                         <button type="submit">Confirmar</button>
                     </form>
                 </div>

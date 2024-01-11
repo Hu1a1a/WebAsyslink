@@ -10,6 +10,7 @@
     <script src="javascript/iniciarSesionContactar.js"></script>
     <script src="javascript/cargarBarra.js"></script>
     <script src="javascript/botonBarra.js"></script>
+    <script src="javascript/registrarContactar.js"></script>
 </head>
 <body>
     <!-- Barra del menu -->
@@ -34,17 +35,21 @@
             </div>
             <div class="form">
                 <h2>Regístrate</h2>
-
+                
+                <!-- Formulario para registrarse -->
                 <form id="signupform">
-                    <label for="signup-username">Correo electrónico:</label>
-                    <input type="text" id="signup-username" name="signup-username" required>
-                    <label for="signup-password">Contraseña:</label>
-                    <input type="password" id="signup-password" name="signup-password" required>
+                    <!-- Hueco donde poner el mensaje de error de registrarse -->
+                    <div id="error-register" style="color: #d06b68; margin-bottom: 15px;"></div>
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="text" id="signup-username" name="correo" required>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="signup-password" name="password" required>
                     <label for="confirm-password">Confirmar contraseña:</label>
                     <input type="password" id="confirm-password" name="confirm-password" required>
                     <div class="checkbox" id="politica">
-                        <input type="checkbox" id="politica_privacidad" name="politica_privacidad" required>
-                        <label for="politica_privacidad">He leído y acepto la <a href="privacidad.html">Política de Privacidad</a></label>
+                        <input type="checkbox" id="politica_privacidad" name="politica" required>
+                        <label for="politica">He leído y acepto la <a href="privacidad.php">Política de Privacidad</a></label>
                    </div>
                     <button type="submit" class="signup-button">Confirmar</button>
                 </form>

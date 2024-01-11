@@ -1,3 +1,6 @@
+<?php
+    include "php/configLenguaje.php"
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +16,7 @@
 <body>
     <div class="barra"></div>
 
-    <div class="block2">
+    <div class="block2 light">
         <h2>Política de privacidad de la página web</h2>
             <div class="content">
                 <p>
@@ -28,7 +31,7 @@
             </div>
     </div>
     <hr>
-    <div class="block2">
+    <div class="block2 dark">
         <h2>¿Qué datos recogemos?</h2>
             <div class="content">
                 <p>
@@ -39,7 +42,7 @@
             </div>
     </div>
     <hr>
-    <div class="block2">
+    <div class="block2 light">
         <h2>¿Por qué y para qué tratamos sus datos?</h2>
             <div class="content">
                 <p>
@@ -50,21 +53,8 @@
                 </p>
             </div>
     </div>
-    <!-- <hr>
-    <div class="block2">
-        <h2>¿Cuanto tiempo conservamos sus datos?</h2>
-            <div class="content">
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Minima reprehenderit aliquam architecto 
-                        facilis facere atque asperiores placeat mollitia. Delectus, 
-                        dolor ex. Facilis eius quisquam rem placeat soluta molestias, 
-                        quidem inventore!
-                </p>
-            </div>
-    </div> -->
     <hr>
-    <div class="block2">
+    <div class="block2 dark">
         <h2>Enlaces a terceros.</h2>
             <div class="content">
                 <p>
@@ -78,7 +68,7 @@
             </div>
     </div>
     <hr>
-    <div class="block2">
+    <div class="block2 light">
         <h2>Tratamiento de su información personal</h2>
             <div class="content">
                 <p>
@@ -90,39 +80,26 @@
             </div>
     </div>
     <hr>
-    <!-- <div class="block2">
-        <h2>Reclamaciones realacionadas con proteccion de datos</h2>
-            <div class="content">
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Minima reprehenderit aliquam architecto 
-                        facilis facere atque asperiores placeat mollitia. Delectus, 
-                        dolor ex. Facilis eius quisquam rem placeat soluta molestias, 
-                        quidem inventore!
-                </p>
-            </div>
-    </div>
-    <hr> -->
 
-
-
+    <!-- Footer -->
     <footer>
-        <div class="content-left">
-            <img src="imagenes/logo.png">
-            <h3>Número de telefono</h3>
-            <p>Sebastian Aparicio (+34) 670 70 34 88</p>
-
-            <h3>Correo electrónico</h3>
-            <p>info@asyslink.com</p>
-
-            <h3>Numero de telefono</h3>
-            <p>Ctra. Torrecárdenas, 153, 04230</p>
-            <p>Huércal de Almería, Almería</p>
-        </div>
-        <div class="content-right">
-            <h3>¿Necesitas más información?</h3>
-            <button>Reúnete con nosotros</button>
-        </div>
-    </footer>
+            <div class="content-left">
+                <img src="imagenes/footer_logo.png" height="50px">
+                <h3><?php echo $langFooter['NumTlf'] ?></h3>
+                <p>Sebastian Aparicio (+34) 670 70 34 88</p>
+    
+                <h3><?php echo $langFooter['Correo'] ?></h3>
+                <p>info@asyslink.com</p>
+    
+                <h3><?php echo $langFooter['Direccion'] ?></h3>
+                <p>Ctra. Torrecárdenas, 153, 04230</p>
+                <p>Huércal de Almería, Almería</p>
+         </div>
+            </div>
+            <div class="content-right">
+                <h3><?php echo $langFooter['Info'] ?></h3>
+                <button onclick="location.href='InicioSesionContactar.html'"><?php echo $langFooter['Reunion'] ?></button>
+            </div>
+        </footer>
 </body>
 </html>

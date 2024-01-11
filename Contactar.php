@@ -52,6 +52,7 @@
                         <label for="fecha_hora"><?php echo $langContactar['p8']?>:</label>
                         <input type="datetime-local" id="fecha_hora" name="fecha_hora" required>
 
+                        <!-- Servicios de interes -->
                         <label for="servicios" id="labelServicios"><?php echo $langContactar['p9']?>:</label>
                         <div class="checkbox">
                             <input type="checkbox" id="infraestructura" name="servicios[]" value="Infraestructura">
@@ -60,27 +61,23 @@
                         <div class="checkbox">
                             <input type="checkbox" id="seguridad" name="servicios[]" value="Seguridad">
                             <label for="seguridad"><?php echo $langInicio['Seguridad']?></label>
+                        </div>    
+                        <div class="checkbox">
+                            <input type="checkbox" id="continuidad" name="servicios[]" value="Continuidad de negocio">
+                            <label for="continuidad"><?php echo $langInicio['Continuidad']?></label>
                         </div>
-                            
-                            <div class="checkbox">
-                                <input type="checkbox" id="continuidad" name="servicios[]" value="Continuidad de negocio">
-                                <label for="continuidad"><?php echo $langInicio['Continuidad']?></label>
-                            </div>
-                            
-                            <div class="checkbox">
-                                <input type="checkbox" id="transformacion" name="servicios[]" value="Transformación digital">
-                                <label for="transformacion"><?php echo $langInicio['Transformacion']?></label>
-                            </div>
-                            
-                            <div class="checkbox">
-                                <input type="checkbox" id="backup" name="servicios[]" value="Backup">
-                                <label for="backup"><?php echo $langInicio['Backup']?></label>
-                            </div>
-                            
-                            <div class="checkbox">
-                                <input type="checkbox" id="mantenimiento" name="servicios[]" value="Mantenimiento">
-                                <label for="mantenimiento"><?php echo $langInicio['Mantenimiento']?></label>
-                            </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="transformacion" name="servicios[]" value="Transformación digital">
+                            <label for="transformacion"><?php echo $langInicio['Transformacion']?></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="backup" name="servicios[]" value="Backup">
+                            <label for="backup"><?php echo $langInicio['Backup']?></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="mantenimiento" name="servicios[]" value="Mantenimiento">
+                            <label for="mantenimiento"><?php echo $langInicio['Mantenimiento']?></label>
+                        </div>
 
                         <button type="submit" id="botonContactar"><?php echo $langContactar['p10']?></button>
                     </form>

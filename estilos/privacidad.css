@@ -35,10 +35,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 60px;
+    padding: 60px;
     align-items: flex-start;
 }
-
 
 .block2 h2 {
     font-family: 'Space Grotesk', sans-serif;;
@@ -58,8 +57,11 @@ body {
     max-width: 30%;
 }
 
-.block2 .content hr {
-    color: #d6d6d6;
+hr {
+    color: #d6d6d6a0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .block2 .content p {
@@ -74,39 +76,10 @@ body {
     font-weight: 600;
 }
 
-
-
-
-footer {
-    background-image: url('../imagenes/backup_footer.jpg');
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-    color: white;
+.light {
+    background-color: #ededed;
 }
 
-footer .content-left {
-    margin: 50px 50px; 
-    float: left;
-}
-
-footer .content-right {
-    margin: 50px 50px;
-    float: right;
-}
-
-footer .content-left h3 {
-    margin-top: 15px;
-}
-
-footer .content-left p {
-    margin-top: 3px;
-}
-
-footer .content-right button {
-    margin-top: 30px;
-    float: right;
-    padding: 5px 50px;
-    color: #353535;
-    cursor: pointer;
+.dark {
+    background-color: #e6e4e4;
 }
