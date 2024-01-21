@@ -4,23 +4,6 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.guide {
-    background-color: #0c62b7;
-    border-top: 2px solid #e7e6e6;
-    padding-left: 10px;
-    padding-top: 2px;
-    padding-bottom: 3px;
-    padding: 5px;
-}
-
-.guide p {
-    color: #ccc;
-}
-
-.guide p a {
-    color: white;
-}
-
 .block1 {
     width: 100%;
     display: block;

@@ -62,12 +62,18 @@ main form .busqueda button {
     color: white;
     background-color: #0054a6;
     border: none;
-    font-size: medium;
+    font-size: 15px;
     padding: 3px 0px 3px 0px;
     width: 15%;
     max-width: 150px;
     border-radius: 5px;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-left: 10px;
+}
+
+main form .busqueda button:hover {
+    background-color: rgb(19, 102, 185);
 }
 
 main form .busqueda input {
@@ -83,6 +89,7 @@ main form .busqueda p {
     font-size: 17px;
 }
 
+main form .listadoCliente,
 main form .listado {
     margin-top: 20px;
     border-radius: 8px;
@@ -92,6 +99,7 @@ main form .listado {
     overflow-y: auto;
 }
 
+main form .listadoCliente .item,
 main form .listado .item {
     background-color: #e6e2e2;
     margin-bottom: 10px;
@@ -99,6 +107,7 @@ main form .listado .item {
     padding: 15px;
 }
 
+main form .listadoCliente .item p,
 main form .listado .item p {
     display: inline-block;
     font-size: 17px;

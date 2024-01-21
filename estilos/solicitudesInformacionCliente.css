@@ -122,3 +122,7 @@ main form .listadoSolicitudesCliente .item .containerBoton {
 main form .listadoSolicitudesCliente .item .container button {
     padding: 5px;
 }
+
+select {
+    padding: 3px;
+}

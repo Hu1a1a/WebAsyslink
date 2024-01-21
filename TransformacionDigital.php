@@ -21,9 +21,9 @@
     <!-- Barra de navegacion -->
     <div class="guia">
         <p><?php echo $langBarra['Servicios']?></p>
-        <p>></p><!-- separador -->       
-        <a> <?php echo $langTrans['Transformacion']?></a>
-    </div>
+        <p>●</p><!-- separador -->       
+        <p class="actual"><?php echo $langTrans['Transformacion']?></p>
+    </div> 
 
     <div class="block1">
         <div class="content">

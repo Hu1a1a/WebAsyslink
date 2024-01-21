@@ -64,6 +64,12 @@ main form .busqueda button {
     border-radius: 5px;
     cursor: pointer;
     margin-left: 10px;
+    padding: 5px;
+    transition: all .2s ease-in-out;
+}
+
+main form .busqueda button:hover {
+    background-color: rgb(19, 102, 185);
 }
 
 main form .busqueda label {
@@ -94,3 +100,6 @@ main form .listadoCliente .item p {
     font-size: 17px;
 }
 
+select {
+    padding: 3px;
+}

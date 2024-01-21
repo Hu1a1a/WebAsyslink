@@ -8,16 +8,25 @@
 .guia p,
 .guia a {
     padding-left: 10px;
-    text-decoration: none;
     display: inline-block;
 }
 
 .guia p {
-    color: #ccc;
+    color: #d8d4d4;
 }
 
-.guia a {
-    color: white;
+.guia p a {
+    text-decoration: none;
+    transition: color 0.5s;
+    color: rgba(235, 228, 228, 0.788);
+}
+
+.guia p a:hover {
+    color: rgb(235, 228, 228);
+}
+
+.guia .actual {
+    color: #fff;
 }
 
 @media all and (min-width:1500px) {

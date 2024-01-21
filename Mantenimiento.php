@@ -5,6 +5,7 @@
         <title>Asyslink - Mantenimiento</title>
         <link rel="stylesheet" href="estilos/mantenimiento.css">
         <link rel="stylesheet" href="estilos/barra.css">
+        <link rel="stylesheet" href="estilos/guia.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
         <script src="javascript/cargarBarra.js"></script>
         <script src="javascript/botonBarra.js"></script>
@@ -13,6 +14,13 @@
         
         <!-- Barra del menu -->
         <div class="barra"></div>
+
+        <!-- Barra de navegacion -->
+        <div class="guia">
+            <p>Servicios</p>
+            <p>●</p><!-- separador -->       
+            <p class="actual">Planes de mantenimiento</p>
+        </div> 
     
         <div class="titulo">
             <h2>Planes de mantenimiento</h2>

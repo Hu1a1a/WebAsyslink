@@ -22,8 +22,8 @@
     <!-- Barra de navegacion -->
     <div class="guia">
         <p><?php echo $langBarra['Servicios']?></p>
-        <p>></p><!-- separador -->       
-        <a><?php echo $langSeg['t1']?></a>
+        <p>●</p><!-- separador -->       
+        <p><?php echo $langSeg['t1']?></p>
     </div>  
 
     <!-- Contenido1 -->

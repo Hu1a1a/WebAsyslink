@@ -21,8 +21,8 @@
         <!-- Barra de navegacion -->
         <div class="guia">
             <p><?php echo $langBarra['Servicios']?></p>
-            <p>></p><!-- separador -->       
-            <a> Backup</a>
+            <p>●</p><!-- separador -->       
+            <p>Backup</p>
         </div>          
 
         <!-- Contenido1 -->

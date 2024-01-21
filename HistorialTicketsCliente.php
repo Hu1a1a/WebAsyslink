@@ -20,10 +20,10 @@
         <!-- Barra de navegacion -->
         <div class="guia">
             <p><a href="PortalCliente.php">Portal Cliente</a></p>
-            <p>></p><!-- separador -->       
-            <a href="TicketingCliente.php">Ticketing</a>
-            <p>></p><!-- separador -->       
-            <a href="#">Historial de Tickets</a>
+            <p>●</p><!-- separador -->       
+            <p><a href="TicketingCliente.php">Ticketing</a></p>
+            <p>●</p><!-- separador -->       
+            <p class="actual">Historial de Tickets</p>
         </div>  
 
         <main>

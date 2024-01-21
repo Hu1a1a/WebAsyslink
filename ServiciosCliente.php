@@ -5,6 +5,7 @@
         <title>Asyslink - Sevicios Cliente</title>
         <link rel="stylesheet" href="estilos/serviciosCliente.css">
         <link rel="stylesheet" href="estilos/barra.css">
+        <link rel="stylesheet" href="estilos/guia.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
         <script src="javascript/cargarBarra.js"></script>
         <script src="javascript/botonBarra.js"></script>
@@ -13,7 +14,14 @@
     </head>
     <body>
         <!-- Barra del menu -->
-        <div class="barra"></div>      
+        <div class="barra"></div>    
+        
+        <!-- Barra de navegacion -->
+        <div class="guia">
+            <p><a href="PortalCliente.php">Portal Cliente</a></p>
+            <p>●</p><!-- separador -->       
+            <p class="actual">Servicios Contratados</p>
+        </div> 
 
         <main>
             <form id="formServiciosCliente">

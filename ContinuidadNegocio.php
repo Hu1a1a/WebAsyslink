@@ -19,8 +19,8 @@
     <!-- Barra de navegacion -->
     <div class="guia">
         <p>Servicios</p>
-        <p>></p><!-- separador -->       
-        <a> Continuidad del negocio</a>
+        <p>●</p><!-- separador -->       
+        <p>Continuidad del negocio</p>
     </div>  
 
     <!-- Contenido1 -->
