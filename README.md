@@ -152,7 +152,7 @@ Estos son los pasos a seguir para poder conectarse a Xammp.
 
 | Nombre de la pagina              | Asignado a | Estado Frontend    | Estado Backend     |
 | -------------------------------- | ---------- | ------------------ | ------------------ |
-| Datos de la solicitud (usuario)  | Jose       | :heavy_check_mark: | :x:                |
+| Datos de la solicitud (usuario)  | Jose       | :heavy_check_mark: | :heavy_check_mark: |
 | Modificar Solicitud (usuario)    | Jose       | :heavy_check_mark: | :x:                |
 | Ticketing Cliente (usuario)      | Jose       | :heavy_check_mark: | :heavy_check_mark: |
 | Listado de clientes (admin)      | Jose       | :heavy_check_mark: | :heavy_check_mark: |
