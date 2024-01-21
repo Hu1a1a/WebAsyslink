@@ -27,7 +27,7 @@
 
             echo "<div class='container containerBoton'>";
             echo "<div class='boton' style='float:right'>";
-            echo '<button onclick="location.href=\'DatosSolicitud.html?idCita=' . $fila->idCita . '\'">Ver detalles</button>';
+            echo '<button onclick="location.href=\'DatosSolicitud.php?idCita=' . $fila->idCita . '\'">Ver detalles</button>';
             echo "</div>";
             echo "</div>";
             echo "</div>";

@@ -7,54 +7,66 @@ body {
     background-attachment: fixed;
 }
 
-.guide {
-    background-color: #0c62b7;
-    border-top: 2px solid #e7e6e6;
-    padding-left: 10px;
-    padding-top: 2px;
-    padding-bottom: 3px;
-    padding: 5px;
-}
-
-.guide p {
-    color: #ccc;
-}
-
-.guide p a {
-    color: white;
-}
-
 .block1  {
     display: block;
-    width: 75%;
-    margin: auto;
-    margin-top: 5%;
-    padding: 0px 20% 10% 0px; 
+    width: max-content;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 8px;
+    padding: 20px 50px;
     background-color: #ffffff;
     border: 1px solid #ccc;
     transition: all .5s ease;
     text-align: left;
 }
 
-.block1 p {
-    color: #0054a6; 
-    margin-left: 3%;
-    margin-top: 3%;
+.block1 h1 {
+    font-size: 25px;
+    color: #0557a7;
+    margin-bottom: 20px;
 }
+
+.block1 table {
+    border: 2px solid rgb(216, 214, 214);
+    border-collapse: collapse;
+    background-color: #f4efef;
+}
+
+.tableContainer {
+    margin: 20px;
+}
+
+.block1 table tr,
+.block1 table tr td {
+    border: 2px solid rgb(216, 214, 214);
+}
+
+.block1 table tr td {
+    padding: 8px;
+}
+
+.row1 {
+    background-color: #f4efef;
+}
+
+.row2 {
+    background-color: #e6e3e3;
+}
+
+.titulo {
+    color: rgb(67, 66, 66);
+    font-weight: bold;
+}
+
 .block1 button{
     background-color: #0557a7;
     color: white;
-    margin-top: 5%;
+    margin-top: 20px;
     padding: 5px;
-    margin-left: 5%;
     border-radius: 5px;
     padding-right: 25px;
     padding-left: 25px;
     max-width: 80%;
     transition: all .5s ease;
 }
-
-
-
-

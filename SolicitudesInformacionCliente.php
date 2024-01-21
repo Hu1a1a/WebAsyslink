@@ -10,6 +10,7 @@
         <script src="javascript/cargarBarra.js"></script>
         <script src="javascript/botonBarra.js"></script>
         <script src="javascript/listadoSolicitudes.js"></script>
+        <script src="javascript/accesoCliente.js"></script>
     </head>
     <body>
         <!-- Barra del menu -->

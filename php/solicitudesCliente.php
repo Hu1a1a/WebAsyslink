@@ -30,10 +30,21 @@
     } else {
         while ($fila = $resultado->fetch_object()) {
             echo "<div class='item'>";
-            echo "<p><b>Cita" . $fila->idCita . "</b>:</p> ";
-            echo "<p>[Fecha creacion: " . $fila->FechaCreacion . "]</p> - ";
-            echo "<p>[Fecha de la cita: " . $fila->FechaCita . "]</p> - ";
-            echo "<p>Estado: " . $fila->Estado . "</p>";
+
+            echo "<div class='container containerTexto'>";
+            echo "<div class='texto' style='float:left'>";
+            echo "<b>Cita" . $fila->idCita . "</b>: ";
+            echo "[Fecha creacion: " . $fila->FechaCreacion . "] - ";
+            echo "[Fecha de la cita: " . $fila->FechaCita . "] - ";
+            echo "Estado: " . $fila->Estado . "";
+            echo "</div>";
+            echo "</div>";
+
+            echo "<div class='container containerBoton'>";
+            echo "<div class='boton' style='float:right'>";
+            echo '<button onclick="location.href=\'DatosSolicitud.php?idCita=' . $fila->idCita . '\'">Ver detalles</button>';
+            echo "</div>";
+            echo "</div>";
             echo "</div>";
         }
     }
