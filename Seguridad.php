@@ -1,3 +1,6 @@
+<?php
+    include "php/configLenguaje.php"
+?>
 <!DOCTYPE html>
 
 <head>
@@ -18,20 +21,17 @@
 
     <!-- Barra de navegacion -->
     <div class="guia">
-        <p>Servicios</p>
+        <p><?php echo $langBarra['Servicios']?></p>
         <p>></p><!-- separador -->       
-        <a>Seguridad</a>
+        <a><?php echo $langSeg['t1']?></a>
     </div>  
 
     <!-- Contenido1 -->
     <div class="block1">
         <div class="content">
-            <h2>Seguridad</h2>
+            <h2><?php echo $langSeg['t1']?></h2>
             <p>
-            Mantenga a su organización un paso adelante de amenazas y ataques que
-            comprometan su operación e información. Evalúe el riesgo y aborde de
-            manera productiva todas las facetas de su entorno de seguridad.
-            </p>
+            <?php echo $langSeg['p1']?>
         </div>
     </div>
 
@@ -39,23 +39,19 @@
     <div class="block2">
         <img src="imagenes/seguridad1.jpg">
         <div class="content">
-            <h2>Perímetro</h2>
+            <h2><?php echo $langSeg['t2']?></h2>
             <hr>
             <p>
-                Los ataques por red y pérdidas de información representan un riesgo
-                importante para el funcionamiento, imagen y progreso de su negocio.
-                Una plataforma robusta para el control de accesos y protección de los
-                servicios informáticos genera un correcto aprovechamiento de la infraestructura
-                e incrementa la integridad, seguridad y confidencialidad de la información.
+            <?php echo $langSeg['p2']?>
             </p>
             <br>
             <p><b>Firewall</b></p>
             <ul>
-                <li>Control de tráfico de red desde y hacia Internet.</li>
-                <li>Protección contra ataques externos.</li>
-                <li>Generación y administración de VPN's</li>
-                <li>Conexión para equipos remotos (portátiles y dispositivos móviles)</li>
-                <li>Gestión de ancho de banda de internet</li>
+                <li><?php echo $langSeg['p3']?></li>
+                <li><?php echo $langSeg['p4']?></li>
+                <li><?php echo $langSeg['p5']?></li>
+                <li><?php echo $langSeg['p6']?></li>
+                <li><?php echo $langSeg['p7']?></li>
             </ul>
         </div>
     </div>
@@ -66,17 +62,11 @@
             <h2>Compliance</h2>
             <hr>
             <p>
-                Mantener la seguridad de la información es un reto constante para todas las empresas
-                sin importar su industria. La adopción de informática en la nube, políticas de llevar
-                su propio-dispositivo (BYOD) así como la penetración de "shadow IT" dentro de las 
-                organizaciones generan mayor complejidad a este reto.
+            <?php echo $langSeg['p8']?>
             </p>
             <br>
             <p>
-                Realizar una auditoría de seguridad no es solo responsabilidad de grandes empresas y
-                corporaciones. Hoy en día cualquier tipo de empresa depende de elementos y dispositivos
-                tecnológicos para poder realizar sus procesos de negocio, por lo que es necesario que
-                evalúe de forma periódica su seguridad.
+            <?php echo $langSeg['p9']?>
             </p>
         </div>
         <img src="imagenes/seguridad2.jpg">
@@ -89,12 +79,7 @@
             <h2>IAM</h2>
             <hr>
             <p>
-                Una solución de identity and access mangement está estructurada de tal manera que puede
-                representar las autorizaciones de acceso de toda una red, incluidas todas las normas de
-                compliance internas y externas. Para asegurarlo, el sistema IAM incluye una amplia gama de
-                tecnologías, herramientas, software y aplicaciones, como un gestor de contraseñas, un software
-                de aprovisionamiento y aplicaciones para las políticas de seguridad, así como para la
-                presentación de informes y la monitorización.
+            <?php echo $langSeg['p10']?>
             </p>
         </div>
     </div>
@@ -105,19 +90,20 @@
     <footer>
         <div class="content-left">
             <img src="imagenes/footer_logo.png" height="50px">
-            <h3>Número de teléfono</h3>
+            <h3><?php echo $langFooter['NumTlf'] ?></h3>
             <p>Sebastian Aparicio (+34) 670 70 34 88</p>
 
-            <h3>Correo electrónico</h3>
+            <h3><?php echo $langFooter['Correo'] ?></h3>
             <p>info@asyslink.com</p>
 
-            <h3>Dirección</h3>
+            <h3><?php echo $langFooter['Direccion'] ?></h3>
             <p>Ctra. Torrecárdenas, 153, 04230</p>
             <p>Huércal de Almería, Almería</p>
+     </div>
         </div>
         <div class="content-right">
-            <h3>¿Necesitas más información?</h3>
-            <button onclick="location.href='InicioSesion.html'">Reúnete con nosotros</button>
+            <h3><?php echo $langFooter['Info'] ?></h3>
+            <button onclick="location.href='InicioSesionContactar.php'"><?php echo $langFooter['Reunion'] ?></button>
         </div>
     </footer>
 </body>

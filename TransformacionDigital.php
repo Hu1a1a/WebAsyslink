@@ -20,7 +20,7 @@
 
     <!-- Barra de navegacion -->
     <div class="guia">
-        <p>Servicios</p>
+        <p><?php echo $langBarra['Servicios']?></p>
         <p>></p><!-- separador -->       
         <a> <?php echo $langTrans['Transformacion']?></a>
     </div>

@@ -20,7 +20,7 @@
     
         <!-- Barra de navegacion -->
         <div class="guia">
-            <p>Servicios</p>
+            <p><?php echo $langBarra['Servicios']?></p>
             <p>></p><!-- separador -->       
             <a> Backup</a>
         </div>          
@@ -30,9 +30,7 @@
             <div class="content">
                 <h2>Backup</h2>
                 <p>
-                    Es una copia que se realiza frecuentemente
-                    a los datos, archivos o informacion critica
-                    para protegerla.
+                <?php echo $langBackup['p1']?>
                 </p>
             </div>
         </div>
@@ -41,24 +39,15 @@
         <div class="block2">
             <img src="imagenes/backup2.jpg">
             <div class="content">
-                <h2>Beneficios</h2>
+                <h2><?php echo $langBackup['t1']?></h2>
                 <hr>
                 <ul>
                     <li>
-                        <b>Capacidad de respueta:</b> Nuestro servicio de backup se 
-                        destaca por su respuesta ágil ante emergencias. Garantizamos 
-                        tiempos de recuperación rápidos, automatización eficiente para
-                        copias de seguridad y monitorización en tiempo real, asegurando
-                        que sus datos estén siempre disponibles cuando los necesite.
+                        <b><?php echo $langBackup['p2']?></b> <?php echo $langBackup['p3']?>
                     </li>
                     
                     <li>
-                        <b>Incremento de confianza del cliente:</b> Aumentamos la confianza
-                        de nuestros clientes mediante una seguridad robusta con cifrado en
-                        tránsito y en reposo, cumplimiento normativo, transparencia en las
-                        prácticas y pruebas regulares de recuperación. Su información está
-                        protegida y accesible, generando la tranquilidad que nuestros 
-                        clientes necesitan.
+                        <b><?php echo $langBackup['p4']?></b> <?php echo $langBackup['p5']?>
                     </li>
                 </ul>
             </div>
@@ -66,7 +55,7 @@
 
         <!-- Boton de servicios backup -->
         <div class="boton-planes">
-            <button onclick="">Probar servicio de backup</button>
+            <button onclick=""><?php echo $langBackup['p6']?></button>
         </div>
 
         <!-- Footer -->

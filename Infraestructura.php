@@ -1,3 +1,6 @@
+<?php
+    include "php/configLenguaje.php"
+?>
 <!DOCTYPE html>
 
 <head>
@@ -18,19 +21,17 @@
 
     <!-- Barra de navegacion -->
     <div class="guia">
-        <p>Servicios</p>
+        <p><?php echo $langBarra['Servicios']?></p>
         <p>></p><!-- separador -->       
-        <a>Infraestructura</a>
+        <a><?php echo $langInfr['t1']?></a>
     </div>  
 
     <!-- Contenido1 -->
     <div class="block1">
         <div class="content">
-            <h2>Infraestructura</h2>
+            <h2><?php echo $langInfr['t1']?></h2>
             <p>
-            Ya sea en la nube, on premises o un ambiente híbrido,
-            nuestro equipo cuenta con la experiencia y especialización
-            para solventar sus necesidades de infraestructura.
+            <?php echo $langInfr['p1']?>
             </p>
         </div>
     </div>
@@ -39,22 +40,18 @@
     <div class="block2">
         <img src="imagenes/infraestructura1.jpg">
         <div class="content">
-            <h2>Almacenamiento</h2>
+            <h2><?php echo $langInfr['t2']?></h2>
             <hr>
             <p>
-                Acelere la modernización de su negocio aprovechando 
-                el poder de sus datos con soluciones de almacenamiento
-                completas, que permitan renovar e integrar su infraestructura
-                de TI, reduciendo costos y complementando eficientemente su
-                entorno.
+            <?php echo $langInfr['p2']?>
             </p>
             <br>
-            <p><b>Beneficios</b></p>
+            <p><b><?php echo $langInfr['t3']?></b></p>
             <ul>
-                <li>Protección de datos</li>
-                <li>Simplificación de sus procesos</li>
-                <li>Aceleración de transformación de datos</li>
-                <li>Fortalecimiento de capacidades de su infraestructura</li>
+                <li><?php echo $langInfr['b1']?></li>
+                <li><?php echo $langInfr['b2']?></li>
+                <li><?php echo $langInfr['b3']?></li>
+                <li><?php echo $langInfr['b4']?></li>
             </ul>
         </div>
     </div>
@@ -62,17 +59,10 @@
     <!-- Backup Archive -->
     <div class="block4">
         <div class="content">
-            <h2>Servidores</h2>
+            <h2><?php echo $langInfr['t4']?></h2>
             <hr>
             <p>
-                Porque entendemos que el procesamiento de sus
-                datos y cargas de trabajo son críticos para responder
-                rápidamente a las necesidades de su negocio, trabajamos
-                de la mano de los fabricantes más importantes a nivel 
-                mundial, para ofrecer un servicio de asesoramiento, 
-                configuración y dimensionamiento completo, para cubrir 
-                sus requerimientos de infraestructura de forma ágil,
-                potente y segura.
+            <?php echo $langInfr['p3']?>
             </p>
         </div>
         <img src="imagenes/infraestructura2.jpg">
@@ -84,19 +74,20 @@
     <footer>
         <div class="content-left">
             <img src="imagenes/footer_logo.png" height="50px">
-            <h3>Número de teléfono</h3>
+            <h3><?php echo $langFooter['NumTlf'] ?></h3>
             <p>Sebastian Aparicio (+34) 670 70 34 88</p>
 
-            <h3>Correo electrónico</h3>
+            <h3><?php echo $langFooter['Correo'] ?></h3>
             <p>info@asyslink.com</p>
 
-            <h3>Dirección</h3>
+            <h3><?php echo $langFooter['Direccion'] ?></h3>
             <p>Ctra. Torrecárdenas, 153, 04230</p>
             <p>Huércal de Almería, Almería</p>
+     </div>
         </div>
         <div class="content-right">
-            <h3>¿Necesitas más información?</h3>
-            <button onclick="location.href='InicioSesion.html'">Reúnete con nosotros</button>
+            <h3><?php echo $langFooter['Info'] ?></h3>
+            <button onclick="location.href='InicioSesionContactar.php'"><?php echo $langFooter['Reunion'] ?></button>
         </div>
     </footer>
 </body>
