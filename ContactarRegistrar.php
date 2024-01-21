@@ -58,6 +58,7 @@
                         <label for="fecha_hora">Fecha y hora:</label>
                         <input type="datetime-local" id="fecha_hora" name="fecha_hora" required>
 
+                        <div class="servicios">
                         <label for="servicios" id="labelServicios"><?php echo $langContactar['p9']?>:</label>
                         <div class="checkbox">
                             <input type="checkbox" id="infraestructura" name="Infraestructura" value="1">
@@ -82,6 +83,7 @@
                         <div class="checkbox">
                             <input type="checkbox" id="mantenimiento" name="Mantenimiento" value="1">
                             <label for="mantenimiento"><?php echo $langInicio['Mantenimiento']?></label>
+                        </div>
                         </div>
                         <button type="submit">Confirmar</button>
                     </form>

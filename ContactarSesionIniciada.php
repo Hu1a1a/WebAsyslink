@@ -1,3 +1,6 @@
+<?php
+    include "php/configLenguaje.php"
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,8 +39,33 @@
                         <label for="fecha_hora">Fecha y hora:</label>
                         <input type="datetime-local" id="fecha_hora" name="fecha_hora" required>
 
-                        <label for="servicios">Servicios de interés:</label>
-                        <textarea id="servicios" name="servicios"></textarea>
+                        <div class="servicios">
+                        <label for="servicios" id="labelServicios"><?php echo $langContactar['p9']?>:</label>
+                        <div class="checkbox">
+                            <input type="checkbox" id="infraestructura" name="Infraestructura" value="1">
+                            <label for="infraestructura"><?php echo $langInicio['Infraestructura']?></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="seguridad" name="Seguridad" value="1">
+                            <label for="seguridad"><?php echo $langInicio['Seguridad']?></label>
+                        </div>    
+                        <div class="checkbox">
+                            <input type="checkbox" id="continuidad" name="Continuidad" value="1">
+                            <label for="continuidad"><?php echo $langInicio['Continuidad']?></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="transformacion" name="Transformacion" value="1">
+                            <label for="transformacion"><?php echo $langInicio['Transformacion']?></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="backup" name="Backup" value="1">
+                            <label for="backup"><?php echo $langInicio['Backup']?></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="mantenimiento" name="Mantenimiento" value="1">
+                            <label for="mantenimiento"><?php echo $langInicio['Mantenimiento']?></label>
+                        </div>
+                        </div>
 
                         <button type="submit">Confirmar</button>
                     </form>
