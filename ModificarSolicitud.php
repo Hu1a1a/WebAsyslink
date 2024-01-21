@@ -14,12 +14,12 @@
     <body>  
         <div class="barra"></div>
         <div class="guia">
-           <p>Portal cliente</p>
-           <p>></p>
-           <a>Solicitudes de informacion</a>
-           <p>></p>
-           <a>Solicitud numero</a>
-        </div>           
+            <p><a href="PortalCliente.php">Portal Cliente</a></p>
+            <p>●</p><!-- separador -->       
+            <p><a href="SolicitudesInformacionCliente.php">Solicitudes de informacion</a></p>
+            <p>●</p><!-- separador -->       
+            <p class="actual">Modificar Solicitud</p>
+        </div>         
 
         <section id="contenido">
             <div class="container">

@@ -60,5 +60,5 @@
     echo "</tr>";
     echo "</tbody>";
     echo "</table>";
-    echo '<button onclick="location.href=\'modificarSolicitud.html?idCita=' . $idCita . '\'">Modificar Datos</button>';
+    echo '<button onclick="location.href=\'ModificarSolicitud.php?idCita=' . $idCita . '\'">Modificar Datos</button>';
 ?>
