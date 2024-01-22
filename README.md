@@ -10,7 +10,7 @@
 ## Requisitos de todas las paginas
 ### Barra del menu
 
-![image](https://github.com/jfs291/WebAsyslink/assets/113710742/f1504036-2d17-4112-8c85-d300add629e9)
+![imagen](https://github.com/jfs291/WebAsyslink/assets/113710742/867b2bbf-675d-4c28-a9c9-11ebbfb1e4b2)
 
 Cada página debe incluir la barra del menú principal que se ha diseñado para la web y no otra. 
 Para ello, deberás copiar los siguientes códigos en tu archivo `.html` que estés diseñando,
@@ -41,7 +41,7 @@ siguiendo estos pasos.
 
 ### Barra de navegacion
 
-![image](https://github.com/jfs291/WebAsyslink/assets/113710742/e55fa916-cc38-46dc-8b8f-5b82fe3c9a8a)
+![imagen](https://github.com/jfs291/WebAsyslink/assets/113710742/01bc147a-5bde-418e-bb56-47c2eb9c466b)
 
 Al igual que con la barra del menú, se ha diseñado una barra para la navegación de la página y 
 se deberá usar esta, y no otra, para mantener un aspecto consistente en la página. Para ello,
@@ -60,22 +60,22 @@ sigue estos pasos:
 2. Pon la barra de navegación debajo de la barra del menú:
 
 ```html
-<body>
-   <!-- Barra del menu -->
-   <div class="barra"></div>
-    
-   <!-- Barra de navegacion -->
-   <div class="guia">
-   <p>Servicios</p>
-   <p>></p>
-   <a>Backup</a>
-   </div>          
-</body>
+<!-- Barra del menu -->
+<div class="barra"></div> 
+
+<!-- Barra de navegacion -->
+<div class="guia">
+    <p><a href="PortalCliente.php">Portal Cliente</a></p>
+    <p>●</p><!-- separador -->       
+    <p><a href="SolicitudesInformacionCliente.php">Solicitudes de informacion</a></p>
+    <p>●</p><!-- separador -->       
+    <p class="actual">Solicitud</p>
+</div> 
 ```
 
 3. Deberá quedar así todo el menú
 
-![image](https://github.com/jfs291/WebAsyslink/assets/113710742/fc7b7598-dba9-4bfb-a59f-6dc1e57c2781)
+![imagen](https://github.com/jfs291/WebAsyslink/assets/113710742/524d685d-940e-4e65-95a4-1935fc679e91)
 
 ## Requisitos de las paginas dinamicas
 ### Modelo Vista-Controlador
@@ -134,18 +134,18 @@ Estos son los pasos a seguir para poder conectarse a Xammp.
 ## Lista de tareas
 ### Paginas Estaticas
 
-| Nombre de la pagina    | Asignado a | Estado             |
-| ---------------------- | ---------- | ------------------ |
-| Sobre Nosotros         | Jose       | :heavy_check_mark: |
-| Pagina de Inicio       | Jose       | :heavy_check_mark: |
-| Continuidad de negocio | Daniel G   | :heavy_check_mark: |
-| Transformacion Digital | Daniel G   | :heavy_check_mark: |
-| Contactar              | Juan       | :heavy_check_mark: |
-| Inicio Sesion          | Juan       | :heavy_check_mark: |
-| Backup                 | Daniel P   | :heavy_check_mark: |
-| Mantenimiento          | Daniel P   | :heavy_check_mark: |
-| Infraestructura        | Elena      | :heavy_check_mark: |
-| Seguridad              | Elena      | :heavy_check_mark: | 
+| Nombre de la pagina    | Asignado a | Estado                   |
+| ---------------------- | ---------- | ------------------------ |
+| Sobre Nosotros         | Jose       | :heavy_check_mark:       |
+| Pagina de Inicio       | Jose       | :heavy_check_mark:       |
+| Continuidad de negocio | Daniel G   | :heavy_check_mark:       |
+| Transformacion Digital | Daniel G   | :heavy_check_mark:       |
+| Contactar              | Juan       | :heavy_check_mark:       |
+| Inicio Sesion          | Juan       | :heavy_check_mark:       |
+| Backup                 | Daniel P   | :heavy_check_mark:       |
+| Mantenimiento          | Daniel P   | :heavy_check_mark:       |
+| Infraestructura        | Elena      | :heavy_multiplication_x: |
+| Seguridad              | Elena      | :heavy_multiplication_x: | 
 
 
  ### Paginas Dinamicas
@@ -175,3 +175,11 @@ Estos son los pasos a seguir para poder conectarse a Xammp.
 | Datos tickets (admin)            | Elena      | :x:                | :x:                |
 | Actualizar tickets (admin)       | Elena      | :x:                | :x:                |
 | Nuevo ticket (admin)             | Elena      | :x:                | :x:                |
+
+## Otras tareas
+
+| Nombre de la tarea               | Estado     |
+| -------------------------------- | ---------- |
+| Traducir paginas estaticas       | :x:        |
+| Traducir paginas dinamicas       | :x:        |
+| Implementar cookies              | :x:        |
