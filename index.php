@@ -23,9 +23,7 @@
     <div class="block1">
         <div class="content">
             <h2>AsysLink</h2>
-            <p>
-                <?php echo $langInicio['p1']?>
-            </p>
+            <p><?php echo $langInicio['p1']?></p>
         </div>
     </div>
     
@@ -39,12 +37,8 @@
         <div class="secciones">
             <h2><?php echo $langInicio['Portafolio']?></h2>
             <hr>
-            <p> <?php echo $langInicio['p2']?>
-               
-            </p>
-            <p> <?php echo $langInicio['p3']?>
-                
-            </p>
+            <p><?php echo $langInicio['p2']?></p>
+            <p><?php echo $langInicio['p3']?></p>
         </div>
 
         <div class="botones">
@@ -56,31 +50,6 @@
             <button onclick="location.href='Mantenimiento.php'"><?php echo $langInicio['Mantenimiento']?></button>
         </div>
     </div>
-
-        <section class="cookies">
-          <h2 class="cookies__titulo">¿Aceptar Cookies?</h2>
-          <p class="cookies__texto">Usamos cookies para mejorar tu experiencia en la web.</p>
-          <a href="Privacidad.php">Mas Informacion</a>
-          <div class="cookies__botones">
-            <button class="cookies-no">No</button>
-            <button class="cookies-si">Si</button>
-          </div>
-        </section>
-
-
-        <script>
-            function hideSection() {
-                var section = document.querySelector(".cookies");
-                section.style.display = "none";
-                var xhr = new XMLHttpRequest();
-                xhr.open("POST", "datosCookie.php", true);
-                xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                xhr.send("data=Datos que deseas almacenar");
-            }
-    
-             document.querySelector(".cookies-si").addEventListener("click", hideSection);
-        </script>
-
 
     <footer>
         <div class="content-left">
@@ -101,5 +70,39 @@
             <button onclick="location.href='InicioSesionContactar.php'"><?php echo $langFooter['Reunion'] ?></button>
         </div>
     </footer>
+
+    <div class="cookies">
+        <div class="left">
+            <img src="imagenes/cookie.png" width="100px">
+        </div>
+        <div class="right">
+            <h3>Valoramos su privacidad</h3>
+            <p>
+                Utilizamos cookies para mejorar su experiencia de navegación y 
+                ofrecerle contenidos personalizados. Al hacer clic en "Aceptar",
+                nos das tu consentimiento para nuestr uso de cookies.
+            </p>
+            <div class="buttons">
+                <button class="secundario" onclick="location.href = 'Privacidad.php'">Nuestra politica de privacidad</button>
+                <button class="rechazar secundario">Rechazar</button>
+                <button class="aceptar primario">Aceptar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var divCookies = document.querySelector(".cookies");
+        var botonAceptar = document.querySelector(".aceptar");
+
+        botonAceptar.onclick = ()=> {
+            document.cookie = 'CookieBy=AsysLink; max-age=' +60*60*24*30;
+            if(document.cookie) {
+                divCookies.classList.add('hide');
+            }
+        }
+        
+        let checkCookie = document.cookie.indexOf('CookieBy=AsysLink');
+        (checkCookie != 1)? divCookies.classList.add('hide') : cookie.classList.remove('hide');
+    </script>
 </body>
 </html>

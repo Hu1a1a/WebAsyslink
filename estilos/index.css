@@ -97,38 +97,70 @@ h2 {
 }
 
 .cookies {
+    display: flex;
+    color: white;
     position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-family: arial;
+    bottom: 10px;
+    left: 10px;
+    background-color: #121212;
+    max-width: 600px;
+    border-radius: 8px;
     text-align: center;
-    width: 45%;
+    padding: 25px 25px 30px 25px;
+    align-items: center;
+}
+
+.cookies .left {
+    width: 30%;
+}
+
+.cookies .left img {
+    display: block;
     margin: auto;
-    border-radius: 20px;
-    border: 5px solid black;
-   
-  }
-  .cookies__botones button {
-    background: initial;
-    border: 2px solid rgb(0, 0, 0);
-    padding: 1rem;
-    font-size: 1rem;
-    color: rgb(0, 0, 0);
-    width: 5rem;
-    text-align: center;
-  }
+}
 
+.cookies .right {
+    flex: 1;
+    width: 70%;
+}
 
+.cookies .right h3 {
+    margin-bottom: 10px;
+}
 
+.cookies .right .buttons {
+    margin-top: 20px;
+}
 
+.cookies .right .buttons .primario {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: 2px solid #0053a6;
+    outline: none;
+    padding: 10px 15px;
+    background-color: #0053a6;
+    color: white;
+}
 
+.cookies .right .buttons .secundario {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid rgb(225, 223, 223);
+    outline: none;
+    padding: 10px 15px;
+    background-color: #121212;
+    color: white;
+    margin-right: 5px;
+}
 
+.cookies .right .buttons .secundario:hover {
+    background-color: #252424;
+}
 
+.cookies .right .buttons .primario:hover {
+    background-color: #1063b6;
+}
 
-
-
-
-
+.hide {
+    display: none;
+}

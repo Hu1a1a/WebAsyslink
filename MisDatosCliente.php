@@ -25,39 +25,7 @@
     </div>
 
     <div class="container"> 
-        <div class="content">
-        <!-- Detalles rapidos -->      
-        <div class="avatar">
-            <img src="imagenes/user.png" height="100px">
-            <b><p>Daniel Perez Valverde</p></b>
-            <p>danialhamilla262@gmail.com</p>
-        </div>
-
-        <!-- Todos los datos -->
-        <div class="datos">
-            <h1>Mis Datos</h1>
-            
-            <div class="nombre-apellidos">
-                <div class="item">
-                    <p class="titulo">Nombre</p>
-                    <p class="dato">Daniel</p>
-                </div>
-                <div class="item">
-                    <p class="titulo">Apellidos</p>
-                    <p class="dato">Perez Valverde</p>
-                </div>
-            </div>
-
-            <p class="titulo">Empresa</p>
-            <p class="dato">Sacos de Papas S.L</p>
-
-            <p class="titulo">Numero de telefono</p>
-            <p class="dato">622678440</p>
-
-            <p class="titulo">Direccion</p>
-            <p class="dato">Ctra. el botijo 32</p>
-        </div>
-        </div>
+        <div class="content"></div>
     </div>
 </body>
 </html>

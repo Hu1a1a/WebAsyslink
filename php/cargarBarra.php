@@ -77,7 +77,7 @@
                     <!-- Submenu de servicios -->
                     <a class='tag' href='PortalCliente.php'>" . $langBarra['Cliente'] . "▼</a>
                     <ul>
-                        <li><a href='MisDatosCliente.html'>" . $langBarra['Cuenta'] . "</a></li>
+                        <li><a href='MisDatosCliente.php'>" . $langBarra['Cuenta'] . "</a></li>
                         <li><a href='SolicitudesInformacionCliente.php'>" . $langBarra['Solicitudes'] . "</a></li>
                         <li><a href='ServiciosCliente.php'>" . $langBarra['ServiciosC'] . "</a></li>
                         <li><a href='TicketingCliente.php'>Ticketing</a></li>
