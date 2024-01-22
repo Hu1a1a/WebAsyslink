@@ -11,7 +11,7 @@ $(document).ready(function() {
             data: $('#loginform').serialize(),
             success: function(result) {
                 if(result == "success") {
-                    window.location.href = "index.php";
+                    window.location.href = "MisDatosCliente.php";
                 } else if(result == "error") {
                     // Dar mensaje de error
                     var err_label = document.querySelector('#error-login');

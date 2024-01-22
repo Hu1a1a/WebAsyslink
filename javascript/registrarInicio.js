@@ -99,7 +99,7 @@ $(document).ready(function() {
                 
                 success: function(result) {
                     if(result != "error") {
-                        window.location.href = "index.php";
+                        window.location.href = "MisDatosCliente.php";
                     } else { alert('Error'); }
                 }
             });
