@@ -102,7 +102,7 @@
         }
         
         let checkCookie = document.cookie.indexOf('CookieBy=AsysLink');
-        (checkCookie != 1)? divCookies.classList.add('hide') : cookie.classList.remove('hide');
+        (checkCookie >= 0)? divCookies.classList.add('hide') : cookie.classList.remove('hide');
     </script>
 </body>
 </html>
