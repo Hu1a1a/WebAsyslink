@@ -156,7 +156,7 @@ Estos son los pasos a seguir para poder conectarse a Xammp.
 | Modificar Solicitud (usuario)    | Jose       | :heavy_check_mark: | :x:                |
 | Ticketing Cliente (usuario)      | Jose       | :heavy_check_mark: | :heavy_check_mark: |
 | Listado de clientes (admin)      | Jose       | :heavy_check_mark: | :heavy_check_mark: |
-| Mi cuenta o datos (usuario)      | Daniel G   | :x:                | :x:                |
+| Mi cuenta o datos (usuario)      | Daniel G   | :heavy_multiplication_x: | :heavy_multiplication_x: |
 | Modificar mis datos (usuario)    | Daniel G   | :x:                | :x:                |
 | Datos del cliente (admin)        | Daniel G   | :x:                | :x:                |
 | Modificar datos clientes (admin) | Daniel G   | :x:                | :x:                |

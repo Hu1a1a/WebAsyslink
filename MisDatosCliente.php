@@ -10,6 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
     <script src="javascript/cargarBarra.js"></script>
     <script src="javascript/botonBarra.js"></script>
+    <script src="javascript/misDatosCliente.js"></script>
+    <script src="javascript/accesoCliente.js"></script>
 </head>
 
 <body>
