@@ -18,7 +18,7 @@
     <div class="barra"></div>
 
     <div class="content">
-        <a href='MisDatosCliente.html' class="block">
+        <a href='MisDatosCliente.php' class="block">
             <h2><?php echo $langBarra['Cuenta']?></h2>
         </a>
 

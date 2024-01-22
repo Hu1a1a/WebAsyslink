@@ -20,10 +20,10 @@
     
         <!-- Barra de navegacion -->
         <div class="guia">
-            <p>Asyslink</p>
-            <p>></p>       
-            <a> <?php echo $langNosotros['t1']?></a>
-        </div>  
+            <p><?php echo $langBarra['Servicios']?></p>
+            <p>●</p><!-- separador -->       
+            <p><?php echo $langNosotros['t1']?></p>
+        </div>     
 
         <!-- Contenido1 -->
         <div class="block1">

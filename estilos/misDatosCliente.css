@@ -1,62 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 
-
-.background{
-    background-image: url(../imagenes/mesaConPantallas.jpg);
+body {
+    background-image: url('../imagenes/mesaConPantallas.jpg');
     background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    justify-content: flex-end;
-}
-
-
-.container{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Space Grotesk', sans-serif;
-    background-color: white;
+}
+
+.container  {
+    display: block;
+    width: max-content;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    padding: 20px 50px;
+    background-color: #ffffff;
+}
+.container .avatar {
+    margin-right: 30px;
+    border-right: 3px solid #edeef1;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.container .avatar img {
+    margin-bottom: 10px;
+}
+
+.container .avatar p {
+    margin-bottom: 5px;
+}
+
+.container .content {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 30vw;
-    margin-top: 10vh;
-
-    height: max-content;
-    width: 40vw;
-
-    color:  #0c62b7;
-    padding: 5%;
-    padding-top: 0%;
-    
-    position: absolute;
-    border-radius: 5%;
 }
 
-h1, h2{
-    margin-bottom: 2vh;
+.container .content .avatar,
+.container .content .datos {
+    flex: 1;
 }
 
-h1{
-    margin-top: 2%;
-    text-decoration: underline;
+.container .content .datos h1 {
+    font-size: 25px;
+    margin-bottom: 25px;
 }
 
-h2{
-    margin-left: 1vw;
-}
-
-button{
-    width: 30vh;
-    background-color: #0c62b7;
-    border: none;
-    margin-left: 1vw;
-}
-
-button a{
-    color: white;
-    font-family:  'Space Grotesk', sans-serif;
+.container .content .datos .titulo {
     font-weight: bold;
+    margin-bottom: 8px;
 }
 
+.container .content .datos .dato {
+    margin-bottom: 25px;
+    background-color: #f2f5f8;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: left;
+    min-width: 200px;
+}
 
+.container .content .datos .nombre-apellidos {
+    display: flex;
+}
 
+.container .content .datos .nombre-apellidos .item {
+    flex: 1;
+}
+
+.container .content .datos .nombre-apellidos .item:first-child {
+    margin-right: 15px;
+}
 
