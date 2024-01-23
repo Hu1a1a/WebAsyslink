@@ -178,8 +178,8 @@ Estos son los pasos a seguir para poder conectarse a Xammp.
 
 ## Otras tareas
 
-| Nombre de la tarea               | Estado     |
-| -------------------------------- | ---------- |
-| Traducir paginas estaticas       | :x:        |
-| Traducir paginas dinamicas       | :x:        |
-| Implementar cookies              | :x:        |
+| Nombre de la tarea               | Estado            |
+| -------------------------------- | ----------------- |
+| Traducir paginas estaticas       | :x:               |
+| Traducir paginas dinamicas       | :x:               |
+| Implementar cookies              |:heavy_check_mark: |
