@@ -10,7 +10,7 @@ body {
 
 .container  {
     display: block;
-    width: max-content;
+    width:  max-content;
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
@@ -34,52 +34,51 @@ body {
     margin-bottom: 5px;
 }
 
-.container .content {
+.container .content-modificar {
     display: flex;
 }
 
-.container .content .avatar,
-.container .content .datos {
+.container .content-modificar .avatar,
+.container .content-modificar .datos {
     flex: 1;
 }
 
-.container .content .datos h1 {
+.container .content-modificar .datos h1 {
     font-size: 25px;
     margin-bottom: 25px;
 }
 
-.container .content .datos .titulo {
+.container .content-modificar .datos .titulo {
     font-weight: bold;
     margin-bottom: 8px;
 }
 
-.container .content .datos .dato {
+.container .content-modificar .datos .dato {
+    border: 1px solid #bbbcbd;
     margin-bottom: 25px;
     background-color: #f2f5f8;
-    padding: 10px 15px;
+    padding: 10px 10px;
     border-radius: 5px;
     text-align: left;
     min-width: 200px;
 }
 
-.container .content .datos .nombre-apellidos {
+.container .content-modificar .datos .nombre-apellidos {
     display: flex;
 }
 
-.container .content .datos .nombre-apellidos .item {
+.container .content-modificar .datos .nombre-apellidos .item {
     flex: 1;
 }
 
-.container .content .datos .nombre-apellidos .item:first-child {
+.container .content-modificar .datos .nombre-apellidos .item:first-child {
     margin-right: 15px;
 }
 
-.container .content .datos button {
-    display: block;
-    margin-left: auto;
+.modificar-datos, .cancelar {
+    min-width: 100px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    background-color: #0053a6;
     color: white;
     padding: 8px 15px;
     border: none;
@@ -87,7 +86,20 @@ body {
     border-radius: 5px;
 }
 
-.container .content .datos button:hover {
+.cancelar {
+    margin-right: 10px;
+    background-color: rgb(231, 87, 87);
+}
+
+.cancelar:hover {
+    background-color: rgb(247, 119, 119);
+}
+
+.modificar-datos {
+    background-color: #0053a6;
+}
+
+.modificar-datos:hover {
     background-color: #136bc3;
 }
 
