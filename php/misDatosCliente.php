@@ -63,17 +63,20 @@
         echo "</div>";
         echo "</div>";
 
+        echo "<p class='titulo'>Correo electrónico</p>";
+        echo "<input class='dato' value='" . $fila->correo . "'>";
+
         echo "<p class='titulo'>Empresa</p>";
         echo "<input class='dato' value='" . $fila->empresa . "'>";
 
-        echo "<p class='titulo'>Numero de telefono</p>";
+        echo "<p class='titulo'>Número de teléfono</p>";
         echo "<input class='dato' value='" . $fila->telefono . "'>";
 
-        echo "<p class='titulo'>Direccion</p>";
+        echo "<p class='titulo'>Dirección</p>";
         echo "<input class='dato' value='" . $fila->direccion . "'>";
         echo "<div class='contenedor-botones'>";
         echo "<div class='botones'>";
-        echo '<button class="cancelar" onclick="location.href=\'MisDatosCliente.php\'">Cancelar</button>';
+        echo '<button class="cancelar">Cancelar</button>';
         echo '<button class="modificar-datos" type="submit">Confirmar</button>';
         echo "</div>";
         echo "</div>";

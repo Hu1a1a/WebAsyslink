@@ -103,3 +103,12 @@ body {
     background-color: #136bc3;
 }
 
+.contenedor-botones {
+    bottom: 0;
+    right: 0;
+}
+
+.botones {
+    display: flex;
+    justify-content: flex-end;
+}

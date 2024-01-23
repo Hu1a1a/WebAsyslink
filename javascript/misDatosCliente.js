@@ -17,6 +17,12 @@ $(document).ready(function() {
             type: 'post',
             success: function(result) {
                 contentModificar.innerHTML =  result;
+                const cancelar = document.getElementsByClassName('cancelar')[0];
+
+                cancelar.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    window.location.href = 'MisDatosCliente.php';
+                });
             }
         });
     }
