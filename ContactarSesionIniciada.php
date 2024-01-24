@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
     <script src="javascript/cargarBarra.js"></script>
     <script src="javascript/botonBarra.js"></script>
+    <script src="javascript/contactarSesionIniciada.js"></script>
     <script src="javascript/accesoCliente.js"></script>
 </head>
 <body>
@@ -35,8 +36,9 @@
 
                 <div class="form">
                     <h2>Reúnete con nosotros</h2>
-                    <form action="procesar_formulario.php" method="POST">
+                    <form id="formulario" method="POST">
                         <label for="fecha_hora">Fecha y hora:</label>
+                        <p class="error"></p>
                         <input type="datetime-local" id="fecha_hora" name="fecha_hora" required>
 
                         <div class="servicios">
@@ -74,3 +76,4 @@
         </div>
     </section>
 </body>
+</html>

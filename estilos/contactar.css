@@ -166,3 +166,9 @@ hr {
    margin-top: 20px;
    margin-bottom: 20px;
 }
+
+.error {
+   color: rgb(239, 93, 93);
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
