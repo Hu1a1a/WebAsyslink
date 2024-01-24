@@ -26,6 +26,12 @@
                     <div class="form">
                         <br>
                         <form action="php/modificarSolicitud.php" method="POST">
+
+                            <?php
+                            $idCita = $_GET['idCita'];
+                            ?>
+                            <input type="hidden" name="idCita" value="<?php echo $idCita; ?>">
+
                             <h2>Modificar solicitud numero.</h2>
                             <label for="fecha_hora">Fecha y hora:</label>
                             <br>
@@ -34,31 +40,31 @@
                             <label for="servicios">Servicios de interés:</label>
                             <br>
                             <div class="checkbox">
-                            <input type="checkbox" id="infraestructura" name="servicios[]" value="Infraestructura">
+                            <input type="checkbox" id="infraestructura" name="servicios[]" value="1">
                             <label for="infraestructura">Infraestructura</label>
                             </div><br>
                             <div class="checkbox">
-                                <input type="checkbox" id="seguridad" name="servicios[]" value="Seguridad">
+                                <input type="checkbox" id="seguridad" name="servicios[]" value="2">
                                 <label for="seguridad">Seguridad</label>
                             </div><br>
                             
                             <div class="checkbox">
-                                <input type="checkbox" id="continuidad" name="servicios[]" value="Continuidad de negocio">
+                                <input type="checkbox" id="continuidad" name="servicios[]" value="3">
                                 <label for="continuidad">Continuidad de negocio</label>
                             </div><br>
                             
                             <div class="checkbox">
-                                <input type="checkbox" id="transformacion" name="servicios[]" value="Transformación digital">
+                                <input type="checkbox" id="transformacion" name="servicios[]" value="4">
                                 <label for="transformacion">Transformación digital</label>
                             </div><br>
                             
                             <div class="checkbox">
-                                <input type="checkbox" id="backup" name="servicios[]" value="Backup">
+                                <input type="checkbox" id="backup" name="servicios[]" value="5">
                                 <label for="backup">Backup</label>
                             </div><br>
                             
                             <div class="checkbox">
-                                <input type="checkbox" id="mantenimiento" name="servicios[]" value="Mantenimiento">
+                                <input type="checkbox" id="mantenimiento" name="servicios[]" value="6">
                                 <label for="mantenimiento">Mantenimiento</label>
                             </div><br>
 

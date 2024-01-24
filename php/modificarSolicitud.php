@@ -5,10 +5,32 @@
 
 
     // Recibir la información del formulario
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fecha_hora = $_POST['fecha_hora'];
-    //$servicios = $_POST['servicios[]'];
-    $idCita= 1;//$_POST['idCita'];
-    $pdf=$_POST['pdf'];
+    $servicios = $_POST['servicios'];
+     $idCita = $_POST['idCita'];
+    
+     $pdf = isset($_POST["pdf"]) ? "Sí" : "No";
+}
+
+    // echo "$pdf";
+    // foreach ($servicios as $services){
+    //     echo "$services<br>";
+    // }
+    $consulta = "UPDATE Citas SET FechaCita='$fecha_hora' WHERE idCita='$idCita'";
+
+    
+
+    $consulta3 = "SELECT C.*, CL.*
+            FROM Cliente CL
+            JOIN Citas_Cliente CC on CL.idUsuario= CC.idUsuario
+            JOIN Citas C on CC.idCita=C.idCita
+            JOIN Servicios_Citas SC ON C.idCita = SC.idCita
+            JOIN Servicios S ON SC.idServicios = S.idServicios
+            WHERE(C.idCita = '" . $idCita . "')";
+
+
+
 
     //$sql = "DELETE FROM Servicios_citas WHERE idCita=$idCita";
     //$result = $mysqli->query($sql);
@@ -17,30 +39,27 @@
     } 
     else{
         // Sentencia SQL para actualizar los campos
-        $consulta = "UPDATE Citas SET FechaCita='$fecha_hora' WHERE idCita='$idCita'";
+        
 
         $resultado = $mysqli->query($consulta);
         if($resultado == 0) {
         echo "<p>Error inesperado pongase en contacto con nosotros.</p>";
-         }else{/*
+         }else{
+            
         foreach ($servicios as $servicio){
+         
           $consulta2 = "INSERT INTO Servicios_citas (id_cita, servicio) VALUES ($idCita, '$servicio')";
+
           $resultado2 = $mysqli->query($consulta2);
             if($resultado2->num_rows == 0) {
              echo "<p>Error inesperado pongase en contacto con nosotros.</p>";
          } 
          
-        }*/
-        if($pdf==1){
+        }
+        if($pdf=="Si"){
             
-            $consulta = "SELECT C.*, CL.*
-            FROM Cliente CL
-            JOIN Citas_Cliente CC on CL.idUsuario= CC.idUsuario
-            JOIN Citas C on CC.idCita=C.idCita
-            JOIN Servicios_Citas SC ON C.idCita = SC.idCita
-            JOIN Servicios S ON SC.idServicios = S.idServicios
-            WHERE(C.idCita = '" . $idCita . "')";
-            $resultado = $mysqli->query($consulta);
+            
+            $resultado = $mysqli->query($consulta3);
             if($resultado->num_rows != 1) {
                 echo "<p>dwrdwddwadError inesperado pongase en contacto con nosotros.</p>";
             } else {
