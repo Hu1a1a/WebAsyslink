@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
     <script src="javascript/cargarBarra.js"></script>
     <script src="javascript/botonBarra.js"></script>
-    <script src="javascript/misDatosCliente.js"></script>
+    <script src="javascript/modifiicarDatosCliente.js"></script>
     <script src="javascript/accesoCliente.js"></script>
 </head>
 
@@ -27,7 +27,7 @@
     </div>
 
     <div class="container"> 
-        <div class="content-modificar"></div>
+        <form class="content-modificar" id="formulario"></form>
     </div>
 </body>
 </html>

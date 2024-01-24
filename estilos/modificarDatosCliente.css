@@ -54,13 +54,18 @@ body {
 }
 
 .container .content-modificar .datos .dato {
-    border: 1px solid #bbbcbd;
+    border: 2px solid #bbbcbd;
     margin-bottom: 25px;
     background-color: #f2f5f8;
     padding: 10px 10px;
     border-radius: 5px;
     text-align: left;
     min-width: 200px;
+}
+
+.container .content-modificar .datos .dato:focus {
+    border: 2px solid #136bc3;
+    outline: none;
 }
 
 .container .content-modificar .datos .nombre-apellidos {
@@ -111,4 +116,19 @@ body {
 .botones {
     display: flex;
     justify-content: flex-end;
+}
+
+.mensaje-error {
+    color: rgb(252, 104, 104);
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.container .content-modificar .datos .error-campo {
+    border: 2px solid rgb(252, 104, 104);
+}
+
+.container .content-modificar .datos .error-campo:focus {
+    border: 2px solid rgb(252, 104, 104);
+    outline: none;
 }
