@@ -132,6 +132,11 @@ Estos son los pasos a seguir para poder conectarse a Xammp.
 > Si cambias el codigo CSS o HTML y la pagina del navegador no se actualiza, pulsa `CTRL+F5` en el navegador, a veces no funciona `F5` ni refrescar la pagina.
 
 ## Lista de tareas
+
+- :heavy_check_mark:: Tarea terminada.
+- :heavy_multiplication_x:: Tarea terminada por otra persona que no era la encargada.
+- :x:: Tarea por terminar.
+
 ### Paginas Estaticas
 
 | Nombre de la pagina    | Asignado a | Estado                   |
