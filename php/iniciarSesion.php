@@ -17,7 +17,7 @@
         $_SESSION['correo'] = $correo;
         $_SESSION['password'] = $password;
         $_SESSION['login_type'] = "admin";
-        echo "success";
+        echo "success-admin";
     } else {
 
         // Comprobar si el usuario existe como Cliente
@@ -29,7 +29,7 @@
             $_SESSION['correo'] = $correo;
             $_SESSION['password'] = $password;
             $_SESSION['login_type'] = "user";
-            echo "success";
+            echo "success-user";
         } else { echo "error"; }
     }
 
