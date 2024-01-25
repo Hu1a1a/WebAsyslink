@@ -102,6 +102,44 @@
 
     );
 
+    $langContinuidad = array(
+        "t1" => "Business continuity",
+        "p1" => "It is the level of preparation that a company has to maintain essential functions after an emergency or interruption.",
+        "p2" => "Why should we backup our files?",
+        "b1" => "Accidental deletion",
+        "b2" => "Retention policies",
+        "b3" => "Internal security threats", 
+        "b4" => "External security threats",
+        "b5" => "Legal requirements and compliance",
+        "p3" => "We analyze and design a comprehensive backup plan for files and documentation in your organization, preventing potential attacks on your most important asset: information.",
+        "p4" => "Disaster recovery plan, structuring the steps and actions necessary for an organization to recover its operation after an incident. Since information is the core of your business, it is essential to have the appropriate advice to execute a correct risk analysis and business impact analysis.",
+        "p5" => "Our methodology includes:",
+        "a1" => "An optimal design of the business continuity strategy",
+        "a2" => "Definition of IT recovery requirements in the alternate data center, private or public cloud",
+        "a3" => "Work together with the IT and consulting areas",
+        "c1" => "Information gathering",
+        "c2" => "Detail by critical process and strategy.",
+        "c3" => "Analysis",
+        "c4" => "Actual, Proposed and Supplier Recovery Capacity.",
+        "c5" => "Cost-benefit analysis",
+        "c6" => "Of the recovery alternatives proposed in a consolidated Strategy.",
+        "c7" => "Validation of results",
+        "c8" => "With IT areas, the project sponsor and Senior Management.",
+        "c9" => "Documentation",
+        "c10" => "Preparation of the proposed Disaster Recovery Strategy Report.",
+        "p6" => "Business continuity management (BCM) is risk management designed to address the threat of disruptions to business activities or processes. It involves making and validating business continuity plans (BCPs) to ensure you can respond and recover from potential threats as effectively as possible.",
+        "p7" => "Asyslink executes a strategy together with the client, in which operation recovery requirements are defined in its different departments and areas, thus establishing the continuity strategy with different strategies and tools, such as alternate sites, remote work, among others."
+    );
+
+    $langMant = array(
+        "t1" => "Maintenance plans",
+        "t2" => "Bronze plan",
+        "t3" => "Silver plan",
+        "t4" => "Gold plan",
+        "p1" => "Plan characteristic"
+
+    );
+
     $langNosotros = array(
         "t1" => "About Us",
         "t2" => "About us",
@@ -141,7 +179,7 @@
     $langContactar = array(
         "t1" => "Contact information",
         "p1" => "Phone number",
-        "p2" => "Email",
+        "p2" => "Email address",
         "p3" => "Visit our offices",
         "t2" => "Have a meeting with us",
         "p4" => "Name",
@@ -153,4 +191,21 @@
         "p10" => "Confirm"
     );
 
+    $langInicSes = array(
+        "t1" => "Log in",
+        "p1" => "Email address",
+        "p2" => "Password",
+        "b1" => "Confirm",
+        "t2" => "Sign up",
+        "p3" => "It must contain:",
+        "a1" => "At least 8 characters",
+        "a2" => "One number",
+        "a3" => "A lowercase letter",
+        "a4" => "An uppercase letter",
+        "a5" => "An uppercase letter",
+        "p4" => "Confirm password",
+        "p5" => "I have read and accept the",
+        "p6" => "Privacy Policy",
+        "b2" => "Continue without logging in"
+    );
 ?>

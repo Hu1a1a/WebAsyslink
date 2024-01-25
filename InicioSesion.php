@@ -1,3 +1,6 @@
+<?php
+    include "php/configLenguaje.php"
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,55 +22,55 @@
         <div class="form-wrapper">
             
             <div class="form">
-                <h2>Inicia sesión</h2>
+                <h2><?php echo $langInicSes['t1']?></h2>
 
                 <!-- Hueco donde poner el mensaje de error de inicio de sesion -->
                 <div id="error-login" style="color: #d06b68; margin-bottom: 15px;"></div>
 
                 <!-- Formulario para iniciar sesion -->
                 <form id="loginform">
-                    <label for="login-username">Correo electrónico:</label>
+                    <label for="login-username"><?php echo $langInicSes['p1']?></label>
                     <input type="text" id="login-username" name="correo" required>
-                    <label for="login-password">Contraseña:</label>
+                    <label for="login-password"><?php echo $langInicSes['p2']?></label>
                     <input type="password" id="login-password" name="password" required>
-                    <button type="submit" class="login-button">Confirmar</button>
+                    <button type="submit" class="login-button"><?php echo $langInicSes['b1']?></button>
                 </form>
             </div>
 
             <div class="form">
-                <h2>Regístrate</h2>
+                <h2><?php echo $langInicSes['t2']?></h2>
                 
                 <!-- Formulario para registrarse -->
                 <form id="signupform">
-                    <label for="correo">Correo electrónico:</label>
+                    <label for="correo"><?php echo $langInicSes['p1']?></label>
                     <p class="error error-correo"></p>
                     <input type="text" id="signup-username" name="correo" required>
                     
-                    <label for="password">Contraseña:</label>
+                    <label for="password"><?php echo $langInicSes['p2']?></label>
 
                     <div class="password-checklist">
-                        <h4 class="checklist-title">Debe contener:</h4>
+                        <h4 class="checklist-title"><?php echo $langInicSes['p3']?></h4>
                         <ul class="checklist">
-                            <li class="list-item">Al menos 8 caracteres.</li>
-                            <li class="list-item">Un numero.</li>
-                            <li class="list-item">Una letra en minuscula.</li>
-                            <li class="list-item">Una letra en mayuscula.</li>
-                            <li class="list-item">Un caracter especial.</li>
+                            <li class="list-item"><?php echo $langInicSes['a1']?></li>
+                            <li class="list-item"><?php echo $langInicSes['a2']?></li>
+                            <li class="list-item"><?php echo $langInicSes['a3']?></li>
+                            <li class="list-item"><?php echo $langInicSes['a4']?></li>
+                            <li class="list-item"><?php echo $langInicSes['a5']?></li>
                         </ul>
                     </div>
 
                     <p class="error error-passwd"></p>
                     <input type="password" id="signup-password" name="password" required>
                     
-                    <label for="confirm-password">Confirmar contraseña:</label>
+                    <label for="confirm-password"><?php echo $langInicSes['p4']?></label>
                     <p class="error error-passwd2"></p>
                     <input type="password" id="confirm-password" name="confirm-password" required>
                     
                     <div class="checkbox" id="politica">
                         <input type="checkbox" id="politica_privacidad" name="politica" required>
-                        <label for="politica">He leído y acepto la <a href="privacidad.php">Política de Privacidad</a></label>
+                        <label for="politica"><?php echo $langInicSes['p5']?> <a href="privacidad.php"><?php echo $langInicSes['p6']?></a></label>
                    </div>
-                    <button type="submit" class="signup-button">Confirmar</button>
+                    <button type="submit" class="signup-button"><?php echo $langInicSes['b1']?></button>
                 </form>
             </div>
         </div>

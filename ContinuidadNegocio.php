@@ -1,3 +1,7 @@
+<?php
+    include "php/configLenguaje.php"
+?>
+
 <!DOCTYPE html>
 
 <head>
@@ -18,19 +22,17 @@
 
     <!-- Barra de navegacion -->
     <div class="guia">
-        <p>Servicios</p>
+        <p><?php echo $langBarra['Servicios']?></p>
         <p>●</p><!-- separador -->       
-        <p>Continuidad del negocio</p>
+        <p><?php echo $langContinuidad['t1']?></p>
     </div>  
 
     <!-- Contenido1 -->
     <div class="block1">
         <div class="content">
-            <h2>Backup</h2>
+            <h2><?php echo $langContinuidad['t1']?></h2>
             <p>
-                Es una copia que se realiza frecuentemente
-                a los datos, archivos o informacion critica
-                para protegerla.
+            <?php echo $langContinuidad['p1']?>
             </p>
         </div>
     </div>
@@ -42,19 +44,17 @@
             <h2>Backup Archive</h2>
             <hr>
             <p>
-                ¿Porque debemos respaldar nuestros archivos?
+            <?php echo $langContinuidad['p2']?>
             </p>
             <ul>
-                <li>Borrado accidental</li>
-                <li>Politicas de retencion</li>
-                <li>Amenazas internas de seguridad</li>
-                <li>Amenazas externas de seguridad</li>
-                <li>Requerimientos legales y compliance </li>
+                <li><?php echo $langContinuidad['b1']?></li>
+                <li><?php echo $langContinuidad['b2']?></li>
+                <li><?php echo $langContinuidad['b3']?></li>
+                <li><?php echo $langContinuidad['b4']?></li>
+                <li><?php echo $langContinuidad['b5']?></li>
             </ul>
             <p>
-                Analizamos y deseñamos un plan integral de respaldo de archivos y 
-                documentación en su organización, previniendo potenciales ataques
-                hacia su activo más importante: la información.
+            <?php echo $langContinuidad['p3']?>
             </p>
         </div>
     </div>
@@ -62,48 +62,44 @@
     <div class="container4">
         <div class="container5">
             <h2>Disaster Recovery Plan</h2>
-            <p1><span> Plan de recuperación ante desastres, estructurando los pasos y acciones necesarios para que una organización pueda
-                recuperar su operación después de un incidente. Siendo la información el núcleo de su negocio, es
-                imprescindible contar con la asesoría adecuada para ejecutar un correcto análisis de riesgos y análisis
-                del impacto del negocio.</span>
+            <p1><span><?php echo $langContinuidad['p4']?></span>
             </p1>
-            <h3>Nuestra metodología incluye:</h3>
+            <h3><?php echo $langContinuidad['p5']?></h3>
             <ul>
-                <li>Un diseño óptimo de la estrategia de la continuidad del negocio</li>
-                <li>Definición de requerimientos de recuperación de TI en el centro de datos alterno, nube privada o
-                    púbilica</li>
-                <li>Trabajo en conjunto con las áreas de TI y consultoría</li>
+                <li><?php echo $langContinuidad['a1']?></li>
+                <li><?php echo $langContinuidad['a2']?></li>
+                <li><?php echo $langContinuidad['a3']?></li>
             </ul>
         </div>
         <ol>
             <li>
                 <div>
-                    <h3>Recopilación de Información</h3>
-                    <p>Detalle por proceso crítico y estrategia.</p>
+                    <h3><?php echo $langContinuidad['c1']?></h3>
+                    <p><?php echo $langContinuidad['c2']?></p>
                 </div>
             </li>
             <li>
                 <div>
-                    <h3>Análisis</h3>
-                    <p>De Capacidad de Recuperación Real, Propuesta y de proveedores. </p>
+                    <h3><?php echo $langContinuidad['c3']?></h3>
+                    <p><?php echo $langContinuidad['c4']?></p>
                 </div>
             </li>
             <li>
                 <div>
-                    <h3>Análisis Costo - Beneficio</h3>
-                    <p>De las alternativas de recuperación propuestas en una Estrategia consolidada.</p>
+                    <h3><?php echo $langContinuidad['c5']?></h3>
+                    <p><?php echo $langContinuidad['c6']?></p>
                 </div>
             </li>
             <li>
                 <div>
-                    <h3>Validación de resultados</h3>
-                    <p>Con áreas de TI, el sponsor del proyecto y Alta Gerencia</p>
+                    <h3><?php echo $langContinuidad['c7']?></h3>
+                    <p><?php echo $langContinuidad['c8']?></p>
                 </div>    
             </li>
             <li>
                 <div>
-                    <h3>Documentación</h3>
-                    <p>Elaboración del Informe de Estrategia de Recuperación ante desastres propuesta.</p>
+                    <h3><?php echo $langContinuidad['c9']?></h3>
+                    <p><?php echo $langContinuidad['c10']?></p>
                 </div>
             </li>
         </ol>
@@ -115,19 +111,11 @@
             <h2>Business Continuity Management (BCM)</h2>
             <hr>
             <p>
-                La gestión de la continuidad de negocio (BCM) es la gestión de 
-                riegos diseñada para abordar la amenaza de interrupciones en las 
-                actividades o procesos comerciales. Implica hacer y validar planes
-                de continuidad comercial (BCP) para garantizar que pueda responder
-                y recuperarse de posibles amenazas de la manera más efectiva posible.
+            <?php echo $langContinuidad['p6']?>
             </p>
             <br>
             <p>
-                Asyslink ejecuta una estrategia en conjunto con el cliente, en la cual
-                se definen requerimientos de recuperación de la operación en sus 
-                diferentes departamentos y áreas, estableciendo así la estrategia de
-                continuidad con diferentes estrategias y herramientas, como por ejemplo
-                sitios alternos, trabajo remoto, entre otros. 
+            <?php echo $langContinuidad['p7']?>
             </p>
         </div>
         <img src="imagenes/contNegocio4.jpg">
@@ -137,22 +125,23 @@
 
     <!-- Footer -->
     <footer>
-        <div class="content-left">
-            <img src="imagenes/footer_logo.png" height="50px">
-            <h3>Número de teléfono</h3>
-            <p>Sebastian Aparicio (+34) 670 70 34 88</p>
-
-            <h3>Correo electrónico</h3>
-            <p>info@asyslink.com</p>
-
-            <h3>Dirección</h3>
-            <p>Ctra. Torrecárdenas, 153, 04230</p>
-            <p>Huércal de Almería, Almería</p>
-        </div>
-        <div class="content-right">
-            <h3>¿Necesitas más información?</h3>
-            <button onclick="location.href='InicioSesion.html'">Reúnete con nosotros</button>
-        </div>
-    </footer>
+            <div class="content-left">
+                <img src="imagenes/footer_logo.png" height="50px">
+                <h3><?php echo $langFooter['NumTlf'] ?></h3>
+                <p>Sebastian Aparicio (+34) 670 70 34 88</p>
+    
+                <h3><?php echo $langFooter['Correo'] ?></h3>
+                <p>info@asyslink.com</p>
+    
+                <h3><?php echo $langFooter['Direccion'] ?></h3>
+                <p>Ctra. Torrecárdenas, 153, 04230</p>
+                <p>Huércal de Almería, Almería</p>
+         </div>
+            </div>
+            <div class="content-right">
+                <h3><?php echo $langFooter['Info'] ?></h3>
+                <button onclick="location.href='InicioSesionContactar.html'"><?php echo $langFooter['Reunion'] ?></button>
+            </div>
+        </footer>
 </body>
 </html>

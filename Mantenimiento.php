@@ -1,3 +1,6 @@
+<?php
+    include "php/configLenguaje.php"
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,37 +20,37 @@
 
         <!-- Barra de navegacion -->
         <div class="guia">
-            <p>Servicios</p>
+            <p><?php echo $langBarra['Servicios']?></p>
             <p>●</p><!-- separador -->       
-            <p class="actual">Planes de mantenimiento</p>
+            <p class="actual"><?php echo $langMant['t1']?></p>
         </div> 
     
         <div class="titulo">
-            <h2>Planes de mantenimiento</h2>
+            <h2><?php echo $langMant['t1']?></h2>
         </div>
 
         <div class="container">
             <div class="box" id="bronce">
-                <h4>Plan bronce</h4>
-                <p>Caracteristica del plan</p>
-                <p>Caracteristica del plan</p>
-                <p>Caracteristica del plan</p>
-                <p>Caracteristica del plan</p>
+                <h4><?php echo $langMant['t2']?></h4>
+                <p><?php echo $langMant['p1']?></p>
+                <p>. . .</p>
+                <p>. . .</p>
+                <p>. . .</p>
             </div>
             <div class="box" id="plata">
-                <h4>Plan plata</h4>
-                <p>Caracteristica del plan</p>
-                <p>Caracteristica del plan</p>
-                <p>Caracteristica del plan</p>
-                <p>Caracteristica del plan</p>
+                <h4><?php echo $langMant['t3']?></h4>
+                <p><?php echo $langMant['p1']?></p>
+                <p>. . .</p>
+                <p>. . .</p>
+                <p>. . .</p>
             </div>
             <div class="box" id="oro">
-                <h4>Plan oro</h4>
-                <p>Caracteristica del plan</p>
-                <p>Caracteristica del plan</p>
-                <p>Caracteristica del plan</p>
-                <p>Caracteristica del plan</p>
+                <h4><?php echo $langMant['t4']?></h4>
+                <p><?php echo $langMant['p1']?></p>
+                <p>. . .</p>
+                <p>. . .</p>
+                <p>. . .</p>
             </div>
-        </div>
+        </div>   
     </body>
 </html>

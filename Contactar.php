@@ -44,7 +44,7 @@
                         <p class="error error-apellidos"></p>
                         <input type="text" id="apellidos" name="apellidos" required>
 
-                        <label for="correo">Correo electrónico:</label>
+                        <label for="correo"><?php echo $langContactar['p6']?></label>
                         <p class="error error-correo"></p>
                         <input type="text" id="correo" name="correo" required>
 

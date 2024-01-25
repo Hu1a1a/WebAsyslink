@@ -108,6 +108,43 @@
         "p12" => "Atención al cliente mejorada"
     );
 
+    $langContinuidad = array(
+        "t1" => "Continuidad de negocio",
+        "p1" => "Es el nivel de preparación que tiene una empresa para mantener las funciones esenciales tras una emergencia o una interrupción.",
+        "p2" => "¿Por qué debemos respaldar nuestros archivos?",
+        "b1" => "Borrado accidental",
+        "b2" => "Políticas de retención",
+        "b3" => "Amenazas internas de seguridad", 
+        "b4" => "Amenazas externas de seguridad",
+        "b5" => "Requerimientos legales y compliance",
+        "p3" => "Analizamos y deseñamos un plan integral de respaldo de archivos y documentación en su organización, previniendo potenciales ataques hacia su activo más importante: la información.",
+        "p4" => "Plan de recuperación ante desastres, estructurando los pasos y acciones necesarios para que una organización pueda recuperar su operación después de un incidente. Siendo la información el núcleo de su negocio, es imprescindible contar con la asesoría adecuada para ejecutar un correcto análisis de riesgos y análisis del impacto del negocio.",
+        "p5" => "Nuestra metodología incluye:",
+        "a1" => "Un diseño óptimo de la estrategia de la continuidad del negocio",
+        "a2" => "Definición de requerimientos de recuperación de TI en el centro de datos alterno, nube privada o púbilica",
+        "a3" => "Trabajo en conjunto con las áreas de TI y consultoría",
+        "c1" => "Recopilación de información",
+        "c2" => "Detalle por proceso crítico y estrategia.",
+        "c3" => "Análisis",
+        "c4" => "De Capacidad de Recuperación Real, Propuesta y de proveedores.",
+        "c5" => "Análisis costo-beneficio",
+        "c6" => "De las alternativas de recuperación propuestas en una Estrategia consolidada.",
+        "c7" => "Validación de resultados",
+        "c8" => "Con áreas de TI, el sponsor del proyecto y Alta Gerencia.",
+        "c9" => "Documentación",
+        "c10" => "Elaboración del Informe de Estrategia de Recuperación ante desastres propuesta.",
+        "p6" => "La gestión de la continuidad de negocio (BCM) es la gestión de riegos diseñada para abordar la amenaza de interrupciones en las actividades o procesos comerciales. Implica hacer y validar planes de continuidad comercial (BCP) para garantizar que pueda responder y recuperarse de posibles amenazas de la manera más efectiva posible.",
+        "p7" => "Asyslink ejecuta una estrategia en conjunto con el cliente, en la cual se definen requerimientos de recuperación de la operación en sus diferentes departamentos y áreas, estableciendo así la estrategia de continuidad con diferentes estrategias y herramientas, como por ejemplo sitios alternos, trabajo remoto, entre otros."
+    );
+
+    $langMant(
+        "t1" => "Planes de mantenimiento",
+        "t2" => "Plan bronce",
+        "t2" => "Plan plata",
+        "t2" => "Plan oro",
+        "p1" => "Caracteristica del plan"
+    );
+
     $langNosotros = array(
         "t1" => "Sobre Nosotros",
         "t2" => "Acerca de nosotros",
@@ -158,6 +195,24 @@
         "p8" => "Fecha y hora",
         "p9" => "Servicios de interés",
         "p10" => "Comfirmar"
+    );
+
+    $langInicSes = array(
+        "t1" => "Inicia sesión",
+        "p1" => "Correo electrónico",
+        "p2" => "Contraseña",
+        "b1" => "Comfirmar",
+        "t2" => "Regístrate",
+        "p3" => "Debe contener:"
+        "a1" => "Al menos 8 caracteres",
+        "a2" => "Un número",
+        "a3" => "Una letra minúscula",
+        "a4" => "Una letra mayúscula",
+        "a5" => "Un caracter especial",
+        "p4" => "Confirmar contraseña",
+        "p5" => "He leído y acepto la",
+        "p6" => "Política de Privacidad",
+        "b2" => "Continuar sin iniciar sesión"
     );
 
 ?>

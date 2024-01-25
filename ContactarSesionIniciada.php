@@ -22,20 +22,20 @@
         <div class="container">
             <div class="form-wrapper">
                 <div class="texto">
-                    <h2>Información de contacto</h2>
-                    <p class="superior">Número de teléfono</p>
+                    <h2><?php echo $langContactar['t1']?></h2>
+                    <p class="superior"><?php echo $langContactar['p1']?></p>
                     <p>Sebastián Aparicio (+34) 670 70 34 88</p>
                     <br>
-                    <p class="superior">Correo electrónico</p>
+                    <p class="superior"><?php echo $langContactar['p2']?></p>
                     <p>info@asyslink.com</p>
                     <br>
-                    <p class="superior">Visítanos en nuestra oficina</p>
+                    <p class="superior"><?php echo $langContactar['p3']?></p>
                     <p>Ctra. Torrecárdenas, 153, 04230</p>
                     <p>Huércal de Almería, Almería</p>
                 </div>
 
                 <div class="form">
-                    <h2>Reúnete con nosotros</h2>
+                    <h2><?php echo $langContactar['t2']?></h2>
                     <form id="formulario" method="POST">
                         <label for="fecha_hora">Fecha y hora:</label>
                         <p class="error"></p>
