@@ -149,8 +149,8 @@ Estos son los pasos a seguir para poder conectarse a Xammp.
 | Inicio Sesion          | Juan       | :heavy_check_mark:       |
 | Backup                 | Daniel P   | :heavy_check_mark:       |
 | Mantenimiento          | Daniel P   | :heavy_check_mark:       |
-| Infraestructura        | Elena      | :heavy_multiplication_x: |
-| Seguridad              | Elena      | :heavy_multiplication_x: | 
+| Infraestructura        | Elena      | :heavy_check_mark:       |
+| Seguridad              | Elena      | :heavy_check_mark:       | 
 
 
  ### Paginas Dinamicas
@@ -185,6 +185,6 @@ Estos son los pasos a seguir para poder conectarse a Xammp.
 
 | Nombre de la tarea               | Estado            |
 | -------------------------------- | ----------------- |
-| Traducir paginas estaticas       | :x:               |
+| Traducir paginas estaticas       |:heavy_check_mark: |
 | Traducir paginas dinamicas       | :x:               |
 | Implementar cookies              |:heavy_check_mark: |
