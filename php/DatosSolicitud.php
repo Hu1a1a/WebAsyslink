@@ -61,4 +61,5 @@
     echo "</tbody>";
     echo "</table>";
     echo '<button onclick="location.href=\'ModificarSolicitud.php?idCita=' . $idCita . '\'">Modificar Datos</button>';
+    echo '<button onclick="location.href=\'php/generarPDF.php?idCita=' . $idCita . '\'">Descargar PDF</button>';
 ?>

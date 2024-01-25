@@ -69,12 +69,7 @@
                                 <label for="mantenimiento">Mantenimiento</label>
                             </div><br>
 
-                            <hr><br>
-
-                            <div class="checkbox">
-                                <input type="checkbox" id="PDF" name="pdf" value="1">
-                                <label for="pdf">Generar PDF</label>
-                            </div><br>
+                    
                             
                             <!-- <textarea id="servicios" name="servicios"></textarea> -->
                             

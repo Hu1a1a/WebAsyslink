@@ -12,7 +12,7 @@ $(document).ready(function() {
             data: $('#formulario').serialize(),
 
             success: function(result) {
-                    alert(result);
+                    
                     alert('Datos modificados con exito!');
                     window.location.href = 'datosSolicitud.php?idCita='+idCita;
                 
