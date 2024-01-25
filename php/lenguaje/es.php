@@ -137,11 +137,11 @@
         "p7" => "Asyslink ejecuta una estrategia en conjunto con el cliente, en la cual se definen requerimientos de recuperación de la operación en sus diferentes departamentos y áreas, estableciendo así la estrategia de continuidad con diferentes estrategias y herramientas, como por ejemplo sitios alternos, trabajo remoto, entre otros."
     );
 
-    $langMant(
+    $langMant = array(
         "t1" => "Planes de mantenimiento",
         "t2" => "Plan bronce",
-        "t2" => "Plan plata",
-        "t2" => "Plan oro",
+        "t3" => "Plan plata",
+        "t4" => "Plan oro",
         "p1" => "Caracteristica del plan"
     );
 
@@ -203,7 +203,7 @@
         "p2" => "Contraseña",
         "b1" => "Comfirmar",
         "t2" => "Regístrate",
-        "p3" => "Debe contener:"
+        "p3" => "Debe contener:",
         "a1" => "Al menos 8 caracteres",
         "a2" => "Un número",
         "a3" => "Una letra minúscula",
