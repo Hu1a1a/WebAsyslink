@@ -1,14 +1,10 @@
-function validarFecha() {
-    
-}
-
 $(document).ready(function() {
 
     $('#formulario').submit(function(e) {
         e.preventDefault();
 
-        var fechaActual = new Date();
-        var fechaSeleccionada = new Date(document.getElementById("fecha_hora").value);
+        var fechaActual = (new Date()).getTime();
+        var fechaSeleccionada = (new Date(document.getElementById("fecha_hora").value)).getTime();
 
         if (fechaSeleccionada < fechaActual) {
             var error = document.querySelector('.error');
@@ -22,8 +18,8 @@ $(document).ready(function() {
                 data: $('#formulario').serialize(),
                 
                 success: function(e) {
-                    alert(e);
                     alert('Cita creada con exito!');
+                    window.location.href = "index.php";
                 }
             });
             return false;
