@@ -9,6 +9,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
         <script src="javascript/cargarBarra.js"></script>
         <script src="javascript/botonBarra.js"></script>
+        <script src="javascript/ModificarSolicitud.js"></script>
         <link rel="stylesheet" href="estilos/guia.css">
     </head>
     <body>  
@@ -25,7 +26,7 @@
             <div class="container">
                     <div class="form">
                         <br>
-                        <form action="php/modificarSolicitud.php" method="POST">
+                        <form id="formulario">
 
                             <?php
                             $idCita = $_GET['idCita'];

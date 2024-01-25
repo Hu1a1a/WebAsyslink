@@ -13,10 +13,6 @@
      $pdf = isset($_POST["pdf"]) ? "Sí" : "No";
 }
 
-    // echo "$pdf";
-    // foreach ($servicios as $services){
-    //     echo "$services<br>";
-    // }
     $consulta = "UPDATE Citas SET FechaCita='$fecha_hora' WHERE idCita='$idCita'";
 
     
@@ -32,8 +28,8 @@
 
 
 
-    //$sql = "DELETE FROM Servicios_citas WHERE idCita=$idCita";
-    //$result = $mysqli->query($sql);
+    $sql = "DELETE FROM Servicios_citas WHERE idCita=$idCita";
+    $result = $mysqli->query($sql);
     if(1 == 0) {
         echo "<p>Error inesperado pongase en contacto con nosotros.</p>";
     } 
@@ -48,12 +44,12 @@
             
         foreach ($servicios as $servicio){
          
-          $consulta2 = "INSERT INTO Servicios_citas (id_cita, servicio) VALUES ($idCita, '$servicio')";
+          $consulta2 = "INSERT INTO Servicios_citas (idCita, idServicios) VALUES ($idCita, '$servicio')";
 
           $resultado2 = $mysqli->query($consulta2);
-            if($resultado2->num_rows == 0) {
-             echo "<p>Error inesperado pongase en contacto con nosotros.</p>";
-         } 
+        //     if($resultado2->num_rows == 0) {
+        //      echo "<p>Error inesperado pongase en contacto con nosotros.</p>";
+        //  } 
          
         }
         if($pdf=="Si"){
@@ -95,9 +91,14 @@
             
             // output file
             $pdf->Output('CitaAsyslink.pdf','D');
+            
             }
+            
+            // header("Location: ../DatosSolicitud.php?idCita=" . $idCita);
+         }else{
+            // header("Location: ../DatosSolicitud.php?idCita=" . $idCita );
          }
-        //header("Location: ../DatosSolicitud.html");
+        
         exit();
         
         }
