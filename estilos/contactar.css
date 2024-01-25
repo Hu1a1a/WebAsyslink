@@ -181,3 +181,29 @@ hr {
    border: 2px solid rgb(252, 104, 104);
    outline: none;
 }
+
+.password-checklist {
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.password-checklist h4 {
+   margin-bottom: 5px;
+}
+
+.password-checklist ul {
+   color: rgb(39, 39, 39);
+   line-height: 1.3;
+}
+
+.password-checklist ul li {
+   margin-left: 15px;
+}
+
+.checked {
+   color: #22983e;
+}
+
+.unchecked {
+   color: rgb(239, 140, 140);
+}

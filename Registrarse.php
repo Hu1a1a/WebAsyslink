@@ -18,22 +18,24 @@
                 <div class="form">
                     <h2>Regístrate</h2>
                     <form id="finRegistroInicio">
-                        <!-- Hueco donde poner el mensaje de error de inicio de sesion -->
-                        <div id="error-register" style="color: #d06b68; margin-bottom: 15px;"></div>
-
                         <label for="nombre">Nombre:</label>
+                        <p class="error error-nombre"></p>
                         <input type="text" id="nombre" name="nombre" required>
 
                         <label for="apellidos">Apellidos:</label>
+                        <p class="error error-apellidos"></p>
                         <input type="text" id="apellidos" name="apellidos" required>
 
                         <label for="telefono">Número de teléfono:</label>
+                        <p class="error error-telefono"></p>
                         <input type="tel" id="telefono" name="telefono" required>
 
                         <label for="empresa">Empresa:</label>
+                        <p class="error error-empresa"></p>
                         <input type="text" id="empresa" name="empresa">
 
                         <label for="direccion">Dirección:</label>
+                        <p class="error error-direccion"></p>
                         <input type="text" id="direccion" name="direccion">
 
                         <button type="submit">Confirmar</button>

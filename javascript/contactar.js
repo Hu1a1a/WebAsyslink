@@ -53,11 +53,11 @@ $(document).ready(function() {
 
         if(!validarNombre(campos.nombre.value)) {
             errores.nombre.innerHTML = 'El correo no es valido.';
-            campos.nombre.classList.add('error-correo');
+            campos.nombre.classList.add('error-campo');
             datos = false;
         }  else {
             errores.nombre.innerHTML = "";
-            campos.nombre.classList.remove('error-correo');
+            campos.nombre.classList.remove('error-campo');
         }
 
         if(!validarNombre(campos.nombre.value)) {

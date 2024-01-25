@@ -5,6 +5,30 @@ function validarInput(input) {
     return false;
 }
 
+function validarPassword(passwd) {
+    let passwordChecklist = document.querySelectorAll('.list-item');
+    let testPassed = true;
+    let validationRegex = [
+        /^.{8,}$/,
+        /[0-9]/,
+        /[a-z]/,
+        /[A-Z]/,
+        /[!@#$%^&*(),.?":{}|<>]/,
+    ];
+
+    validationRegex.forEach((item, i) => {
+        if(item.test(passwd)) {
+            passwordChecklist[i].classList.remove('unchecked');
+            passwordChecklist[i].classList.add('checked');
+        } else{
+            testPassed = false;
+            passwordChecklist[i].classList.remove('checked');
+            passwordChecklist[i].classList.add('unchecked');
+        }
+    });
+    return testPassed;
+}
+
 function validarNombre(nombre) {
     var regex = /^[A-Za-z\s]+$/;
     return regex.test(nombre);
@@ -21,74 +45,154 @@ const validateEmail = (email) => {
     );
 };
 
+function validateDate(date) {
+    return (new Date(date)).getTime() > (new Date()).getTime();
+}
+
 $(document).ready(function() {
 
     $('#signupform').submit(function(e) {
         e.preventDefault();
 
-        var err_label = document.querySelector('#error-register');
-        var correo = document.querySelector('#signup-username').value;
-        var password = document.querySelector('#signup-password').value;
-        var password_confirm = document.querySelector('#confirm-password').value;
+        var datos = true; 
+        var errores = {
+            correo: document.querySelector('.error-correo'),
+            passwd: document.querySelector('.error-passwd'),
+            passwd2: document.querySelector('.error-passwd2'),
+        };
 
-        if(validateEmail(correo)) {
-            if(password == password_confirm) {
-                if(validarInput(password)) {
-                    $.ajax({
-                        url: './php/registrarInicio.php',
-                        type: 'post',
-                        data: $('#signupform').serialize(),
-            
-                        success: function(result) {
-                            if(result != "error") { 
-                                window.location.href = "ContactarRegistrar.php";
-                            } else {
-                                err_label.innerHTML = "La direccion de correo ya esta registrada.";
-                            }
-                        }
-                    });
-                    return false;
-                } else {
-                    err_label.innerHTML = "La contraseña no es valida.";
-                }
-            } else {
-                err_label.innerHTML = "Las contraseñas no coinciden.";
-            }
-        } else {
-            err_label.innerHTML = "Direccion de correo no valida.";
+        var valores = {
+            correo: document.querySelector('#signup-username'),
+            passwd: document.querySelector('#signup-password'),
+            passwd2: document.querySelector('#confirm-password'),
+        };
+
+        if(!validateEmail(valores.correo.value)) {
+            errores.correo.innerHTML = 'El correo no es valido.';
+            valores.correo.classList.add('error-campo');
+            datos = false;
+        }  else {
+            errores.correo.innerHTML = "";
+            valores.correo.classList.remove('error-campo');
         }
+
+        if(!validarPassword(valores.passwd.value)) {
+            valores.passwd.classList.add('error-campo');
+            datos = false;
+        } else {
+            errores.passwd.innerHTML = "";
+            valores.passwd.classList.remove('error-campo');
+        }
+
+        if(valores.passwd.value != valores.passwd2.value) {
+            errores.passwd2.innerHTML = 'Las contraseñas no coinciden.';
+            valores.passwd2.classList.add('error-campo');
+            datos = false;
+        }
+
+        if(!datos) return;
+
+        $.ajax({
+            url: './php/registrarInicio.php',
+            type: 'post',
+            data: $('#signupform').serialize(),
+
+            success: function(result) {
+                if(result != "error") { 
+                    window.location.href = "ContactarRegistrar.php";
+                } else {
+                    err_label.innerHTML = "La direccion de correo ya esta registrada.";
+                }
+            }
+        });
+        return false;
     });
 
     $('#finRegistroContactar').submit(function(e) {
-        
         e.preventDefault();
 
-        var err_label = document.querySelector('#error-register');
-        var nombre = document.querySelector('#nombre').value;
-        var apellidos = document.querySelector('#apellidos').value;
-        var telefono = document.querySelector('#telefono').value;
-        var empresa = document.querySelector('#empresa').value;
-        var direccion = document.querySelector('#direccion').value;
         var datos = true;
+        var campos = {
+            nombre: document.querySelector('#correo'),
+            nombre: document.querySelector('#nombre'),
+            apellido: document.querySelector('#apellidos'),
+            empresa: document.querySelector('#empresa'),
+            telefono: document.querySelector('#telefono'),
+            direccion: document.querySelector('#direccion'),
+            fecha: document.querySelector('#fecha_hora'),
+        };
+    
+        var errores = {
+            nombre: document.querySelector('.error-correo'),
+            nombre: document.querySelector('.error-nombre'),
+            apellido: document.querySelector('.error-apellidos'),
+            empresa: document.querySelector('.error-empresa'),
+            telefono: document.querySelector('.error-telefono'),
+            direccion: document.querySelector('.error-direccion'),
+            fecha: document.querySelector('.error-fecha'),
+        };
 
-        if(!validarNombre(nombre)) {
-            err_label.innerHTML = "El nombre no es valido.";
+        if(!validarNombre(campos.nombre.value)) {
+            errores.nombre.innerHTML = 'El correo no es valido.';
+            campos.nombre.classList.add('error-campo');
             datos = false;
-        } if(!validarNombre(apellidos)) {
-            err_label.innerHTML = "Los apellidos no son validos.";
+        }  else {
+            errores.nombre.innerHTML = "";
+            campos.nombre.classList.remove('error-campo');
+        }
+
+        if(!validarNombre(campos.nombre.value)) {
+            errores.nombre.innerHTML = 'El nombre no es valido.';
+            campos.nombre.classList.add('error-campo');
             datos = false;
-        } if(!validarTelefono(telefono)) {
-            err_label.innerHTML = "El numero de telefono no es valido.";
+        }  else {
+            errores.nombre.innerHTML = "";
+            campos.nombre.classList.remove('error-campo');
+        }
+
+        if(!validarNombre(campos.apellido.value)) {
+            errores.apellido.innerHTML = 'Los apellidos no son validos.';
+            campos.apellido.classList.add('error-campo');
             datos = false;
-        } if(!validarInput(empresa)) {
-            err_label.innerHTML = "El nombre de la empresa no es valida.";
+        }  else {
+            errores.apellido.innerHTML = "";
+            campos.apellido.classList.remove('error-campo');
+        }
+
+        if(!validarInput(campos.empresa.value)) { 
+            errores.empresa.innerHTML = 'El nombre de la empresa no es valida.';
+            campos.empresa.classList.add('error-campo');
             datos = false;
-        } if(!validarInput(empresa)) {
-            err_label.innerHTML = "El nombre de la empresa no es valida.";
+        } else { 
+            errores.empresa.innerHTML = "";
+            campos.empresa.classList.remove('error-campo');
+        }
+
+        if(!validarTelefono(campos.telefono.value)) { 
+            errores.telefono.innerHTML = 'En numero no es valido.';
+            campos.telefono.classList.add('error-campo');
             datos = false;
-        } if(!validarInput(direccion)) {
-            err_label.innerHTML = "La direccion no es valida.";
+        } else { 
+            errores.telefono.innerHTML = "";
+            campos.telefono.classList.remove('error-campo');
+        }
+
+        if(!validarInput(campos.direccion.value)) { 
+            errores.direccion.innerHTML = 'La direccion no es valida.';
+            campos.direccion.classList.add('error-campo');
             datos = false;
+        } else {
+            errores.direccion.innerHTML = "";
+            campos.direccion.classList.remove('error-campo');
+        }
+
+        if(!validateDate(campos.fecha.value)) { 
+            errores.fecha.innerHTML = 'La fecha no es valida.';
+            campos.fecha.classList.add('error-campo');
+            datos = false;
+        } else {
+            errores.fecha.innerHTML = "";
+            campos.fecha.classList.remove('error-campo');
         }
 
         if(datos) {

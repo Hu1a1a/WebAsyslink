@@ -80,3 +80,17 @@ body {
    color: rgb(0, 84, 166);
 }
 
+.error {
+   color: rgb(239, 93, 93);
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.error-campo {
+   border: 2px solid rgb(252, 104, 104);
+}
+
+.error-campo:focus {
+   border: 2px solid rgb(252, 104, 104);
+   outline: none;
+}
