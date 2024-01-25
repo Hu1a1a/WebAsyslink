@@ -171,7 +171,7 @@ Estos son los pasos a seguir para poder conectarse a Xammp.
 | Listado servicios (admin)        | Daniel P   | :heavy_check_mark:       | :heavy_check_mark:       |
 | Historial de tickets (admin)     | Daniel P   | :heavy_check_mark:       | :heavy_check_mark:       |
 | Contactar sesion iniciada        | Juan       | :heavy_check_mark:       | :heavy_check_mark:       |
-| Contactar sin registro           | Juan       | :heavy_check_mark:       | :x:                      |
+| Contactar sin registro           | Juan       | :heavy_check_mark:       | :heavy_check_mark:       |
 | Contactar con registro           | Juan       | :heavy_check_mark:       | :heavy_check_mark:       |
 | Registrarse                      | Juan       | :heavy_check_mark:       | :heavy_check_mark:       |
 | Portal cliente con menu          | Juan       | :heavy_check_mark:       | :heavy_check_mark:       |
