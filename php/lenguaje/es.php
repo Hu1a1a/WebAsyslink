@@ -194,14 +194,14 @@
         "p7" => "Dirección",
         "p8" => "Fecha y hora",
         "p9" => "Servicios de interés",
-        "p10" => "Comfirmar"
+        "p10" => "Confirmar"
     );
 
     $langInicSes = array(
         "t1" => "Inicia sesión",
         "p1" => "Correo electrónico",
         "p2" => "Contraseña",
-        "b1" => "Comfirmar",
+        "b1" => "Confirmar",
         "t2" => "Regístrate",
         "p3" => "Debe contener:",
         "a1" => "Al menos 8 caracteres",
