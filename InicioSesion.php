@@ -68,7 +68,7 @@
                     
                     <div class="checkbox" id="politica">
                         <input type="checkbox" id="politica_privacidad" name="politica" required>
-                        <label for="politica"><?php echo $langInicSes['p5']?> <a href="privacidad.php"><?php echo $langInicSes['p6']?></a></label>
+                        <label for="politica"><?php echo $langInicSes['p5']?> <a href="Privacidad.php"><?php echo $langInicSes['p6']?></a></label>
                    </div>
                     <button type="submit" class="signup-button"><?php echo $langInicSes['b1']?></button>
                 </form>
