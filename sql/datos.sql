@@ -1,5 +1,33 @@
 USE mydb;
 
+CREATE TABLE `mydb`.`TipoUsuario` (`idCategoria` INTEGER, `nombre` VARCHAR(20));
+
+CREATE TABLE `mydb`.`Cliente` (`idUsuario` INTEGER, `correo` VARCHAR(20), `passwd` VARCHAR(20), `empresa` VARCHAR(20), `nombre` VARCHAR(20), `apellido` VARCHAR(20), `telefono` VARCHAR(20), `direccion` VARCHAR(20), `idCategoria` INTEGER);
+
+CREATE TABLE `mydb`.`Servicios` (`idServicios` INTEGER, `nombreServicio` VARCHAR(20), `infoServicio` VARCHAR(20), `precio` VARCHAR(20), `TotalTickets` INTEGER);
+
+CREATE TABLE `mydb`.`Ticketing` (`idTicketing` INTEGER, `asunto` VARCHAR(20), `fecha` VARCHAR(20), `texto` VARCHAR(20), `archivoAdjunto` VARCHAR(20), `idServicio` INTEGER, `estado` INTEGER);
+
+CREATE TABLE `mydb`.`HistorialTickets` (`idUsuario` INTEGER, `idTicketing`INTEGER);
+
+CREATE TABLE `mydb`.`Administrador` (`idAdministrador` INTEGER, `correo` VARCHAR(20), `passwd` VARCHAR(20), `nombre` VARCHAR(20), `apellidos` VARCHAR(20), `telefono` VARCHAR(20));
+
+CREATE TABLE `mydb`.`Citas` (`idCita` INTEGER, `FechaCreacion` VARCHAR(20), `FechaCita` VARCHAR(20), `citaCliente`INTEGER, `Estado` VARCHAR(20), `idAdministrador` VARCHAR(20));
+
+CREATE TABLE `mydb`.`Servicios_Citas` (`idCita` INTEGER, `idServicios`INTEGER);
+
+CREATE TABLE `mydb`.`Servicios_Usuario` (`idServicios` INTEGER, `idUsuario` INTEGER, `TicketsRestantes` INTEGER);
+
+CREATE TABLE `mydb`.`Citas_Cliente` (`idCita` INTEGER, `idUsuario` INTEGER);
+
+CREATE TABLE `mydb`.`Posible_Cliente` (`idPCliente` INTEGER, `correo` VARCHAR(20), `empresa` VARCHAR(20), `nombre` VARCHAR(20), `apellidos` VARCHAR(20), `telefono` VARCHAR(20), `direccion` VARCHAR(20));
+
+CREATE TABLE `mydb`.`Servicios_Administrador` (`idAdministrador` INTEGER, `idServicios` INTEGER);
+
+CREATE TABLE `mydb`.`Administrador_Ticket` (`idAdministrador` INTEGER, `idTicketing` INTEGER);
+
+CREATE TABLE `mydb`.`Citas_De_Posible_Cliente` (`idCita` INTEGER, `idPCliente` INTEGER);
+
 -- Inserciones para la tabla TipoUsuario
 INSERT INTO `mydb`.`TipoUsuario`
 (`idCategoria`, `nombre`) 

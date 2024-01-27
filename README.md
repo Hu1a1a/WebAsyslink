@@ -13,7 +13,7 @@
 ![imagen](https://github.com/jfs291/WebAsyslink/assets/113710742/867b2bbf-675d-4c28-a9c9-11ebbfb1e4b2)
 
 Cada página debe incluir la barra del menú principal que se ha diseñado para la web y no otra. 
-Para ello, deberás copiar los siguientes códigos en tu archivo `.html` que estés diseñando,
+Para ello, deberás copiar los siguientes códigos    en tu archivo `.html` que estés diseñando,
 siguiendo estos pasos.
 
 1. Incluye los archivos necesarios en tu página:
