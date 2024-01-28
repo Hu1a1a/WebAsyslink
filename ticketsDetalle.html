@@ -10,7 +10,7 @@
     <script src="javascript/cargarBarra.js"></script>
     <script src="javascript/botonBarra.js"></script>
     <script src="javascript/accesoAdmin.js"></script>
-    <script src="javascript/listadoTicketsCursoAdmin.js"></script>
+    <script src="javascript/getTicketAdmin.js"></script>
   </head>
   <body>
     <!-- Barra del menu -->
@@ -24,33 +24,10 @@
       <p><a href="TicketingAdmin.html">Ticketing</a></p>
       <p>●</p>
       <!-- separador -->
-      <p class="actual">Tickets </p>
+      <p class="actual">Tickets</p>
     </div>
-
     <main>
-      <form id="formTicketsCliente">
-        <h2>Lista de Tickets</h2>
-        <!-- Barra de busqueda -->
-        <div class="busqueda">
-          <div class="orden">
-            <p><b>Cliente</b></p>
-            <select id="Cliente"></select>
-          </div>
-          <br />
-          <div class="orden">
-            <p><b>Ordenar</b></p>
-            <select id="orden">
-              <option value="opcion1">Fecha (mas cercanos primero)</option>
-              <option value="opcion2">Fecha (mas lejanos primero)</option>
-            </select>
-          </div>
-          <button type="submit">OK</button>
-        </div>
-        <br />
-
-        <!-- Listado de ejemplo -->
-        <div class="listadoCliente"></div>
-      </form>
+      <form id="listadoCliente"></form>
     </main>
   </body>
 </html>

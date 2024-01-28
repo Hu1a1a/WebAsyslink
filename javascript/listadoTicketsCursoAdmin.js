@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     // Funcion para obtener el listado de los tickets
     // de un cliente (usuario normal).
-    $("#formTicketsCliente").submit(function (e) {
+    $("#Filtrar").click(function (e) {
       e.preventDefault();
       $.ajax({
         url: "./php/ticketsCursoAdmin.php",
@@ -39,9 +39,7 @@ $(document).ready(function () {
 });
 
 function TicketDetalle() {
-  for (let i = 0; i < $(".Detalle").length; i++) {
-    $(".Detalle")[i].click(function () {
-      window.location = "/ticketsDetalle.html";
-    });
+  for (let i = 0; i < $("button.Detalle").length; i++) {
+    $("button.Detalle")[i].href = "ticketsDetalle.html";
   }
 }

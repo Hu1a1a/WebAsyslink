@@ -11,7 +11,7 @@
     <script src="javascript/cargarBarra.js"></script>
     <script src="javascript/botonBarra.js"></script>
     <script src="javascript/accesoCliente.js"></script>
-    <script src="javascript/listadoTicketsCursoCliente.js"></script>
+    <script src="javascript/getTicketCliente.js"></script>
 </head>
 
 <body>
@@ -28,14 +28,7 @@
     </div>
 
     <main>
-        <p>> Ticket </p>
-        <p>Asunto: </p>
-        <p>Estado: </p>
-        <p>Fecha de apertura </p>
-        <p>Fecha de cierre </p>
-        <p>Descripción </p>
-        <p>Resolución </p>
-
+        <form id="listadoCliente"></form>
     </main>
 </body>
 

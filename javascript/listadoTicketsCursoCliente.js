@@ -9,6 +9,7 @@ $(document).ready(function () {
       type: "post",
       success: function (result) {
         listadoCliente.innerHTML = result;
+        TicketDetalle();
       },
     });
 
@@ -23,9 +24,15 @@ $(document).ready(function () {
 
         success: function (result) {
           listadoCliente.innerHTML = result;
+          TicketDetalle();
         },
       });
     });
   }
-
 });
+
+function TicketDetalle() {
+  for (let i = 0; i < $("button.Detalle").length; i++) {
+    $("button.Detalle")[i].href = "ticketsDetalle.html";
+  }
+}

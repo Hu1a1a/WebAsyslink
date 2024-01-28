@@ -18,7 +18,7 @@ if ($resultado->num_rows == 0) {
 } else {
     while ($fila = $resultado->fetch_object()) {
         echo "<div class='item'>";
-        echo "<p><b>Ticket " . $fila->idTicketing . "</b></p>";
+        echo "<a href='ticketsDetalle.html?id=" . $fila->idTicketing . "'><b>Ticket " . $fila->idTicketing . "</b></a>";
         echo "<p> : </p> ";
         echo "<p>[Apertura: " . $fila->fecha . "]</p>";
         echo " <p> - </p> ";
@@ -28,7 +28,6 @@ if ($resultado->num_rows == 0) {
         if ($fila->estado == "1") {
             echo "Activo";
         } else echo "Cerrado";
-        echo "<button class='Detalle'>Detalle</button>";
         echo "</div>";
     }
 }
