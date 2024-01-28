@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 1);
+
 // Datos de conexion
 $host = "localhost";
 $user = "root";

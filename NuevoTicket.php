@@ -1,6 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-
 include_once('conexion.php');
 session_start();
 $asunto = $_POST['Asunto'];

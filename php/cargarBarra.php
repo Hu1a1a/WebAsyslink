@@ -1,15 +1,17 @@
 <?php
-    include "configLenguaje.php";
-    include_once ('conexion.php');
-    //session_start();
-    
-    // Comprobar si se ha iniciado sesion
-    if (!isset($_SESSION['login_type'])) {
-        $_SESSION['login_type'] = 'none';
-    }
-    
-    if($_SESSION['login_type']=="none") {
-        echo "
+ini_set('display_errors', 1);
+
+include "configLenguaje.php";
+include_once('conexion.php');
+//session_start();
+
+// Comprobar si se ha iniciado sesion
+if (!isset($_SESSION['login_type'])) {
+    $_SESSION['login_type'] = 'none';
+}
+
+if ($_SESSION['login_type'] == "none") {
+    echo "
             <nav id='navegation'>
                 <ul class='menu'>
                     <li class='logo'><a href='index.php'><img src='imagenes/logo.png' draggable='false'></a></li>
@@ -45,9 +47,8 @@
                     <li class='toggle'><a href='#'><span class='bars'></span></a></li>
                 </ul>
             </nav>";
-
-    } else if($_SESSION['login_type'] == 'user') {
-        echo "
+} else if ($_SESSION['login_type'] == 'user') {
+    echo "
         <nav id='navegation'>
             <ul class='menu'>
                 <li class='logo'><a href='index.php'><img src='imagenes/logo.png' draggable='false'></a></li>
@@ -98,9 +99,8 @@
                 <li class='toggle'><a href='#'><span class='bars'></span></a></li>
             </ul>
         </nav>";
-
-    } else if($_SESSION['login_type'] == 'admin') {
-        echo "
+} else if ($_SESSION['login_type'] == 'admin') {
+    echo "
         <nav id='navegation'>
             <ul class='menu'>
                 <!-- Page logo and some links -->
@@ -148,5 +148,4 @@
                 <li class='toggle'><a href='#'><span class='bars'></span></a></li>
             </ul>
         </nav>";
-    }
-?>
+}
