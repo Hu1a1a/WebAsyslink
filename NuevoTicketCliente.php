@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
     <link rel="stylesheet" type="text/css" href="estilos/portal.css">
     <link rel="stylesheet" href="estilos/misDatosCliente.css">
+    <link rel="stylesheet" href="estilos/NuevoTicket.css">
     <!--Crear nuevo estilo-->
     <link rel="stylesheet" href="estilos/barra.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

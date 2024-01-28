@@ -1,0 +1,43 @@
+div.item {
+  width: 100%;
+}
+
+select {
+  width: 100%;
+}
+div.content {
+  padding-top: 10px;
+}
+
+button#Enviar {
+  color: white;
+  background-color: #0054a6;
+  border: none;
+  font-size: 13px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: all 0.2s ease-in-out;
+}
+button#Eliminar {
+  color: white;
+  background-color: red;
+  border: none;
+  font-size: 13px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+span {
+  color: blue;
+  font-weight: 750;
+  vertical-align: top;
+}
+
+p {
+  padding: 5px 0px;
+}

@@ -1,0 +1,20 @@
+button#Modificar,
+button#Cerrar {
+  background-color: grey;
+  color: white;
+  border: 0;
+  padding: 5px 20px;
+  margin: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+span {
+  color: blue;
+  font-weight: 750;
+  vertical-align: top;
+}
+
+p {
+  padding: 5px 0px;
+}

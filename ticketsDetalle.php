@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="estilos/barra.css">
     <link rel="stylesheet" href="estilos/misDatosCliente.css" />
     <link rel="stylesheet" href="estilos/ticketsCurso.css">
+    <link rel="stylesheet" href="estilos/ticketsDetalle.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="javascript/cargarBarra.js"></script>
     <script src="javascript/botonBarra.js"></script>

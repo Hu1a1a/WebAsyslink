@@ -12,19 +12,19 @@ $consulta = "SELECT t.*, c.*
 $resultado = $mysqli->query($consulta);
 $fila = $resultado->fetch_object();
 
-echo "<p>> Ticket " . $fila->idTicketing . "</p>";
-echo "<p>Asunto: " . $fila->asunto . "</p>";
+echo "<p><span>> Ticket " . $fila->idTicketing . "</span></p>";
+echo "<p id='Asunto'><span>Asunto: </span>" . $fila->asunto . "</p>";
 if ($fila->estado == "1") {
-    echo "<p>Estado: Activo</p>";
-} else echo "<p>Estado: Cerrado</p>";
-echo "<p>Fecha de apertura: " . $fila->fecha . "</p>";
-echo "<p>Fecha de cierre: " . $fila->fechaCierre . "</p>";
+    echo "<p id='Estado'><span>Estado: </span>Activo</p>";
+} else echo "<p id='Estado'><span>Estado: </span>Cerrado</p>";
+echo "<p id='FechaA'><span>Fecha de apertura: </span>" . $fila->fecha . "</p>";
+echo "<p id='FechaC'><span>Fecha de cierre: </span>" . $fila->fechaCierre . "</p>";
 if ($_POST['level'] === "Admin") {
-    echo "<p>Descripción: </p><textarea cols=50 rows=10>" . $fila->texto . "</textarea>";
-    echo "<p>Resolución: </p><textarea cols=50 rows=10>" . $fila->Resolucion . "</textarea><br>";
-    echo "<button onclick='Modificar()'> Modificar </button>";
-    echo "<button onclick='Cerrar()'> Cerrar Tickets </button>";
+    echo "<p><span>Descripción: </span><textarea id='Descripcion' cols=50 rows=10>" . $fila->texto . "</textarea></p>";
+    echo "<p><span>Resolución: </span><textarea id='Resolucion'cols=50 rows=10>" . $fila->Resolucion . "</textarea></p><br>";
+    echo "<button id='Modificar' onclick='Modificar()'> Modificar </button>";
+    echo "<button id='Cerrar' onclick='Cerrar()'> Cerrar Tickets </button>";
 } else {
-    echo "<p>Descripción: </p><textarea cols=50 rows=10 disabled>" . $fila->texto . "</textarea>";
-    echo "<p>Resolución: </p><textarea cols=50 rows=10 disabled>" . $fila->Resolucion . "</textarea>";
+    echo "<p><span>Descripción: </span></p><textarea cols=50 rows=10 disabled>" . $fila->texto . "</textarea>";
+    echo "<p><span>Resolución: </span></p><textarea cols=50 rows=10 disabled>" . $fila->Resolucion . "</textarea>";
 }
