@@ -18,7 +18,7 @@ if ($resultado->num_rows == 0) {
 } else {
     while ($fila = $resultado->fetch_object()) {
         echo "<div class='item'>";
-        echo "<a href='ticketsDetalle.html?id=" . $fila->idTicketing . "'><b>Ticket " . $fila->idTicketing . "</b></a>";
+        echo "<a href='ticketsDetalle.php?id=" . $fila->idTicketing . "'><b>Ticket " . $fila->idTicketing . "</b></a>";
         echo "<p> : </p> ";
         echo "<p>[Apertura: " . $fila->fecha . "]</p>";
         echo " <p> - </p> ";

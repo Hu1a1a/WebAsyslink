@@ -1,10 +1,4 @@
 $(document).ready(function () {
-  $(document).on("click", ".toggle", function () {
-    $(".item").toggleClass("active");
-    $(".end").toggleClass("active");
-    $(".toggle").toggleClass("active");
-  });
-
   $("button.cerrarSesion").on("click", function () {
     $.ajax({
       url: "./php/cerrarSesion.php",
@@ -14,5 +8,11 @@ $(document).ready(function () {
       },
     });
     return false;
+  });
+  $(document).on("click", ".toggle", function () {
+    console.log("easd")
+    $(".item").toggleClass("active");
+    $(".end").toggleClass("active");
+    $(".toggle").toggleClass("active");
   });
 });

@@ -21,9 +21,9 @@ echo "<p>Fecha de apertura: " . $fila->fecha . "</p>";
 echo "<p>Fecha de cierre: " . $fila->fechaCierre . "</p>";
 if ($_POST['level'] === "Admin") {
     echo "<p>Descripción: </p><textarea cols=50 rows=10>" . $fila->texto . "</textarea>";
-    echo "<p>Resolución: </p><textarea cols=50 rows=10>" . $fila->Resolucion . "</textarea>";
-    echo "<button id='Modificar'> Modificar </button>";
-    echo "<button id='Cerrar'> Cerrar Tickets </button>";
+    echo "<p>Resolución: </p><textarea cols=50 rows=10>" . $fila->Resolucion . "</textarea><br>";
+    echo "<button onclick='Modificar()'> Modificar </button>";
+    echo "<button onclick='Cerrar()'> Cerrar Tickets </button>";
 } else {
     echo "<p>Descripción: </p><textarea cols=50 rows=10 disabled>" . $fila->texto . "</textarea>";
     echo "<p>Resolución: </p><textarea cols=50 rows=10 disabled>" . $fila->Resolucion . "</textarea>";
