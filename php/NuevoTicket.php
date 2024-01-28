@@ -25,7 +25,7 @@ if ($asunto && $texto && $idUsuario > 0) {
     $fila = $resultado->fetch_object();
     $idTicketing = ($fila->idTicketing + 1);
 
-    $insert1 = "INSERT INTO ticketing VALUES (" . $idTicketing . ", '" . $asunto . "', '" . $fecha . "', '" . $texto . "', '" . $archivoAdjunto . "', 1, '', '')";
+    $insert1 = "INSERT INTO Ticketing VALUES (" . $idTicketing . ", '" . $asunto . "', '" . $fecha . "', '" . $texto . "', '" . $archivoAdjunto . "', 1, '', '')";
     $mysqli->query($insert1);
 
     $insert2 = "INSERT INTO HistorialTickets VALUES (" . $idUsuario . ", " . $idTicketing . ")";
