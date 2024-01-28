@@ -10,7 +10,7 @@
         <script src="javascript/cargarBarra.js"></script>
         <script src="javascript/botonBarra.js"></script>
         <script src="javascript/accesoCliente.js"></script>
-        <script src="javascript/listadoTicketsCurso.js"></script>
+        <script src="javascript/listadoTicketsCursoCliente.js"></script>
     </head>
     <body>
         <!-- Barra del menu -->

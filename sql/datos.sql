@@ -6,7 +6,7 @@ CREATE TABLE `mydb`.`Cliente` (`idUsuario` INTEGER, `correo` VARCHAR(20), `passw
 
 CREATE TABLE `mydb`.`Servicios` (`idServicios` INTEGER, `nombreServicio` VARCHAR(20), `infoServicio` VARCHAR(20), `precio` VARCHAR(20), `TotalTickets` INTEGER);
 
-CREATE TABLE `mydb`.`Ticketing` (`idTicketing` INTEGER, `asunto` VARCHAR(20), `fecha` VARCHAR(20), `texto` VARCHAR(20), `archivoAdjunto` VARCHAR(20), `idServicio` INTEGER, `estado` INTEGER);
+CREATE TABLE `mydb`.`Ticketing` (`idTicketing` INTEGER, `asunto` VARCHAR(50), `fecha` VARCHAR(20), `texto` VARCHAR(255), `archivoAdjunto` VARCHAR(20), `estado` INTEGER,`fechaCierre` VARCHAR(20), `Resolucion` VARCHAR(255));
 
 CREATE TABLE `mydb`.`HistorialTickets` (`idUsuario` INTEGER, `idTicketing`INTEGER);
 
@@ -60,13 +60,13 @@ VALUES
 
 -- Inserciones para la tabla Ticketing
 INSERT INTO `mydb`.`Ticketing` 
-(`idTicketing`, `asunto`, `fecha`, `texto`, `archivoAdjunto`, `idServicio`, `estado`)
+(`idTicketing`, `asunto`, `fecha`, `texto`, `archivoAdjunto`, `estado`, `fechaCierre`, `Resolucion`)
 VALUES
-(1, 'Asunto 1', '2023-01-01', 'Texto del Ticket 1', 'adjunto1.pdf', 1, 1),
-(2, 'Asunto 2', '2023-02-02', 'Texto del Ticket 2', 'adjunto2.doc', 2, 0),
-(3, 'Asunto 3', '2023-03-03', 'Texto del Ticket 3', 'adjunto3.jpg', 3, 0),
-(4, 'Asunto 4', '2023-04-04', 'Texto del Ticket 4', 'adjunto4.txt', 4, 1),
-(5, 'Asunto 5', '2023-05-05', 'Texto del Ticket 5', 'adjunto5.png', 5, 1);
+(1, 'Asunto 1', '2023-01-01', 'Texto del Ticket 1', 'adjunto1.pdf', 1, '2023-01-01', 'fasdfasfds'),
+(2, 'Asunto 2', '2023-02-02', 'Texto del Ticket 2', 'adjunto2.doc', 0, '2023-01-01', 'sadfdasfdsa'),
+(3, 'Asunto 3', '2023-03-03', 'Texto del Ticket 3', 'adjunto3.jpg', 0, '2023-01-01', 'asdfadsfdasf'),
+(4, 'Asunto 4', '2023-04-04', 'Texto del Ticket 4', 'adjunto4.txt', 1, '2023-01-01', 'sdfsafasdf'),
+(5, 'Asunto 5', '2023-05-05', 'Texto del Ticket 5', 'adjunto5.png', 1, '2023-01-01', 'fdsafadsfds');
 
 -- Inserciones para la tabla HistorialTickets
 INSERT INTO `mydb`.`HistorialTickets` 

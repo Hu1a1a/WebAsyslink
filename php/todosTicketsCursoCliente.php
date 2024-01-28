@@ -15,8 +15,8 @@
         echo "<p style='color:#d06b68';>No tienes tickets abiertos atualmente.</p>";
     } else {
         while ($fila = $resultado->fetch_object()) {
-            echo "<div class='item'>";
-            echo "<p><b>Ticket" . $fila->idTicketing . "</b></p>";
+            echo "<div class='item ticket'>";
+            echo "<p><b>Ticket " . $fila->idTicketing . "</b></p>";
             echo "<p> : </p> ";
             echo "<p>[Apertura: " . $fila->fecha . "]</p>";
             echo " <p> - </p> ";
@@ -26,6 +26,7 @@
             if($fila->estado == "1") {
                 echo "Activo";
             } else echo "Cerrado";
+            echo "<button class='Detalle'>Detalle</button>";
             echo "</div>";
         }
     }

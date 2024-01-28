@@ -2,16 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Asyslink - Historial de Tickets (Admin)</title>
-    <link rel="stylesheet" href="estilos/estilos.css" />
+    <title>Asyslink - Historial de Tickets</title>
     <link rel="stylesheet" href="estilos/guia.css" />
-    <link rel="stylesheet" href="estilos/historialTicketsAdmin.css" />
     <link rel="stylesheet" href="estilos/barra.css" />
+    <link rel="stylesheet" href="estilos/ticketsCurso.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="javascript/cargarBarra.js"></script>
     <script src="javascript/botonBarra.js"></script>
     <script src="javascript/accesoAdmin.js"></script>
-    <script src="javascript/listadoTicketsHistorial.js"></script>
+    <script src="javascript/listadoTicketsCursoAdmin.js"></script>
   </head>
   <body>
     <!-- Barra del menu -->
@@ -25,30 +24,31 @@
       <p><a href="TicketingAdmin.html">Ticketing</a></p>
       <p>●</p>
       <!-- separador -->
-      <p class="actual">Historial de Tickets</p>
+      <p class="actual">Tickets en Curso</p>
     </div>
 
     <main>
-      <form id="formTicketsAdmin">
+      <form id="formTicketsCliente">
         <h2>Lista de Tickets</h2>
-
         <!-- Barra de busqueda -->
         <div class="busqueda">
-          <p><b>Buscar Cliente</b></p>
-          <input type="text" placeholder="correo del usuario" name="correo" />
+          <div class="orden">
+            <p><b>Cliente</b></p>
+            <select id="Cliente"></select>
+          </div>
+          <br />
+          <div class="orden">
+            <p><b>Ordenar</b></p>
+            <select id="orden">
+              <option value="opcion1">Fecha (mas cercanos primero)</option>
+              <option value="opcion2">Fecha (mas lejanos primero)</option>
+            </select>
+          </div>
           <button type="submit">OK</button>
         </div>
         <br />
-        <div class="orden">
-          <p><b>Ordenar</b></p>
-          <select id="orden" name="orden">
-            <option value="opcion1">Fecha (mas cercanas primero)</option>
-            <option value="opcion2">Fecha (mas lejanas primero)</option>
-          </select>
-        </div>
-
         <!-- Listado de ejemplo -->
-        <div class="listadoAdmin"></div>
+        <div class="listadoCliente"></div>
       </form>
     </main>
   </body>

@@ -23,24 +23,20 @@
     <div class="guia">
         <p><a href="TicketingCliente.php">Mis tickets</a></p>
         <p>●</p><!-- separador -->
-        <p class="actual">Crear ticket</p>
+        <p class="actual">Crear Ticket</p>
     </div>
 
 
     <div class="container">
         <div class="content">
             <div class="item">
-                <p class="titulo">
-                    Asunto:
-                </p>
+                <p class="titulo"> Asunto: </p>
                 <textarea id="Asunto" cols="50" rows="2"></textarea>
             </div>
         </div>
         <div class=content>
             <div class="item">
-                <p class="titulo">
-                    Texto:
-                </p>
+                <p class="titulo"> Texto: </p>
                 <textarea id="Texto" cols="50" rows="10"></textarea>
             </div>
         </div>

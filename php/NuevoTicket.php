@@ -6,23 +6,24 @@ $fecha = date("Y-m-d");
 $texto = $_POST['Texto'];
 $archivoAdjunto = "";
 
-if ($asunto && $texto) {
+if (isset($_POST['Cliente'])) {
+    $idUsuario = $_POST['Cliente'];
+} else {
     $correo = $_SESSION['correo'];
-
     $consulta = "SELECT * FROM Cliente 
     WHERE(Cliente.correo = '" . $correo . "')";
-
     $resultado = $mysqli->query($consulta);
     $fila = $resultado->fetch_object();
     $idUsuario = $fila->idUsuario;
-
+}
+if ($asunto && $texto && $idUsuario > 0) {
     $consulta = "SELECT * FROM Ticketing ORDER BY Ticketing.idTicketing DESC;";
     $resultado = $mysqli->query($consulta);
 
     $fila = $resultado->fetch_object();
     $idTicketing = ($fila->idTicketing + 1);
 
-    $insert1 = "INSERT INTO ticketing VALUES (" . $idTicketing . ", '" . $asunto . "', '" . $fecha . "', '" . $texto . "', '" . $archivoAdjunto . "', " . $idUsuario . ", 1)";
+    $insert1 = "INSERT INTO ticketing VALUES (" . $idTicketing . ", '" . $asunto . "', '" . $fecha . "', '" . $texto . "', '" . $archivoAdjunto . "', 1, '', '')";
     $mysqli->query($insert1);
 
     $insert2 = "INSERT INTO HistorialTickets VALUES (" . $idUsuario . ", " . $idTicketing . ")";

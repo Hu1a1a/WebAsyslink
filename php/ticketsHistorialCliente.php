@@ -31,7 +31,7 @@
         while ($fila = $resultado->fetch_object()) {
             $estado = $fila->estado;
             
-            echo "<div class='item'>";
+            echo "<div class='item ticket'>";
             echo "<p><b>Ticket" . $fila->idTicketing . "</b></p>";
             echo "<p> : </p> ";
             echo "<p>[Apertura: " . $fila->fecha . "]</p>";
@@ -42,7 +42,7 @@
             if($fila->estado == "1") {
                 echo "Activo";
             } else echo "Cerrado";
-
+            echo "<button class='Detalle'>Detalle</button>";
             echo "</div>";
         }
     }
